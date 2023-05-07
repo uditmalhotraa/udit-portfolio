@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export const Header = () => {
   return (
     <>
@@ -10,14 +8,12 @@ export const Header = () => {
         >
           Udit<span className="ml-[2px] font-light">Malhotra</span>
         </a>
-        <Link
-          href={() => {
-            window.location.href = "mailto:uditmalhotra98@gmail.com";
-          }}
+        <a
+          href="mailto:uditmalhotra98@gmail.com"
           className="px-3 py-2 border font-medium tracking-wide border-milka text-milka hover:bg-milka hover:text-white rounded-lg"
         >
           Contact
-        </Link>
+        </a>
       </div>
     </>
   );
