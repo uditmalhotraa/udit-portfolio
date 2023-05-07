@@ -33,7 +33,7 @@ export default {
         'container': 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
       },
       backgroundImage: {
-        'uditPic': "url('src/assets/UditPic.jpg')",
+        'uditPic': "url('./src/assets/UditPic.jpg')",
       }
     },
   },
