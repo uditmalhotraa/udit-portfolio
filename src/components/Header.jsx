@@ -10,7 +10,7 @@ export const Header = () => {
         </a>
         <a
           href="mailto:uditmalhotra98@gmail.com"
-          className="px-3 py-2 border font-medium tracking-wide border-milka text-milka hover:bg-milka hover:text-white rounded-lg"
+          className="px-3 py-2 border font-medium tracking-wide border-milka hover:bg-milka/90 bg-milka text-white rounded-lg"
         >
           Contact
         </a>

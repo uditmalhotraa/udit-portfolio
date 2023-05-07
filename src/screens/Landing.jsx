@@ -29,20 +29,30 @@ export const Landing = () => {
                   Formal schooling and graduation
                 </p>
               </div>
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-5">
                 <p className=" font-poppins leading-loose text-xl font-normal text-black"></p>
                 <div className="flex flex-col">
-                  <p className=" font-poppins text-xl font-normal text-black">
-                    Kendriya Vidyalaya
-                  </p>
+                  <div className="flex flex-row justify-between items-center w-full">
+                    <p className=" font-poppins text-xl font-normal text-black">
+                      Kendriya Vidyalaya
+                    </p>
+                    <p className=" font-poppins tracking-wider text-sm font-normal text-darkGray italic">
+                      (2004-2016)
+                    </p>
+                  </div>
                   <p className=" font-poppins tracking-wider text-base font-normal text-darkGray">
                     Primary, secondary and higher secondary
                   </p>
                 </div>
                 <div className="flex flex-col">
-                  <p className=" font-poppins text-xl font-normal text-black">
-                    Chitkara University
-                  </p>
+                  <div className="flex flex-row justify-between items-center w-full">
+                    <p className=" font-poppins text-xl font-normal text-black">
+                      Chitkara University
+                    </p>
+                    <p className=" font-poppins tracking-wider text-sm font-normal text-darkGray italic">
+                      (2016-2020)
+                    </p>
+                  </div>
                   <p className=" font-poppins tracking-wider text-base font-normal text-darkGray">
                     Bachelor of Engineering
                   </p>
@@ -58,27 +68,42 @@ export const Landing = () => {
                   Professional company work
                 </p>
               </div>
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-5">
                 <div className="flex flex-col">
-                  <p className=" font-poppins text-xl font-normal text-black">
-                    Infosys
-                  </p>
+                  <div className="flex flex-row justify-between items-center w-full">
+                    <p className=" font-poppins text-xl font-normal text-black">
+                      Infosys
+                    </p>
+                    <p className=" font-poppins tracking-wider text-sm font-normal text-darkGray italic">
+                      (2020-2021)
+                    </p>
+                  </div>
                   <p className=" font-poppins tracking-wider text-base font-normal text-darkGray">
                     System Engineer
                   </p>
                 </div>
                 <div className="flex flex-col">
-                  <p className=" font-poppins text-xl font-normal text-black">
-                    Mintworxs
-                  </p>
+                  <div className="flex flex-row justify-between items-center w-full">
+                    <p className=" font-poppins text-xl font-normal text-black">
+                      Mintworxs
+                    </p>
+                    <p className=" font-poppins tracking-wider text-sm font-normal text-darkGray italic">
+                      (2021)
+                    </p>
+                  </div>
                   <p className=" font-poppins tracking-wider text-base font-normal text-darkGray">
                     Web Developer
                   </p>
                 </div>
                 <div className="flex flex-col">
-                  <p className=" font-poppins text-xl font-normal text-black">
-                    Spenda
-                  </p>
+                  <div className="flex flex-row justify-between items-center w-full">
+                    <p className=" font-poppins text-xl font-normal text-black">
+                      Spenda
+                    </p>
+                    <p className=" font-poppins tracking-wider text-sm font-normal text-darkGray italic">
+                      (2021-present)
+                    </p>
+                  </div>
                   <p className=" font-poppins tracking-wider text-base font-normal text-darkGray">
                     React Developer
                   </p>
@@ -86,31 +111,31 @@ export const Landing = () => {
               </div>
             </div>
             <div className="flex flex-row justify-between gap-4 lg:gap-0 flex-wrap w-full h-auto">
-              <div className="flex flex-col justify-center items-center shadow-container rounded-2xl w-[47%] md:w-[23%] h-auto py-7 px-5 gap-2 bg-milka">
-                <p className="font-poppins text-3xl font-bold text-white">6+</p>
-                <p className="font-poppins text-[18px] font-normal tracking-wider text-lightGray">
+              <div className="flex flex-col justify-center items-center shadow-container rounded-2xl w-[47%] md:w-[23%] h-auto py-7 px-5 gap-2 bg-white border-2 border-milka">
+                <p className="font-poppins text-3xl font-bold text-milka">6+</p>
+                <p className="font-poppins text-[18px] font-normal tracking-wider text-black">
                   Languages
                 </p>
               </div>
-              <div className="flex flex-col justify-center items-center shadow-container rounded-2xl w-[47%] md:w-[23%] h-auto py-7 px-5 gap-2 bg-milka">
-                <p className="font-poppins text-3xl font-bold text-white">
+              <div className="flex flex-col justify-center items-center shadow-container rounded-2xl w-[47%] md:w-[23%] h-auto py-7 px-5 gap-2 bg-white border-2 border-milka">
+                <p className="font-poppins text-3xl font-bold text-milka">
                   20+
                 </p>
-                <p className="font-poppins text-[18px] font-normal tracking-wider text-lightGray">
+                <p className="font-poppins text-[18px] font-normal tracking-wider text-black">
                   Tools
                 </p>
               </div>
-              <div className="flex flex-col justify-center items-center shadow-container rounded-2xl w-[47%] md:w-[23%] h-auto py-7 px-5 gap-2 bg-milka">
-                <p className="font-poppins text-3xl font-bold text-white">
+              <div className="flex flex-col justify-center items-center shadow-container rounded-2xl w-[47%] md:w-[23%] h-auto py-7 px-5 gap-2 bg-white border-2 border-milka">
+                <p className="font-poppins text-3xl font-bold text-milka">
                   20+
                 </p>
-                <p className="font-poppins text-[18px] font-normal tracking-wider text-lightGray">
+                <p className="font-poppins text-[18px] font-normal tracking-wider text-black">
                   Projects
                 </p>
               </div>
-              <div className="flex flex-col justify-center items-center shadow-container rounded-2xl w-[47%] md:w-[23%] h-auto py-7 px-5 gap-2 bg-milka">
-                <p className="font-poppins text-3xl font-bold text-white">8+</p>
-                <p className="font-poppins text-[18px] font-normal tracking-wider text-lightGray">
+              <div className="flex flex-col justify-center items-center shadow-container rounded-2xl w-[47%] md:w-[23%] h-auto py-7 px-5 gap-2 bg-white border-2 border-milka">
+                <p className="font-poppins text-3xl font-bold text-milka">8+</p>
+                <p className="font-poppins text-[18px] font-normal tracking-wider text-black">
                   Clients
                 </p>
               </div>
