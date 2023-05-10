@@ -110,13 +110,13 @@ export const Landing = () => {
               </div>
             </div>
             <div className="flex flex-row justify-between gap-4 lg:gap-0 flex-wrap w-full h-auto">
-              <div className="cursor-pointer flex flex-col justify-center items-center shadow-container hover:shadow-containerXL dark:shadow-darkContainer dark:hover:shadow-darkContainerXL rounded-2xl w-[47%] md:w-[23%] h-auto py-7 px-5 gap-2 bg-white dark:bg-black border-2 border-milka">
+              <div className=" flex flex-col justify-center items-center shadow-container dark:shadow-darkContainer rounded-2xl w-[47%] md:w-[23%] h-auto py-7 px-5 gap-2 bg-white dark:bg-black">
                 <p className="font-poppins text-3xl font-bold text-milka">6+</p>
                 <p className="font-poppins text-[18px] font-normal tracking-wider text-black dark:text-white">
                   Languages
                 </p>
               </div>
-              <div className="cursor-pointer flex flex-col justify-center items-center shadow-container hover:shadow-containerXL dark:shadow-darkContainer dark:hover:shadow-darkContainerXL rounded-2xl w-[47%] md:w-[23%] h-auto py-7 px-5 gap-2 bg-white dark:bg-black border-2 border-milka">
+              <div className=" flex flex-col justify-center items-center shadow-container dark:shadow-darkContainer rounded-2xl w-[47%] md:w-[23%] h-auto py-7 px-5 gap-2 bg-white dark:bg-black">
                 <p className="font-poppins text-3xl font-bold text-milka">
                   20+
                 </p>
@@ -124,7 +124,7 @@ export const Landing = () => {
                   Tools
                 </p>
               </div>
-              <div className="cursor-pointer flex flex-col justify-center items-center shadow-container hover:shadow-containerXL dark:shadow-darkContainer dark:hover:shadow-darkContainerXL rounded-2xl w-[47%] md:w-[23%] h-auto py-7 px-5 gap-2 bg-white dark:bg-black border-2 border-milka">
+              <div className=" flex flex-col justify-center items-center shadow-container dark:shadow-darkContainer rounded-2xl w-[47%] md:w-[23%] h-auto py-7 px-5 gap-2 bg-white dark:bg-black">
                 <p className="font-poppins text-3xl font-bold text-milka">
                   20+
                 </p>
@@ -132,7 +132,7 @@ export const Landing = () => {
                   Projects
                 </p>
               </div>
-              <div className="cursor-pointer flex flex-col justify-center items-center shadow-container hover:shadow-containerXL dark:shadow-darkContainer dark:hover:shadow-darkContainerXL rounded-2xl w-[47%] md:w-[23%] h-auto py-7 px-5 gap-2 bg-white dark:bg-black border-2 border-milka">
+              <div className=" flex flex-col justify-center items-center shadow-container dark:shadow-darkContainer rounded-2xl w-[47%] md:w-[23%] h-auto py-7 px-5 gap-2 bg-white dark:bg-black">
                 <p className="font-poppins text-3xl font-bold text-milka">8+</p>
                 <p className="font-poppins text-[18px] font-normal tracking-wider text-black dark:text-white">
                   Clients
@@ -166,7 +166,7 @@ export const Landing = () => {
               </a>
             </div>
             <div className="flex flex-col w-full h-auto">
-              <p className="font-poppins text-sm font-light text-milka tracking-wider leading-relaxed">
+              <p className="font-poppins text-sm font-normal text-milka tracking-wider leading-relaxed">
                 This website only covers the professional aspect of life, which
                 is merely a fraction of the total. Designed and developed by
                 Udit Malhotra.
