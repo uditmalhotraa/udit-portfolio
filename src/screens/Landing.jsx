@@ -184,10 +184,10 @@ export const Landing = () => {
             <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-auto p-5 bg-white dark:bg-black">
               <div className="flex flex-col mb-5">
                 <p className=" font-poppins text-3xl font-semibold tracking-wide text-milka">
-                  Self-studied
+                  Books
                 </p>
                 <p className=" font-poppins text-lg tracking-wide font-normal text-darkGray dark:text-lightGray">
-                  Things learned other than formal education
+                  Listing of books read over time
                 </p>
               </div>
               <div className="flex flex-col gap-3">
