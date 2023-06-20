@@ -1,4 +1,5 @@
 import { Header } from "../components/Header";
+import Carousel from "react-material-ui-carousel";
 import Instagram from "../assets/Instagram";
 import Twitter from "../assets/Twitter";
 import Spotify from "../assets/Spotify";
@@ -139,155 +140,213 @@ export const Landing = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-auto p-5 bg-white dark:bg-black">
-              <div className="flex flex-col mb-5">
-                <p className=" font-poppins text-3xl font-semibold tracking-wide text-milka">
-                  Self-studied
-                </p>
-                <p className=" font-poppins text-lg tracking-wide font-normal text-darkGray dark:text-lightGray">
-                  Things learned other than formal education
-                </p>
-              </div>
-              <div className="flex flex-col gap-3">
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    UI/UX designing
+            <Carousel
+              className="p-1"
+              swipe
+              navButtonsAlwaysInvisible
+              prevButtonsAlwaysInvisible
+              fullHeightHover={false}
+              autoPlay={false}
+              interval="6000"
+              animation="fade"
+              navButtonsProps={{
+                style: {
+                  backgroundColor: "#7E69AD",
+                },
+              }}
+              activeIndicatorIconButtonProps={{
+                style: {
+                  color: "#7E69AD",
+                },
+              }}
+            >
+              <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-[300px] p-5 bg-white dark:bg-black">
+                <div className="flex flex-col mb-5">
+                  <p className=" font-poppins text-3xl font-semibold tracking-wide text-milka">
+                    Self-studied
+                  </p>
+                  <p className=" font-poppins text-lg tracking-wide font-normal text-darkGray dark:text-lightGray">
+                    Things learned other than formal education
                   </p>
                 </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    Google: Data science
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    Indian stock market
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    Event management
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    Research work
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    Music, instruments
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-auto p-5 bg-white dark:bg-black">
-              <div className="flex flex-col mb-5">
-                <p className=" font-poppins text-3xl font-semibold tracking-wide text-milka">
-                  Books
-                </p>
-                <p className=" font-poppins text-lg tracking-wide font-normal text-darkGray dark:text-lightGray">
-                  Listing of books read over time
-                </p>
-              </div>
-              <div className="flex flex-col gap-3">
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    The 48 laws of power
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    The power of your subconcious mind
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    Can't hurt me
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    Man's search for meaning
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    The almanack of Naval Ravikant
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    Thinking, fast and slow
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    Atomic Habits
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    The Archer
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    The psychology of money
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    The compound effect
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    Homo Deus
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    Sapiens
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    The intelligent investor
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    The 5AM club
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    Rich dad, poor dad
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    Everything is f*cked
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    The subtle art of not giving a f*ck
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    Life's amazing secrets
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                    Diary of a Wimpy Kid
-                  </p>
+                <div className="flex flex-col gap-3">
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      UI/UX designing
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      Google: Data science
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      Indian stock market
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+              <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-[300px] p-5 bg-white dark:bg-black">
+                <div className="flex flex-col gap-3">
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      Event management
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      Research work
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      Music, instruments
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Carousel>
+            <Carousel
+              className="p-1"
+              swipe
+              navButtonsAlwaysInvisible
+              prevButtonsAlwaysInvisible
+              fullHeightHover={false}
+              autoPlay={false}
+              interval="6000"
+              animation="fade"
+              navButtonsProps={{
+                style: {
+                  backgroundColor: "#7E69AD",
+                },
+              }}
+              activeIndicatorIconButtonProps={{
+                style: {
+                  color: "#7E69AD",
+                },
+              }}
+            >
+              <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-[300px] p-5 bg-white dark:bg-black">
+                <div className="flex flex-col mb-5">
+                  <p className=" font-poppins text-3xl font-semibold tracking-wide text-milka">
+                    Books
+                  </p>
+                  <p className=" font-poppins text-lg tracking-wide font-normal text-darkGray dark:text-lightGray">
+                    Listing of books read over time
+                  </p>
+                </div>
+                <div className="flex flex-col gap-3">
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      The 48 laws of power
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      The power of your subconcious mind
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      Can't hurt me
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      Man's search for meaning
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-[300px] p-5 bg-white dark:bg-black">
+                <div className="flex flex-col gap-3">
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      The almanack of Naval Ravikant
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      Thinking, fast and slow
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      Atomic Habits
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      The Archer
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      The psychology of money
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      The compound effect
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-[300px] p-5 bg-white dark:bg-black">
+                <div className="flex flex-col gap-3">
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      Homo Deus
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      Sapiens
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      The intelligent investor
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      The 5AM club
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      Rich dad, poor dad
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      Everything is f*cked
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-[300px] p-5 bg-white dark:bg-black">
+                <div className="flex flex-col gap-3">
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      The subtle art of not giving a f*ck
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      Life's amazing secrets
+                    </p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                      Diary of a Wimpy Kid
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Carousel>
             <div className="flex flex-row justify-between flex-wrap w-full h-auto mb-10">
               <a
                 className="flex flex-col justify-center items-center shadow-container hover:shadow-containerXL dark:shadow-darkContainer dark:hover:shadow-darkContainerXL rounded-2xl w-[23%] h-auto p-5 bg-white dark:bg-black cursor-pointer"
