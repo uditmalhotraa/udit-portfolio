@@ -17,7 +17,7 @@ export const Landing = () => {
               Namaste,
             </p>
             <p className=" font-poppins text-md font-light tracking-wide text-white w-full z-10">
-              Here you can have a glance about my profession and contact details
+              Here you can have a glance at my profession and contact details.
             </p>
           </div>
           <div className="flex flex-col w-full gap-8 lg:mt-2">
@@ -43,8 +43,24 @@ export const Landing = () => {
                   <p className=" font-poppins tracking-wider text-base font-normal text-darkGray dark:text-lightGray">
                     Primary, secondary and higher secondary
                   </p>
+                  <div className="flex flex-row justify-between items-start w-full mt-2">
+                    <p className=" font-poppins tracking-wider text-sm font-normal text-black dark:text-lightGray mr-3">
+                      Secondary School Certificate
+                    </p>
+                    <p className=" font-poppins tracking-wider text-sm font-normal text-black dark:text-lightGray italic whitespace-nowrap">
+                      9.60 CGPA
+                    </p>
+                  </div>
+                  <div className="flex flex-row justify-between items-start w-full mt-1">
+                    <p className=" font-poppins tracking-wider text-sm font-normal text-black dark:text-lightGray mr-3">
+                      Higher Secondary School Certificate
+                    </p>
+                    <p className=" font-poppins tracking-wider text-sm font-normal text-black dark:text-lightGray italic whitespace-nowrap">
+                      71.00 %
+                    </p>
+                  </div>
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col border-t border-t-lightGray dark:border-t-lightGray pt-3">
                   <div className="flex flex-row justify-between items-center w-full">
                     <p className=" font-poppins text-xl font-normal text-black dark:text-white">
                       Chitkara University
@@ -56,6 +72,14 @@ export const Landing = () => {
                   <p className=" font-poppins tracking-wider text-base font-normal text-darkGray dark:text-lightGray">
                     Bachelor of Engineering
                   </p>
+                  <div className="flex flex-row justify-between items-start w-full mt-2">
+                    <p className=" font-poppins tracking-wider text-sm font-normal text-black dark:text-lightGray mr-3">
+                      Graduation
+                    </p>
+                    <p className=" font-poppins tracking-wider text-sm font-normal text-black dark:text-lightGray italic whitespace-nowrap">
+                      9.16 CGPA
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -75,14 +99,18 @@ export const Landing = () => {
                       Infosys
                     </p>
                     <p className=" font-poppins tracking-wider text-sm font-normal text-darkGray dark:text-lightGray italic">
-                      (2020-2021)
+                      (2020)
                     </p>
                   </div>
                   <p className=" font-poppins tracking-wider text-base font-normal text-darkGray dark:text-lightGray">
                     System Engineer
                   </p>
+                  <p className=" font-poppins tracking-wider text-sm font-normal text-darkGray dark:text-lightGray mt-2">
+                    The specific role includes database administration, which
+                    involved working with SQL and Oracle Server Manager.
+                  </p>
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col border-t border-t-lightGray dark:border-t-lightGray pt-3">
                   <div className="flex flex-row justify-between items-center w-full">
                     <p className=" font-poppins text-xl font-normal text-black dark:text-white">
                       Mintworxs
@@ -94,18 +122,28 @@ export const Landing = () => {
                   <p className=" font-poppins tracking-wider text-base font-normal text-darkGray dark:text-lightGray">
                     Web Developer
                   </p>
+                  <p className=" font-poppins tracking-wider text-sm font-normal text-darkGray dark:text-lightGray mt-2">
+                    The specific role includes UI development, which involved
+                    working with HTML, CSS, SCSS, Js, Bootstrap, MUI, React,
+                    various tools, etc.
+                  </p>
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col border-t border-t-lightGray dark:border-t-lightGray pt-3">
                   <div className="flex flex-row justify-between items-center w-full">
                     <p className=" font-poppins text-xl font-normal text-black dark:text-white">
                       Spenda
                     </p>
                     <p className=" font-poppins tracking-wider text-sm font-normal text-darkGray dark:text-lightGray italic">
-                      (2021-present)
+                      (2022 +)
                     </p>
                   </div>
                   <p className=" font-poppins tracking-wider text-base font-normal text-darkGray dark:text-lightGray">
                     React Developer
+                  </p>
+                  <p className=" font-poppins tracking-wider text-sm font-normal text-darkGray dark:text-lightGray mt-2">
+                    The specific role includes product development, which
+                    involved working with React, Js, Ts, Tailwind, Storybook,
+                    MUI, various tools, etc.
                   </p>
                 </div>
               </div>
@@ -160,7 +198,7 @@ export const Landing = () => {
                 },
               }}
             >
-              <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-[300px] p-5 bg-white dark:bg-black">
+              <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-[600px] lg:h-[500] p-5 bg-white dark:bg-black">
                 <div className="flex flex-col mb-5">
                   <p className=" font-poppins text-3xl font-semibold tracking-wide text-milka">
                     Self-studied
@@ -172,36 +210,69 @@ export const Landing = () => {
                 <div className="flex flex-col gap-3">
                   <div className="flex flex-col">
                     <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                      UI/UX designing
+                      UI/UX design and development
+                    </p>
+                    <p className=" font-poppins tracking-wider text-sm font-normal text-darkGray dark:text-lightGray mt-2">
+                      Various courses, materials, articles, and videos on UI and
+                      UX design and development. Along with languages and tools,
+                      hands on practice and work as well.
                     </p>
                   </div>
-                  <div className="flex flex-col">
+                  <div className="flex flex-col border-t border-t-lightGray dark:border-t-lightGray pt-3">
                     <p className=" font-poppins text-lg font-normal text-black dark:text-white">
                       Google: Data science
                     </p>
+                    <p className=" font-poppins tracking-wider text-sm font-normal text-darkGray dark:text-lightGray mt-2">
+                      Complete Google's data science course out of interest. and
+                      future requirements.
+                    </p>
                   </div>
-                  <div className="flex flex-col">
+                  <div className="flex flex-col border-t border-t-lightGray dark:border-t-lightGray pt-3">
                     <p className=" font-poppins text-lg font-normal text-black dark:text-white">
                       Indian stock market
+                    </p>
+                    <p className=" font-poppins tracking-wider text-sm font-normal text-darkGray dark:text-lightGray mt-2">
+                      Researched and studied the Indian stock market from the
+                      perspectives of techincal, fundamental, psychological, and
+                      life management concepts, along with practice and work
+                      over time.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-[300px] p-5 bg-white dark:bg-black">
+              <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-[600px] lg:h-[500] p-5 bg-white dark:bg-black">
                 <div className="flex flex-col gap-3">
                   <div className="flex flex-col">
                     <p className=" font-poppins text-lg font-normal text-black dark:text-white">
                       Event management
                     </p>
+                    <p className=" font-poppins tracking-wider text-sm font-normal text-darkGray dark:text-lightGray mt-2">
+                      Worked in 40+ events of all sorts in college and have good
+                      hands-on experience of how to lead or work in a team to
+                      yield positive results.
+                    </p>
                   </div>
-                  <div className="flex flex-col">
+                  <div className="flex flex-col border-t border-t-lightGray dark:border-t-lightGray pt-3">
                     <p className=" font-poppins text-lg font-normal text-black dark:text-white">
                       Research work
                     </p>
+                    <p className=" font-poppins tracking-wider text-sm font-normal text-darkGray dark:text-lightGray mt-2">
+                      Thanks to the mind and personality built over time,
+                      research at work or in daily life is like a second
+                      personality now.
+                    </p>
                   </div>
-                  <div className="flex flex-col">
+                  <div className="flex flex-col border-t border-t-lightGray dark:border-t-lightGray pt-3">
                     <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                      Music, instruments
+                      Reading, writing, sarcasm, music, instruments and
+                      fragrances
+                    </p>
+                    <p className=" font-poppins tracking-wider text-sm font-normal text-darkGray dark:text-lightGray mt-2">
+                      Inclined towards music, things related to it, and musical
+                      instruments. Fragrance enthusiasts, be it using, creating,
+                      or breaking it down. Long-time reader and writer, deeply
+                      involved in sarcasm, and found in places, talks, and
+                      actions of that sort.
                     </p>
                   </div>
                 </div>
@@ -227,7 +298,7 @@ export const Landing = () => {
                 },
               }}
             >
-              <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-[300px] p-5 bg-white dark:bg-black">
+              <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-[400px] p-5 bg-white dark:bg-black">
                 <div className="flex flex-col mb-5">
                   <p className=" font-poppins text-3xl font-semibold tracking-wide text-milka">
                     Books
@@ -238,110 +309,102 @@ export const Landing = () => {
                 </div>
                 <div className="flex flex-col gap-3">
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
                       The 48 laws of power
                     </p>
                   </div>
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
                       The power of your subconcious mind
                     </p>
                   </div>
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
                       Can't hurt me
                     </p>
                   </div>
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
                       Man's search for meaning
                     </p>
                   </div>
-                </div>
-              </div>
-              <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-[300px] p-5 bg-white dark:bg-black">
-                <div className="flex flex-col gap-3">
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
                       The almanack of Naval Ravikant
                     </p>
                   </div>
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
                       Thinking, fast and slow
                     </p>
                   </div>
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
                       Atomic Habits
                     </p>
                   </div>
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
                       The Archer
                     </p>
                   </div>
+                </div>
+              </div>
+              <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-[400px] p-5 bg-white dark:bg-black">
+                <div className="flex flex-col gap-3">
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
                       The psychology of money
                     </p>
                   </div>
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
                       The compound effect
                     </p>
                   </div>
-                </div>
-              </div>
-              <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-[300px] p-5 bg-white dark:bg-black">
-                <div className="flex flex-col gap-3">
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
                       Homo Deus
                     </p>
                   </div>
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
                       Sapiens
                     </p>
                   </div>
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
                       The intelligent investor
                     </p>
                   </div>
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
                       The 5AM club
                     </p>
                   </div>
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
                       Rich dad, poor dad
                     </p>
                   </div>
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
                       Everything is f*cked
                     </p>
                   </div>
-                </div>
-              </div>
-              <div className="flex flex-col shadow-container dark:shadow-darkContainer rounded-2xl w-full h-[300px] p-5 bg-white dark:bg-black">
-                <div className="flex flex-col gap-3">
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
                       The subtle art of not giving a f*ck
                     </p>
                   </div>
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
                       Life's amazing secrets
                     </p>
                   </div>
                   <div className="flex flex-col">
-                    <p className=" font-poppins text-lg font-normal text-black dark:text-white">
-                      Diary of a Wimpy Kid
+                    <p className=" font-poppins text-sm tracking-wider font-normal text-black dark:text-white">
+                      Diary of a Wimpy Kid Series
                     </p>
                   </div>
                 </div>
