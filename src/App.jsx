@@ -5,9 +5,9 @@ function App() {
   return (
     <>
       <div className="w-full h-full ">
-        <BrowserRouter basename={"/udit-portfolio"}>
+        <BrowserRouter>
           <Routes>
-            <Route index element={<Landing />} />
+            <Route path="/" index element={<Landing />} />
           </Routes>
         </BrowserRouter>
       </div>
