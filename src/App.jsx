@@ -1,15 +1,13 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Landing } from "./screens/Landing";
 
 function App() {
   return (
     <>
       <div className="w-full h-full ">
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" index element={<Landing />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+        </Routes>
       </div>
     </>
   );
