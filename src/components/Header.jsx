@@ -1,16 +1,16 @@
 export const Header = () => {
   return (
     <>
-      <div className="fixed flex flex-row justify-between items-center w-full h-16 px-4 shadow-lg dark:shadow-darkContainer bg-white/60 dark:bg-black/40 backdrop-blur-md z-20">
+      <div className="fixed flex flex-row justify-between items-center w-full h-16 px-4 shadow-container bg-cream/40 dark:bg-gray/40 backdrop-blur-lg z-20">
         <a
           href="/"
-          className=" font-poppins text-3xl font-semibold tracking-wider text-milka dark:text-milka"
+          className=" font-poppins text-3xl font-semibold tracking-wider text-accent-light dark:text-accent-dark dark:text-accent-dark-dark"
         >
-          Udit<span className="ml-[2px] font-light">Malhotra</span>
+          Udit<span className="ml-[2px] font-thin">Malhotra</span>
         </a>
         <a
           href="mailto:uditmalhotra98@gmail.com"
-          className="px-3 py-2 border font-semibold tracking-wide border-milka dark:border-milka hover:bg-milka/90 dark:hover:bg-milka/90 bg-milka dark:bg-milka text-white rounded-lg"
+          className="px-3 py-2 border font-semibold tracking-wide border-accent-light dark:border-accent-dark hover:bg-accent-light/90 dark:hover:bg-accent-dark/90 bg-accent-light dark:bg-accent-dark text-cream dark:text-gray rounded-lg"
         >
           Contact
         </a>

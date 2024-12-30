@@ -8,14 +8,11 @@ export default {
   theme: {
     colors: {
       transparent: 'transparent',
-      'white': '#ffffff',
-      'slate': '#F5F5F7',
-      'lightGray': '#CCC',
-      'darkGray': '#666',
-      'black': '#000000',
-      'darkBlack': '#111',
-      'accent': '#672AE9',
-      'milka': '#7E69AD'
+      'cream': '#efebdb',
+      'gray': '#181818',
+      'darkgray': '#121212',
+      'accent-light': '#212196',
+      'accent-dark': '#AFAFED',
     },
     fontFamily: {
       poppins: 'Poppins, sans-serif',
@@ -31,10 +28,8 @@ export default {
     },
     extend: {
       boxShadow: {
-        'container': 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
-        'containerXL': 'rgba(0, 0, 0, 0.44) 0px 4px 10px',
-        'darkContainer': 'rgba(155, 155, 155, 0.24) 0px 3px 12px',
-        'darkContainerXL': 'rgba(155, 155, 155, 0.44) 0px 4px 10px',
+        'container': 'rgba(75, 75, 75, 0.24) 0px 3px 8px',
+        'containerXL': 'rgba(75, 75, 75, 0.44) 0px 4px 10px',
       },
       backgroundImage: {
         'uditPic': "url('../src/assets/UditPic.jpg')",
