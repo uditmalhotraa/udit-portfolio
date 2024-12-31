@@ -1,4 +1,15 @@
+import { useContext } from "react";
+import DarkModeContext from "../contexts/DarkModeContext";
+import LightModeIcon from "../assets/LightModeIcon";
+import DarkModeIcon from "../assets/DarkModeIcon";
+
 export const Header = () => {
+  const { darkMode, setDarkMode } = useContext(DarkModeContext);
+
+  const handleClick = () => {
+    setDarkMode();
+  };
+
   return (
     <>
       <div className="fixed flex flex-row justify-between items-center w-full h-16 px-4 shadow-container bg-cream/40 dark:bg-gray/40 backdrop-blur-lg z-20">
@@ -8,12 +19,13 @@ export const Header = () => {
         >
           Udit<span className="ml-[2px] font-thin">Malhotra</span>
         </a>
-        <a
-          href="mailto:uditmalhotra98@gmail.com"
-          className="px-3 py-2 border font-semibold tracking-wide border-accent-light dark:border-accent-dark hover:bg-accent-light/90 dark:hover:bg-accent-dark/90 bg-accent-light dark:bg-accent-dark text-cream dark:text-gray rounded-lg"
-        >
-          Contact
-        </a>
+        <div className="cursor-pointer" onClick={handleClick}>
+          {darkMode ? (
+            <LightModeIcon className="h-[30px] w-[30px] !stroke-accent-dark" />
+          ) : (
+            <DarkModeIcon className="h-[30px] w-[30px] !fill-accent-light" />
+          )}
+        </div>
       </div>
     </>
   );

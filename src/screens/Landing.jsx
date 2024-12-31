@@ -125,7 +125,7 @@ export const Landing = () => {
                       Jan 2022 - Jun 2023
                     </p>
                   </div>
-                  <div className="flex flex-row w-full gap-2 flex-wrap mt-2">
+                  <div className="flex flex-row w-full gap-2 flex-wrap mt-4">
                     <Chip text="React" />
                     <Chip text="Tailwind" />
                     <Chip text="JS/TS" />
@@ -149,7 +149,7 @@ export const Landing = () => {
                       Apr 2021 - Dec 2021
                     </p>
                   </div>
-                  <div className="flex flex-row w-full gap-2 flex-wrap mt-2">
+                  <div className="flex flex-row w-full gap-2 flex-wrap mt-4">
                     <Chip text="React" />
                     <Chip text="CSS/SCSS" />
                     <Chip text="JS" />
@@ -171,7 +171,7 @@ export const Landing = () => {
                       Mar 2020 - Mar 2021
                     </p>
                   </div>
-                  <div className="flex flex-row w-full gap-2 flex-wrap mt-2">
+                  <div className="flex flex-row w-full gap-2 flex-wrap mt-4">
                     <Chip text="SQL" />
                     <Chip text="Oracle Server Manager" />
                   </div>
