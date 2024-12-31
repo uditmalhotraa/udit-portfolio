@@ -6,7 +6,7 @@ function App() {
     <>
       <div className="w-full h-full ">
         <Routes>
-          <Route exact path="/" element={<Landing />} />
+          <Route path="/udit-portfolio" element={<Landing />} />
         </Routes>
       </div>
     </>
