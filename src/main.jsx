@@ -6,7 +6,7 @@ import { DarkModeContextProvider } from "./contexts/DarkModeContextProvider.jsx"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <DarkModeContextProvider>
-    <HashRouter>
+    <HashRouter basename="/udit-portfolio">
       <App />
     </HashRouter>
   </DarkModeContextProvider>
