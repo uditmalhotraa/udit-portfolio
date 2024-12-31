@@ -5,8 +5,8 @@ function App() {
   return (
     <>
       <div className="w-full h-full ">
-        <Routes>
-          <Route path="/udit-portfolio" element={<Landing />} />
+        <Routes basename="/udit-portfolio">
+          <Route path="/" element={<Landing />} />
         </Routes>
       </div>
     </>

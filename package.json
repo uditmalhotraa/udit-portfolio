@@ -1,7 +1,7 @@
 {
-  "homepage": "https://uditmalhotraa.github.io/udit-portfolio/",
+  "homepage": "https://uditmalhotraa.in/",
   "name": "udit-portfolio",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
