@@ -1,0 +1,33 @@
+[
+  {
+    "educationIndex": 1,
+    "name": "Kendriya Vidyalaya",
+    "year": "2004 - 2016",
+    "desc": "Primary, secondary and higher secondary",
+    "detail": [
+      {
+        "detailIndex": 1,
+        "certificate": "Secondary School Certificate",
+        "grade": "9.60 CGPA"
+      },
+      {
+        "detailIndex": 2,
+        "certificate": "Higher Secondary School Certificate",
+        "grade": "71.00 %"
+      }
+    ]
+  },
+  {
+    "educationIndex": 2,
+    "name": "Chitkara University",
+    "year": "2016 - 2020",
+    "desc": "Bachelor of Engineering",
+    "detail": [
+      {
+        "detailIndex": 1,
+        "certificate": "Graduation",
+        "grade": "9.16 CGPA"
+      }
+    ]
+  }
+]

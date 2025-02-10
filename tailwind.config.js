@@ -9,8 +9,8 @@ export default {
     colors: {
       transparent: 'transparent',
       'cream': '#efebdb',
-      'gray': '#111822',
-      'darkgray': '#090c11',
+      'gray': '#15202B',
+      'darkgray': '#111822',
       'accent-light': '#212196',
       'accent-dark': '#AFAFED',
     },
