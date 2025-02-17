@@ -1,29 +1,30 @@
 name: Deployment Workflow
 
-
-
 on:
-
   push:
-
     branches:
-
       - main
 
-
-
 jobs:
-
   deploy:
-
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.12.1'  # Adjust to your preferred Node.js version
 
-      - run: npm install
-      - run: |
-          system(git config --global user.email "uditmalhotra98@gmail.com")
-          system(git config --global user.name "Udit Malhotra")
-      - run: npm run deploy
+      - name: Install Dependencies
+        run: npm install --production  # Installs only production dependencies
+
+      - name: Configure Git User
+        run: |
+          git config --global user.email "uditmalhotra98@gmail.com"
+          git config --global user.name "Udit Malhotra"
+
+      - name: Deploy Application
+        run: npm run deploy
