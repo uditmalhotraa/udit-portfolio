@@ -34,19 +34,9 @@
         "category": "primary"
       },
       {
-        "techIndex": 3,
-        "name": "Kafka",
-        "category": "secondary"
-      },
-      {
-        "techIndex": 4,
-        "name": "Kubernets",
-        "category": "secondary"
-      },
-      {
         "techIndex": 5,
         "name": "Storybook",
-        "category": "primary"
+        "category": "secondary"
       },
       {
         "techIndex": 6,
@@ -56,7 +46,7 @@
       {
         "techIndex": 7,
         "name": "Azure",
-        "category": "primary"
+        "category": "secondary"
       }
     ]
   },
