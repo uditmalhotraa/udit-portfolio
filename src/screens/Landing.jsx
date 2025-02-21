@@ -58,7 +58,7 @@ export const Landing = () => {
             </div>
           </div>
           <div className="flex flex-col w-full gap-8 lg:mt-2">
-            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto p-5 bg-cream dark:bg-darkgray">
+            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto p-5 bg-cream dark:bg-gray">
               <div className="flex flex-col mb-4">
                 <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                   Education
@@ -101,7 +101,7 @@ export const Landing = () => {
                 ))}
               </div>
             </div>
-            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto p-5 bg-cream dark:bg-darkgray">
+            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto p-5 bg-cream dark:bg-gray">
               <div className="flex flex-col mb-4">
                 <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                   Work
@@ -152,7 +152,7 @@ export const Landing = () => {
                 ))}
               </div>
             </div>
-            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto p-5 bg-cream dark:bg-darkgray">
+            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto p-5 bg-cream dark:bg-gray">
               <div className="flex flex-col mb-4">
                 <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                   Interests
@@ -181,7 +181,7 @@ export const Landing = () => {
               {socialData.map((socialData) => (
                 <a
                   key={socialData.socialIndex}
-                  className="flex flex-col justify-center items-center shadow-container hover:shadow-containerXL  dark:hover:shadow-darkContainerXL rounded-2xl w-auto h-auto p-3 bg-cream dark:bg-darkgray cursor-pointer"
+                  className="flex flex-col justify-center items-center shadow-container hover:shadow-containerXL  dark:hover:shadow-darkContainerXL rounded-2xl w-auto h-auto p-3 bg-cream dark:bg-gray cursor-pointer"
                   href={socialData.link}
                 >
                   {getSocialLogo(socialData.name)}
