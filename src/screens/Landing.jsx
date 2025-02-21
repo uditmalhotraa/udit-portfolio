@@ -58,9 +58,9 @@ export const Landing = () => {
             </div>
           </div>
           <div className="flex flex-col w-full gap-8 lg:mt-2">
-            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto p-5 bg-cream dark:bg-gray">
+            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto p-5 bg-cream dark:bg-gray border border-[#808080]">
               <div className="flex flex-col mb-4">
-                <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark border border-[#808080]">
+                <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                   Education
                 </p>
                 <p className=" font-poppins text-lg tracking-wide font-light text-darkgray dark:text-cream">
@@ -101,9 +101,9 @@ export const Landing = () => {
                 ))}
               </div>
             </div>
-            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto p-5 bg-cream dark:bg-gray">
+            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto p-5 bg-cream dark:bg-gray border border-[#808080]">
               <div className="flex flex-col mb-4">
-                <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark border border-[#808080]">
+                <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                   Work
                 </p>
                 <p className=" font-poppins text-lg tracking-wide font-light text-darkgray dark:text-cream">
@@ -152,9 +152,9 @@ export const Landing = () => {
                 ))}
               </div>
             </div>
-            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto p-5 bg-cream dark:bg-gray">
+            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto p-5 bg-cream dark:bg-gray border border-[#808080]">
               <div className="flex flex-col mb-4">
-                <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark border border-[#808080]">
+                <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                   Interests
                 </p>
                 <p className=" font-poppins text-lg tracking-wide font-light text-darkgray dark:text-cream">
