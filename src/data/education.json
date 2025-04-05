@@ -7,12 +7,12 @@
     "detail": [
       {
         "detailIndex": 1,
-        "certificate": "Secondary School Certificate",
+        "certificate": "Secondary (10th)",
         "grade": "9.60 CGPA"
       },
       {
         "detailIndex": 2,
-        "certificate": "Higher Secondary School Certificate",
+        "certificate": "Higher Secondary (12th)",
         "grade": "71.00 %"
       }
     ]

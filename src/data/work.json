@@ -29,9 +29,14 @@
         "category": "primary"
       },
       {
+        "techIndex": 7,
+        "name": "Testing",
+        "category": "primary"
+      },
+      {
         "techIndex": 2,
         "name": "Tailwind",
-        "category": "primary"
+        "category": "secondary"
       },
       {
         "techIndex": 5,
@@ -46,11 +51,6 @@
       {
         "techIndex": 7,
         "name": "Azure",
-        "category": "secondary"
-      },
-      {
-        "techIndex": 7,
-        "name": "Testing",
         "category": "secondary"
       }
     ]
