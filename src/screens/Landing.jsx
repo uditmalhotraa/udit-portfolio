@@ -51,8 +51,8 @@ export const Landing = () => {
     <>
       <div className="relative flex flex-col w-full bg-cream dark:bg-gray">
         <Header />
-        <div className="flex flex-col lg:flex-row px-2.5 md:px-16 mt-24 md:mt-28 mb-10 gap-8 lg:max-w-[1280px] xl:max-w-[1536px] 2xl:max-w-[1920px] mx-auto">
-          <div className="lg:!sticky lg:top-[120px] lg:left-0 relative flex flex-col justify-end bg-uditPic bg-no-repeat bg-cover bg-top shadow-container !rounded-2xl w-full h-[414px] md:h-[600px] xl:h-[724px] 2xl:h-[796px] border border-[#808080]">
+        <div className="flex flex-col lg:flex-row px-2.5 md:px-16 mt-28 mb-10 gap-8 lg:max-w-[1280px] xl:max-w-[1536px] 2xl:max-w-[1920px] mx-auto">
+          <div className="lg:!sticky lg:top-[120px] lg:left-0 relative flex flex-col justify-end bg-uditPic bg-no-repeat bg-cover bg-top shadow-container !rounded-2xl w-full h-[468px] md:h-[600px] xl:h-[724px] 2xl:h-[796px] border border-[#808080]">
             <div className="flex flex-col gap-2 w-full h-auto z-10 bg-gray/10 backdrop-blur-sm px-5 py-2.5 rounded-2xl">
               <p
                 title="Greetings: I bow to you"
@@ -72,7 +72,7 @@ export const Landing = () => {
                   Education
                 </p>
                 <p className=" font-poppins text-lg tracking-wide font-light text-darkgray dark:text-cream">
-                  Formal schooling and graduation
+                  Graduation and formal schooling
                 </p>
               </div>
               <div className="flex flex-col gap-5">
@@ -197,8 +197,9 @@ export const Landing = () => {
               ))}
             </div>
             <div className="flex flex-col w-full h-auto">
-              <p className="font-poppins text-sm font-thin text-center text-gray dark:text-cream tracking-wider leading-relaxed">
-                Designed, developed, and owned by <br/>Udit Malhotra
+              <p className="font-poppins text-sm font-thin text-center opacity-75 text-gray dark:text-cream tracking-wider leading-relaxed">
+                Designed, developed, and owned by <br />
+                Udit Malhotra
               </p>
             </div>
           </div>
