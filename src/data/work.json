@@ -47,6 +47,11 @@
         "techIndex": 7,
         "name": "Azure",
         "category": "secondary"
+      },
+      {
+        "techIndex": 7,
+        "name": "Testing",
+        "category": "secondary"
       }
     ]
   },
