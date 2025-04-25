@@ -2,6 +2,7 @@
   {
     "workIndex": 1,
     "companyName": "Spenda",
+    "companyWebsite": "https://www.spenda.co/",
     "roleDetail": [
       {
         "roleIndex": 1,
@@ -58,6 +59,7 @@
   {
     "workIndex": 2,
     "companyName": "Mintworxs",
+    "companyWebsite": "https://www.mintworxs.co/",
     "roleDetail": [
       {
         "roleIndex": 1,
@@ -107,6 +109,7 @@
   {
     "workIndex": 3,
     "companyName": "Infosys",
+    "companyWebsite": "https://www.infosys.com/",
     "roleDetail": [
       {
         "roleIndex": 1,

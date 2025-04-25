@@ -2,6 +2,7 @@
   {
     "educationIndex": 1,
     "name": "Chitkara University",
+    "educationWebsite": "https://www.chitkara.edu.in/",
     "year": "2016 - 2020",
     "desc": "Bachelor of Engineering",
     "detail": [
@@ -15,6 +16,7 @@
   {
     "educationIndex": 2,
     "name": "Kendriya Vidyalaya",
+    "educationWebsite": "https://kvsangathan.nic.in/",
     "year": "2004 - 2016",
     "desc": "Primary, secondary and higher secondary",
     "detail": [

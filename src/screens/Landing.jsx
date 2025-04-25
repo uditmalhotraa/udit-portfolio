@@ -49,9 +49,9 @@ export const Landing = () => {
 
   return (
     <>
-      <div className="relative flex flex-col w-full bg-cream dark:bg-gray">
+      <div className="relative flex flex-col w-full bg-cream dark:bg-gray !select-none">
         <Header />
-        <div className="flex flex-col lg:flex-row px-2.5 md:px-16 mt-28 mb-10 gap-8 lg:max-w-[1280px] xl:max-w-[1536px] 2xl:max-w-[1920px] mx-auto">
+        <div className="flex bg-cream dark:bg-gray flex-col lg:flex-row px-2.5 md:px-16 mt-28 mb-10 gap-8 lg:max-w-[1280px] xl:max-w-[1536px] 2xl:max-w-[1920px] mx-auto">
           <div className="lg:!sticky lg:top-[120px] lg:left-0 relative flex flex-col justify-end bg-uditPic bg-no-repeat bg-cover bg-top shadow-container !rounded-2xl w-full h-[468px] md:h-[600px] xl:h-[724px] 2xl:h-[796px] border border-[#808080]">
             <div className="flex flex-col gap-2 w-full h-auto z-10 bg-gray/10 backdrop-blur-sm px-5 py-2.5 rounded-2xl">
               <p
@@ -66,7 +66,7 @@ export const Landing = () => {
             </div>
           </div>
           <div className="flex flex-col w-full gap-8 lg:mt-2">
-            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto p-5 bg-cream dark:bg-gray border border-[#808080]">
+            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto p-5 border border-[#808080] bg-black/0 dark:hover:bg-white/[0.03] hover:bg-black/[0.04]">
               <div className="flex flex-col mb-4">
                 <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                   Education
@@ -82,9 +82,9 @@ export const Landing = () => {
                     className="flex flex-col border-t border-[#808080] pt-3"
                   >
                     <div className="flex flex-row justify-between items-center w-full">
-                      <p className=" font-poppins text-xl font-semibold text-darkgray dark:text-cream">
-                        {educationData?.name}
-                      </p>
+                      <a className="font-poppins text-xl font-semibold text-darkgray dark:text-cream hover:text-accent-light dark:hover:text-accent-dark" href={educationData.educationWebsite}>
+                      {educationData.name}
+                    </a>
                       <p className=" font-poppins tracking-wider text-base opacity-50 font-normal text-darkgray dark:text-cream">
                         {educationData?.year}
                       </p>
@@ -109,7 +109,7 @@ export const Landing = () => {
                 ))}
               </div>
             </div>
-            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto p-5 bg-cream dark:bg-gray border border-[#808080]">
+            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto p-5 border border-[#808080] bg-black/0 dark:hover:bg-white/[0.03] hover:bg-black/[0.04]">
               <div className="flex flex-col mb-4">
                 <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                   Work
@@ -124,9 +124,9 @@ export const Landing = () => {
                     key={workData.workIndex}
                     className="flex flex-col border-t border-[#808080] pt-3"
                   >
-                    <p className=" font-poppins mb-2 text-xl font-semibold text-darkgray dark:text-cream">
+                    <a className="font-poppins mb-2 text-xl font-semibold text-darkgray dark:text-cream hover:text-accent-light dark:hover:text-accent-dark" href={workData.companyWebsite}>
                       {workData.companyName}
-                    </p>
+                    </a>
                     {workData.roleDetail.map((roleDetail) => (
                       <div
                         key={roleDetail.roleIndex}
@@ -160,7 +160,7 @@ export const Landing = () => {
                 ))}
               </div>
             </div>
-            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto p-5 bg-cream dark:bg-gray border border-[#808080]">
+            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto p-5 border border-[#808080] bg-black/0 dark:hover:bg-white/[0.03] hover:bg-black/[0.04]">
               <div className="flex flex-col mb-4">
                 <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                   Interests
@@ -189,7 +189,7 @@ export const Landing = () => {
               {socialData.map((socialData) => (
                 <a
                   key={socialData.socialIndex}
-                  className="flex flex-col justify-center items-center shadow-container hover:shadow-containerXL  dark:hover:shadow-darkContainerXL rounded-2xl w-auto h-auto p-3 bg-cream dark:bg-gray cursor-pointer border border-[#808080]"
+                  className="flex flex-col justify-center items-center shadow-container hover:shadow-containerXL dark:hover:shadow-darkContainerXL rounded-2xl w-auto h-auto p-3 cursor-pointer border border-[#808080] bg-black/0 dark:hover:bg-white/[0.03] hover:bg-black/[0.04]"
                   href={socialData.link}
                 >
                   {getSocialLogo(socialData.name)}

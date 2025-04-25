@@ -13,6 +13,8 @@ export default {
       'darkgray': '#111822',
       'accent-light': '#212196',
       'accent-dark': '#AFAFED',
+      'black': '#000000',
+      'white': '#ffffff',
     },
     fontFamily: {
       poppins: 'Poppins, sans-serif',
