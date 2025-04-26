@@ -116,7 +116,7 @@ export const Landing = () => {
                 {educationData.map((educationData) => (
                   <div
                     key={educationData.educationIndex}
-                    className="flex flex-col border-t border-gray/20 dark:border-cream/20 pt-3 bg-black/0 dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06] px-5 pb-5"
+                    className="flex flex-col border-t border-gray/20 dark:border-cream/20 pt-3 last:rounded-b-2xl dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06] px-5 pb-5"
                   >
                     <div className="flex flex-row justify-between items-center w-full">
                       <a
@@ -162,7 +162,7 @@ export const Landing = () => {
                 {workData.map((workData) => (
                   <div
                     key={workData.workIndex}
-                    className="flex flex-col border-t border-gray/20 dark:border-cream/20  pt-3 bg-black/0 dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06] pb-5 px-5"
+                    className="flex flex-col border-t last:rounded-b-2xl border-gray/20 dark:border-cream/20  pt-3 bg-black/0 dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06] pb-5 px-5"
                   >
                     <a
                       className="font-poppins w-fit mb-2 text-xl font-semibold text-darkgray dark:text-cream hover:text-accent-light dark:hover:text-accent-dark"
@@ -266,7 +266,7 @@ export const Landing = () => {
                 {interestData.map((interestData) => (
                   <div
                     key={interestData.interestIndex}
-                    className="flex flex-col border-t border-gray/20 dark:border-cream/20 pt-3 bg-black/0 dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06] pb-5 px-5"
+                    className="flex flex-col border-t last:rounded-b-2xl border-gray/20 dark:border-cream/20 pt-3 bg-black/0 dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06] pb-5 px-5"
                   >
                     <p className=" font-poppins text-lg font-semibold text-darkgray dark:text-cream">
                       {interestData.name}
