@@ -1,0 +1,26 @@
+[
+  {
+    "projectIndex": 1,
+    "name": "Spenda",
+    "desc": "Empowering businesses with integrated payments and productivity software.",
+    "projectWebsite": "https://www.spenda.co/",
+    "area": "B2B Fintech",
+    "role": "Software Engineer"
+  },
+  {
+    "projectIndex": 2,
+    "name": "Escapekar",
+    "desc": "From itinerary to bookings, Escapekar simplifies travel planning like never before.",
+    "projectWebsite": "https://escapekar.com/",
+    "area": "Travel Partner",
+    "role": "React Developer"
+  },
+  {
+    "projectIndex": 3,
+    "name": "IQVIA",
+    "desc": "Advancing healthcare through data-driven insights and clinical research.",
+    "projectWebsite": "https://www.iqvia.com/",
+    "area": "Healthcare Analytics",
+    "role": "React Developer"
+  }
+]

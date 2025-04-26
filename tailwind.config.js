@@ -32,6 +32,9 @@ export default {
       boxShadow: {
         'container': 'rgba(75, 75, 75, 0.24) 0px 3px 8px',
         'containerXL': 'rgba(75, 75, 75, 0.44) 0px 4px 10px',
+        'rim': 'rgba(75, 75, 75, 0.15) 0px -3px 7px',
+        'neo-light':  '16px 16px 30px #e1ddce, -16px -16px 30px #fdf9e8',
+        'neo-dark': '16px 16px 32px #101821, -16px -16px 32px #1a2835'
       },
       backgroundImage: {
         'uditPic': "url('../src/assets/UditPic.jpg')",

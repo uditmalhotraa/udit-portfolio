@@ -2,7 +2,7 @@ import { createContext } from "react";
 
 const darkModeInitialValue = () => {
   return {
-    darkMode: false,
+    darkMode: true,
     toggleDarkMode: () => {},
   };
 };
