@@ -90,7 +90,7 @@ export const Landing = () => {
         <Header />
         <div className="flex flex-col lg:flex-row px-5 md:px-16 mt-28 mb-10 gap-10 lg:max-w-[1280px] xl:max-w-[1536px] 2xl:max-w-[1920px] mx-auto">
           <div className="lg:!sticky lg:top-[120px] lg:left-0 relative flex flex-col justify-end bg-uditPic bg-no-repeat bg-cover bg-top shadow-container !rounded-2xl w-full h-[468px] md:h-[600px] xl:h-[724px] 2xl:h-[796px] border border-gray/[0.075] dark:border-cream/[0.075] ">
-            <div className=" absolute -bottom-3 md:-bottom-4 -left-[8px] md:-left-[16px] flex flex-col gap-2 w-[calc(100%+16px)] md:w-[calc(100%+32px)] h-auto z-10 bg-cream/10 dark:bg-gray/10 shadow-container backdrop-blur-lg px-5 py-2.5 rounded-2xl">
+            <div className=" absolute -bottom-3 md:-bottom-4 -left-[8px] md:-left-[16px] flex flex-col gap-2 w-[calc(100%+16px)] md:w-[calc(100%+32px)] h-auto z-10 bg-cream/10 dark:bg-gray/10 shadow-container backdrop-blur-xl px-5 py-2.5 rounded-2xl">
               <p
                 title="Greetings: I bow to you"
                 className=" font-poppins text-2xl font-semibold tracking-wide text-cream w-[80%] z-10"
@@ -105,11 +105,11 @@ export const Landing = () => {
           <div className="flex flex-col w-full gap-12 lg:mt-2 overflow-visible lg:overflow-hidden">
             <div className="setWrapper relative">
               <div className="objectSet">
-                <div className="z-0 absolute top-10 -right-4 w-[150px] h-[150px] rounded-full bg-accent-dark dark:bg-accent-light blur-md"></div>
-                <div className="z-0 absolute -top-2 left-10 w-[75px] h-[75px] rounded-full bg-accent-dark dark:bg-accent-light blur-lg"></div>
-                <div className="z-0 absolute -bottom-5 -left-20 w-[200px] h-[200px] rounded-full bg-accent-dark dark:bg-accent-light blur-md"></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219650, #AFAFED50)'}} className="z-0 absolute top-10 -right-4 w-[150px] h-[150px] rounded-full"></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219660, #AFAFED60)'}} className="z-0 absolute -top-2 left-10 w-[75px] h-[75px] rounded-full"></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219680, #AFAFED80)'}} className="z-0 absolute -bottom-5 -left-20 w-[200px] h-[200px] rounded-full"></div>
               </div>
-              <div className="z-10 flex flex-col rounded-2xl w-full h-auto border shadow-container border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-lg bg-cream/30 dark:bg-gray/30">
+              <div className="z-10 flex flex-col rounded-2xl w-full h-auto border shadow-container border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/30 dark:bg-gray/30">
                 <div className="flex flex-col mb-4 pt-5 px-5">
                   <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                     Education
@@ -158,12 +158,12 @@ export const Landing = () => {
             </div>
             <div className="setWrapper relative">
               <div className="objectSet">
-                <div className="z-0 absolute top-10 -left-4 w-[75px] h-[75px] rounded-full bg-accent-dark dark:bg-accent-light blur-sm"></div>
-                <div className="z-0 absolute -top-5 -right-20 w-[200px] h-[200px] rounded-full bg-accent-dark dark:bg-accent-light blur-md"></div>
-                <div className="z-0 absolute bottom-60 left-20 w-[150px] h-[150px] rounded-full bg-accent-dark dark:bg-accent-light blur-lg"></div>
-                <div className="z-0 absolute -bottom-32 right-10 w-[250px] h-[250px] rounded-full bg-accent-dark dark:bg-accent-light blur-md"></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219650, #AFAFED50)'}}  className="z-0 absolute top-10 -left-4 w-[75px] h-[75px] rounded-full "></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED50)'}}  className="z-0 absolute -top-5 -right-20 w-[200px] h-[200px] rounded-full "></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219680, #AFAFED80)'}}  className="z-0 absolute bottom-60 left-20 w-[150px] h-[150px] rounded-full "></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED50)'}}  className="z-0 absolute -bottom-32 right-10 w-[250px] h-[250px] rounded-full "></div>
               </div>
-              <div className="flex flex-col shadow-container rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-lg bg-cream/30 dark:bg-gray/30">
+              <div className="flex flex-col shadow-container rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/30 dark:bg-gray/30">
                 <div className="flex flex-col mb-4 pt-5 px-5">
                   <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                     Work
@@ -220,13 +220,13 @@ export const Landing = () => {
             </div>
             <div className="setWrapper relative">
               <div className="objectSet">
-                <div className="z-0 absolute top-[32%] -left-4 w-[75px] h-[75px] rounded-full bg-accent-dark dark:bg-accent-light blur-lg"></div>
-                <div className="z-0 absolute top-72 -right-20 w-[200px] h-[200px] rounded-full bg-accent-dark dark:bg-accent-light blur-md"></div>
-                <div className="z-0 absolute top-[52%] left-10 w-[125px] h-[125px] rounded-full bg-accent-dark dark:bg-accent-light blur-sm"></div>
-                <div className="z-0 absolute bottom-96 right-10 w-[100px] h-[100px] rounded-full bg-accent-dark dark:bg-accent-light blur-md"></div>
-                <div className="z-0 absolute -bottom-32 -left-32 w-[250px] h-[250px] rounded-full bg-accent-dark dark:bg-accent-light blur-xl"></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219650, #AFAFED50)'}}  className="z-0 absolute top-[32%] -left-4 w-[75px] h-[75px] rounded-full "></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219670, #AFAFED70)'}}  className="z-0 absolute top-72 -right-20 w-[200px] h-[200px] rounded-full "></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED)'}}  className="z-0 absolute top-[52%] left-10 w-[125px] h-[125px] rounded-full "></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED)'}}  className="z-0 absolute bottom-96 right-10 w-[100px] h-[100px] rounded-full "></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED50)'}}  className="z-0 absolute -bottom-32 -left-32 w-[250px] h-[250px] rounded-full "></div>
               </div>
-              <div className="flex flex-col backdrop-blur-lg bg-cream/30 dark:bg-gray/30 rounded-2xl">
+              <div className="flex flex-col backdrop-blur-xl bg-cream/30 dark:bg-gray/30 rounded-2xl">
                 <div className="flex flex-col rounded-2xl rounded-b-none w-full h-auto p-5 border border-b-0 z-10 border-gray/[0.075] dark:border-cream/[0.075] shadow-rim">
                   <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                     Projects
@@ -284,11 +284,11 @@ export const Landing = () => {
             </div>
             <div className="setWrapper relative">
               <div className="objectSet">
-                <div className="z-0 absolute top-[52%] left-10 w-[125px] h-[125px] rounded-full bg-accent-dark dark:bg-accent-light blur-sm"></div>
-                <div className="z-0 absolute bottom-96 right-0 w-[100px] h-[100px] rounded-full bg-accent-dark dark:bg-accent-light blur-md"></div>
-                <div className="z-0 absolute -bottom-32 -right-40 w-[250px] h-[250px] rounded-full bg-accent-dark dark:bg-accent-light blur-lg"></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219650, #AFAFED50)'}}  className="z-0 absolute top-[52%] left-10 w-[125px] h-[125px] rounded-full "></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED)'}}  className="z-0 absolute bottom-96 right-0 w-[100px] h-[100px] rounded-full "></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED90)'}}  className="z-0 absolute -bottom-32 -right-40 w-[250px] h-[250px] rounded-full "></div>
               </div>
-            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-lg bg-cream/30 dark:bg-gray/30">
+            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/30 dark:bg-gray/30">
               <div className="flex flex-col mb-4 pt-5 px-5">
                 <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                   Interests
@@ -318,7 +318,7 @@ export const Landing = () => {
               {socialData.map((socialData) => (
                 <a
                   key={socialData.socialIndex}
-                  className="flex flex-col justify-center items-center shadow-container rounded-2xl w-auto h-auto p-3 cursor-pointer border border-gray/[0.075] dark:border-cream/[0.075] hover:border-accent-light dark:hover:border-accent-dark backdrop-blur-lg bg-cream/30 dark:bg-gray/30 dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06]"
+                  className="flex flex-col justify-center items-center shadow-container rounded-2xl w-auto h-auto p-3 cursor-pointer border border-gray/[0.075] dark:border-cream/[0.075] hover:border-accent-light dark:hover:border-accent-dark backdrop-blur-xl bg-cream/30 dark:bg-gray/30 dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06]"
                   href={socialData.link}
                 >
                   {getSocialLogo(socialData.name)}
