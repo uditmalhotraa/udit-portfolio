@@ -17,6 +17,7 @@ import SpendaLogoLightMode from "../assets/SpendaLogoLightMode";
 import IQVIALogoLightMode from "../assets/IQVIALogoLightMode";
 import EscapekarLogoDarkMode from "../assets/EscapekarLogoDarkMode";
 import EscapekarLogoLightMode from "../assets/EscapekarLogoLightMode";
+import ArrowRightIcon from "../assets/ArrowRightIcon";
 
 export const Landing = () => {
   const [educationData, setEducationData] = useState([]);
@@ -88,9 +89,9 @@ export const Landing = () => {
     <>
       <div className="relative flex flex-col w-full !select-none bg-fixed bg-cream dark:bg-gray">
         <Header />
-        <div className="flex lg:overflow-x-visible overflow-x-hidden  flex-col lg:flex-row px-5 md:px-16 mt-28 mb-10 gap-10 lg:max-w-[1280px] xl:max-w-[1536px] 2xl:max-w-[1920px] mx-auto">
+        <div className="flex lg:overflow-x-visible overflow-x-hidden flex-col lg:flex-row px-5 md:px-16 mt-28 mb-10 gap-12 lg:max-w-[1280px] xl:max-w-[1536px] 2xl:max-w-[1920px] mx-auto">
           <div className="lg:!sticky z-20 lg:top-[120px] lg:left-0 relative flex flex-col justify-end bg-uditPic bg-no-repeat bg-cover bg-top shadow-container !rounded-2xl w-full h-[468px] md:h-[600px] xl:h-[724px] 2xl:h-[796px] border border-gray/[0.075] dark:border-cream/[0.075] ">
-            <div className="absolute -bottom-3 md:-bottom-4 -left-[8px] md:-left-[16px] flex flex-col gap-2 w-[calc(100%+16px)] md:w-[calc(100%+32px)] h-auto z-10 bg-cream/10 dark:bg-gray/10 shadow-container backdrop-blur-xl px-5 py-2.5 rounded-2xl">
+            <div className="absolute -bottom-3 md:-bottom-4 -left-[8px] md:-left-[16px] flex flex-col gap-2 w-[calc(100%+16px)] md:w-[calc(100%+32px)] h-auto z-10 bg-cream/10 dark:bg-gray/10 shadow-container backdrop-blur-xl p-4 rounded-2xl">
               <p
                 title="Greetings: I bow to you"
                 className=" font-poppins text-2xl font-semibold tracking-wide text-cream w-[80%] z-10"
@@ -106,11 +107,11 @@ export const Landing = () => {
             <div className="setWrapper relative">
               <div className="objectSet">
                 <div style={{background: 'radial-gradient(circle at 33% 33%, #21219660, #AFAFED60)'}} className="z-0 absolute top-10 -right-4 w-[150px] h-[150px] rounded-full"></div>
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED60)'}} className="z-0 absolute -top-2 left-10 w-[75px] h-[75px] rounded-full"></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED60)'}} className="z-0 absolute -top-2 left-10 w-[75px] h-[75px] rounded-full animate-spin"></div>
                 <div style={{background: 'radial-gradient(circle at 33% 33%, #21219680, #AFAFED80)'}} className="z-0 absolute -bottom-5 -left-20 w-[200px] h-[200px] rounded-full"></div>
               </div>
-              <div className="z-10 flex flex-col rounded-2xl w-full h-auto border shadow-container border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/30 dark:bg-gray/30">
-                <div className="flex flex-col mb-4 pt-5 px-5">
+              <div className="z-10 flex flex-col rounded-2xl w-full h-auto border shadow-container border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/40 dark:bg-gray/40">
+                <div className="flex flex-col mb-4 pt-4 px-4">
                   <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                     Education
                   </p>
@@ -122,31 +123,32 @@ export const Landing = () => {
                   {educationData.map((educationData) => (
                     <div
                       key={educationData.educationIndex}
-                      className="flex flex-col border-t border-gray/[0.075] dark:border-cream/[0.075] pt-3 last:rounded-b-2xl dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06] px-5 pb-5"
+                      className="flex flex-col border-t border-gray/[0.075] dark:border-cream/[0.075] pt-3 last:rounded-b-2xl dark:hover:bg-accent-dark/[0.2] hover:bg-accent-light/[0.2] px-4 pb-4"
                     >
                       <div className="flex flex-row justify-between items-center w-full">
                         <a
-                          className="font-poppins text-xl w-fit font-semibold text-darkgray dark:text-cream hover:text-accent-light dark:hover:text-accent-dark"
+                          className="font-poppins group inline-flex gap-[6px] items-center text-xl w-fit font-semibold text-darkgray dark:text-cream hover:text-accent-light dark:hover:text-accent-dark"
                           href={educationData.educationWebsite}
                         >
                           {educationData.name}
+                          <ArrowRightIcon className="transition-all duration-300 transform group-hover:translate-x-1 fill-darkgray dark:fill-cream group-hover:fill-accent-light dark:group-hover:fill-accent-dark" />
                         </a>
                         <p className=" font-poppins tracking-wider text-base opacity-50 font-normal text-darkgray dark:text-cream">
                           {educationData?.year}
                         </p>
                       </div>
-                      <p className=" font-poppins tracking-wider text-sm font-light text-darkgray dark:text-cream mb-1">
+                      <p className=" font-poppins tracking-wider text-sm font-light text-darkgray dark:text-cream my-1">
                         {educationData?.desc}
                       </p>
                       {educationData?.detail.map((educationDataDetail) => (
                         <div
                           key={educationDataDetail.detailIndex}
-                          className="flex flex-row justify-between items-start w-full mt-2"
+                          className="flex flex-row justify-between items-start w-full mt-4"
                         >
-                          <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream mr-3">
+                          <p className=" font-poppins tracking-wider text-base font-light text-darkgray dark:text-cream mr-3">
                             {educationDataDetail?.certificate}
                           </p>
-                          <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream italic whitespace-nowrap">
+                          <p className=" font-poppins tracking-wider text-base font-light text-darkgray dark:text-cream italic whitespace-nowrap">
                             {educationDataDetail?.grade}
                           </p>
                         </div>
@@ -160,11 +162,11 @@ export const Landing = () => {
               <div className="objectSet">
                 <div style={{background: 'radial-gradient(circle at 33% 33%, #21219650, #AFAFED50)'}}  className="z-0 absolute top-10 -left-4 w-[75px] h-[75px] rounded-full "></div>
                 <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED50)'}}  className="z-0 absolute -top-5 -right-20 w-[200px] h-[200px] rounded-full "></div>
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219680, #AFAFED80)'}}  className="z-0 absolute bottom-60 left-20 w-[150px] h-[150px] rounded-full "></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219680, #AFAFED80)'}}  className="z-0 absolute bottom-60 left-20 w-[150px] h-[150px] rounded-full animate-spin"></div>
                 <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED50)'}}  className="z-0 absolute -bottom-32 right-10 w-[250px] h-[250px] rounded-full "></div>
               </div>
-              <div className="flex flex-col shadow-container rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/30 dark:bg-gray/30">
-                <div className="flex flex-col mb-4 pt-5 px-5">
+              <div className="flex flex-col shadow-container rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/40 dark:bg-gray/40">
+                <div className="flex flex-col mb-4 pt-4 px-4">
                   <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                     Work
                   </p>
@@ -176,18 +178,19 @@ export const Landing = () => {
                   {workData.map((workData) => (
                     <div
                       key={workData.workIndex}
-                      className="flex flex-col border-t last:rounded-b-2xl border-gray/[0.075] dark:border-cream/[0.075]  pt-3 bg-black/0 dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06] pb-5 px-5"
+                      className="flex flex-col border-t last:rounded-b-2xl border-gray/[0.075] dark:border-cream/[0.075] pt-3 bg-black/0 dark:hover:bg-accent-dark/[0.2] hover:bg-accent-light/[0.2] pb-4 px-4"
                     >
                       <a
-                        className="font-poppins w-fit mb-2 text-xl font-semibold text-darkgray dark:text-cream hover:text-accent-light dark:hover:text-accent-dark"
+                        className="font-poppins group inline-flex gap-[6px] items-center w-fit mb-3 text-xl font-semibold text-darkgray dark:text-cream hover:text-accent-light dark:hover:text-accent-dark"
                         href={workData.companyWebsite}
                       >
                         {workData.companyName}
+                        <ArrowRightIcon className="transition-all duration-300 transform group-hover:translate-x-1 fill-darkgray dark:fill-cream group-hover:fill-accent-light dark:group-hover:fill-accent-dark" />
                       </a>
                       {workData.roleDetail.map((roleDetail) => (
                         <div
                           key={roleDetail.roleIndex}
-                          className="flex flex-row justify-between items-center w-full mt-2"
+                          className="flex flex-row justify-between items-center w-full mt-3"
                         >
                           <p className=" block md:hidden font-poppins tracking-wider text-base font-light text-darkgray dark:text-cream">
                             {roleDetail.shortName}
@@ -195,12 +198,12 @@ export const Landing = () => {
                           <p className=" hidden md:block font-poppins tracking-wider text-base font-light text-darkgray dark:text-cream">
                             {roleDetail.fullName}
                           </p>
-                          <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream">
+                          <p className=" font-poppins tracking-wider text-base font-light text-darkgray dark:text-cream">
                             {roleDetail.period}
                           </p>
                         </div>
                       ))}
-                      <div className="flex flex-row w-full gap-2 flex-wrap mt-4">
+                      <div className="flex flex-row w-full gap-2 flex-wrap mt-7">
                         {workData.tech.map((techDetail) => (
                           <Chip
                             key={techDetail.techIndex}
@@ -220,14 +223,14 @@ export const Landing = () => {
             </div>
             <div className="setWrapper relative">
               <div className="objectSet">
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219650, #AFAFED50)'}}  className="z-0 absolute top-[32%] -left-4 w-[75px] h-[75px] rounded-full "></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219650, #AFAFED50)'}}  className="z-0 absolute top-[32%] -left-4 w-[75px] h-[75px] rounded-full animate-spin"></div>
                 <div style={{background: 'radial-gradient(circle at 33% 33%, #21219670, #AFAFED70)'}}  className="z-0 absolute top-72 -right-20 w-[200px] h-[200px] rounded-full "></div>
                 <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED)'}}  className="z-0 absolute top-[52%] left-10 w-[125px] h-[125px] rounded-full "></div>
                 <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED)'}}  className="z-0 absolute bottom-96 lg:bottom-60 right-32 w-[100px] h-[100px] rounded-full "></div>
                 <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED50)'}}  className="z-0 absolute -bottom-32 -left-32 w-[250px] h-[250px] rounded-full "></div>
               </div>
-              <div className="flex flex-col bg-cream/30 dark:bg-gray/30 rounded-2xl">
-                <div className="flex flex-col rounded-2xl backdrop-blur-xl rounded-b-none w-full h-auto p-5 border border-b-0 z-10 border-gray/[0.075] dark:border-cream/[0.075] shadow-rim">
+              <div className="flex flex-col bg-cream/40 dark:bg-gray/40 rounded-2xl">
+                <div className="flex flex-col rounded-2xl backdrop-blur-xl rounded-b-none w-full h-auto p-4 border border-b-0 z-10 border-gray/[0.075] dark:border-cream/[0.075] shadow-rim">
                   <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                     Projects
                   </p>
@@ -239,7 +242,7 @@ export const Landing = () => {
                   {projectsData.map((projectsData) => (
                     <div
                       key={projectsData.projectIndex}
-                      className="flex flex-col backdrop-blur-xl md:flex-row gap-x-0 md:gap-y-0 shadow-container gap-y-4 rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] z-10 dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06]"
+                      className="flex flex-col backdrop-blur-xl md:flex-row gap-x-0 md:gap-y-0 shadow-container gap-y-4 rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] z-10 dark:hover:bg-accent-dark/[0.2] hover:bg-accent-light/[0.2]"
                     >
                       <div
                         className={`${
@@ -250,14 +253,16 @@ export const Landing = () => {
                       >
                         {getProjectLogo(projectsData.name)}
                       </div>
-                      <div className="pb-5 md:pb-0 px-5 pt-0 md:pt-5 w-full md:w-[50%]">
-                        <div className="flex flex-col mb-4 gap-3">
+                      <div className="pb-4 md:pb-0 px-4 pt-0 md:pt-4 w-full md:w-[50%]">
+                        <div className="flex flex-col mb-5 gap-5">
                           <div className="flex flex-row justify-between items-center w-full">
                             <a
-                              className="font-poppins text-xl w-fit font-semibold text-darkgray dark:text-cream hover:text-accent-light dark:hover:text-accent-dark"
+                              className="font-poppins group inline-flex items-center gap-[6px] text-xl w-fit font-semibold text-darkgray dark:text-cream hover:text-accent-light dark:hover:text-accent-dark"
                               href={projectsData.projectWebsite}
                             >
                               {projectsData.name}
+                          <ArrowRightIcon className="transition-all duration-300 transform group-hover:translate-x-1 fill-darkgray dark:fill-cream group-hover:fill-accent-light dark:group-hover:fill-accent-dark" />
+
                             </a>
                             <Chip
                               type="outlined"
@@ -285,11 +290,11 @@ export const Landing = () => {
             <div className="setWrapper relative">
               <div className="objectSet">
                 <div style={{background: 'radial-gradient(circle at 33% 33%, #21219650, #AFAFED50)'}}  className="z-0 absolute top-[52%] left-10 w-[125px] h-[125px] rounded-full "></div>
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED)'}}  className="z-0 absolute bottom-96 right-0 w-[100px] h-[100px] rounded-full "></div>
+                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED)'}}  className="z-0 absolute bottom-96 right-0 w-[100px] h-[100px] rounded-full animate-spin"></div>
                 <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED90)'}}  className="z-0 absolute -bottom-32 -right-40 lg:-right-20 w-[250px] h-[250px] rounded-full "></div>
               </div>
-            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/30 dark:bg-gray/30">
-              <div className="flex flex-col mb-4 pt-5 px-5">
+            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/40 dark:bg-gray/40">
+              <div className="flex flex-col mb-4 pt-4 px-4">
                 <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                   Interests
                 </p>
@@ -301,12 +306,12 @@ export const Landing = () => {
                 {interestData.map((interestData) => (
                   <div
                     key={interestData.interestIndex}
-                    className="flex flex-col border-t last:rounded-b-2xl border-gray/[0.075] dark:border-cream/[0.075] pt-3 bg-black/0 dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06] pb-5 px-5"
+                    className="flex flex-col border-t last:rounded-b-2xl border-gray/[0.075] dark:border-cream/[0.075] pt-3 bg-black/0 dark:hover:bg-accent-dark/[0.2] hover:bg-accent-light/[0.2] pb-4 px-4"
                   >
                     <p className=" font-poppins text-lg font-semibold text-darkgray dark:text-cream">
                       {interestData.name}
                     </p>
-                    <p className=" font-poppins tracking-wider text-sm font-normal text-darkgray dark:text-cream mt-2">
+                    <p className=" font-poppins tracking-wider text-sm font-normal text-darkgray dark:text-cream mt-3">
                       {interestData.desc}
                     </p>
                   </div>
