@@ -12,11 +12,13 @@ export const DarkModeContextProvider = ({ children }) => {
 
   useEffect(() => {
     const savedMode = localStorage.getItem("darkMode");
+    // Check the saved mode and apply it directly
     if (savedMode === DARK_MODE_ENABLED) {
       setDarkMode(true);
-    } else if (savedMode !== DARK_MODE_ENABLED) {
+    } else if (savedMode === DARK_MODE_DISABLED) {
       setDarkMode(false);
     } else {
+      // Apply system preference if no saved preference is found
       if (getSystemDarkModePreference) {
         setDarkMode(true);
       } else {
@@ -38,6 +40,15 @@ export const DarkModeContextProvider = ({ children }) => {
   const toggleDarkMode = () => {
     setDarkMode((prev) => !prev);
   };
+
+  // Apply the dark mode class immediately before rendering the content
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, []);
 
   return (
     <DarkModeContext.Provider
