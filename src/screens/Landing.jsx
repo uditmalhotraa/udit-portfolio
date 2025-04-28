@@ -151,7 +151,7 @@ export const Landing = () => {
                           {educationData.name}
                           <ArrowRightIcon className="transition-all duration-300 transform group-hover:translate-x-1 fill-darkgray dark:fill-cream group-hover:fill-accent-light dark:group-hover:fill-accent-dark" />
                         </a>
-                        <p className=" font-poppins tracking-wider text-base opacity-50 font-normal text-darkgray dark:text-cream">
+                        <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream">
                           {educationData?.year}
                         </p>
                       </div>
