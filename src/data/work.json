@@ -30,27 +30,27 @@
         "category": "primary"
       },
       {
-        "techIndex": 7,
+        "techIndex": 2,
         "name": "Testing",
         "category": "primary"
       },
       {
-        "techIndex": 2,
+        "techIndex": 3,
         "name": "Tailwind",
         "category": "secondary"
       },
       {
-        "techIndex": 5,
+        "techIndex": 4,
         "name": "Storybook",
         "category": "secondary"
       },
       {
-        "techIndex": 6,
+        "techIndex": 5,
         "name": "Figma",
         "category": "secondary"
       },
       {
-        "techIndex": 7,
+        "techIndex": 6,
         "name": "Azure",
         "category": "secondary"
       }
