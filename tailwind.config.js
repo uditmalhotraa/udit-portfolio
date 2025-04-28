@@ -37,7 +37,7 @@ export default {
         'neo-dark': '16px 16px 32px #101821, -16px -16px 32px #1a2835'
       },
       backgroundImage: {
-        'uditPic': "url('../src/assets/UditPic.jpg')",
+        'uditPic': "url('../src/assets/UditPic.webp')",
       }
     },
   },
