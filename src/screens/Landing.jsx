@@ -416,6 +416,7 @@ export const Landing = () => {
                   className="flex flex-col justify-center items-center shadow-container rounded-2xl w-auto h-auto p-3 cursor-pointer border border-gray/[0.075] dark:border-cream/[0.075] hover:border-accent-light dark:hover:border-accent-dark backdrop-blur-xl bg-cream/30 dark:bg-gray/30 dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06]"
                   href={socialData.link}
                   alt={`${socialData.name} Link`}
+                  aria-label={`Find Udit at ${socialData.name} platform and connect`}
                 >
                   {getSocialLogo(socialData.name)}
                 </a>
