@@ -15,16 +15,38 @@
     
     <link rel="icon" type="image/svg+xml" href="./public/iconsSun.png" />
     <title>Udit Malhotra</title>
-    
-    <!-- Inline critical CSS for faster rendering (if applicable) -->
+
+    <script>
+      // Critical inline script to apply dark or light theme immediately on page load
+      (function() {
+        // Get the saved theme preference
+        const savedMode = localStorage.getItem("darkMode");
+
+        // Apply theme based on saved preference or system preference
+        if (savedMode === "enabled") {
+          document.documentElement.classList.add("dark");
+        } else if (savedMode === "disabled") {
+          document.documentElement.classList.remove("dark");
+        } else {
+          // Fallback to system preference if no saved preference exists
+          const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if (prefersDarkMode) {
+            document.documentElement.classList.add("dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+          }
+        }
+      })();
+    </script>
+
     <style>
-      /* Inline critical CSS */
+      /* Prevent flickering during the initial load */
       body {
         background-color: #efebdb;
       }
     </style>
   </head>
-  <body class="bg-cream dark:bg-gray">
+  <body>
     <div id="root"></div>
 
     <!-- Defer non-critical JavaScript -->

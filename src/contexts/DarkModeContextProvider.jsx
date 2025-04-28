@@ -1,33 +1,28 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import {
-  DARK_MODE_DISABLED,
-  DARK_MODE_ENABLED,
-  getSystemDarkModePreference,
-} from "../constants/constants";
+import { DARK_MODE_ENABLED, DARK_MODE_DISABLED } from "../constants/constants";
 import DarkModeContext from "./DarkModeContext";
 
 export const DarkModeContextProvider = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(null); // Start with null to prevent flicker
 
   useEffect(() => {
     const savedMode = localStorage.getItem("darkMode");
-    // Check the saved mode and apply it directly
+
     if (savedMode === DARK_MODE_ENABLED) {
       setDarkMode(true);
     } else if (savedMode === DARK_MODE_DISABLED) {
       setDarkMode(false);
     } else {
-      // Apply system preference if no saved preference is found
-      if (getSystemDarkModePreference) {
-        setDarkMode(true);
-      } else {
-        setDarkMode(false);
-      }
+      // If no saved mode, set dark mode based on system preference
+      const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      setDarkMode(prefersDarkMode);
     }
   }, []);
 
   useEffect(() => {
+    if (darkMode === null) return; // Don't apply anything until darkMode is determined
+
     if (darkMode) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("darkMode", DARK_MODE_ENABLED);
@@ -40,15 +35,6 @@ export const DarkModeContextProvider = ({ children }) => {
   const toggleDarkMode = () => {
     setDarkMode((prev) => !prev);
   };
-
-  // Apply the dark mode class immediately before rendering the content
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, []);
 
   return (
     <DarkModeContext.Provider
