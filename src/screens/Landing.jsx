@@ -106,9 +106,27 @@ export const Landing = () => {
           <div className="flex flex-col w-full gap-12 lg:mt-2">
             <div className="setWrapper relative">
               <div className="objectSet">
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219660, #AFAFED60)'}} className="z-0 absolute top-10 -right-4 w-[150px] h-[150px] rounded-full"></div>
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED60)'}} className="z-0 absolute -top-2 left-10 w-[75px] h-[75px] rounded-full animate-spin"></div>
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219680, #AFAFED80)'}} className="z-0 absolute -bottom-5 -left-20 w-[200px] h-[200px] rounded-full"></div>
+                <div
+                  style={{
+                    background:
+                      "radial-gradient(circle at 33% 33%, #21219660, #AFAFED60)",
+                  }}
+                  className="z-0 absolute top-10 -right-4 w-[150px] h-[150px] rounded-full"
+                ></div>
+                <div
+                  style={{
+                    background:
+                      "radial-gradient(circle at 33% 33%, #212196, #AFAFED60)",
+                  }}
+                  className="z-0 absolute -top-2 left-10 w-[75px] h-[75px] rounded-full animate-spin"
+                ></div>
+                <div
+                  style={{
+                    background:
+                      "radial-gradient(circle at 33% 33%, #21219680, #AFAFED80)",
+                  }}
+                  className="z-0 absolute -bottom-5 -left-20 w-[200px] h-[200px] rounded-full"
+                ></div>
               </div>
               <div className="z-10 flex flex-col rounded-2xl w-full h-auto border shadow-container border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/40 dark:bg-gray/40">
                 <div className="flex flex-col mb-4 pt-4 px-4">
@@ -160,10 +178,34 @@ export const Landing = () => {
             </div>
             <div className="setWrapper relative">
               <div className="objectSet">
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219650, #AFAFED50)'}}  className="z-0 absolute top-10 -left-4 w-[75px] h-[75px] rounded-full "></div>
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED50)'}}  className="z-0 absolute -top-5 -right-20 w-[200px] h-[200px] rounded-full "></div>
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219680, #AFAFED80)'}}  className="z-0 absolute bottom-60 left-20 w-[150px] h-[150px] rounded-full animate-spin"></div>
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED50)'}}  className="z-0 absolute -bottom-32 right-10 w-[250px] h-[250px] rounded-full "></div>
+                <div
+                  style={{
+                    background:
+                      "radial-gradient(circle at 33% 33%, #21219650, #AFAFED50)",
+                  }}
+                  className="z-0 absolute top-10 -left-4 w-[75px] h-[75px] rounded-full "
+                ></div>
+                <div
+                  style={{
+                    background:
+                      "radial-gradient(circle at 33% 33%, #212196, #AFAFED50)",
+                  }}
+                  className="z-0 absolute -top-5 -right-20 w-[200px] h-[200px] rounded-full "
+                ></div>
+                <div
+                  style={{
+                    background:
+                      "radial-gradient(circle at 33% 33%, #21219680, #AFAFED80)",
+                  }}
+                  className="z-0 absolute bottom-60 left-20 w-[150px] h-[150px] rounded-full animate-spin"
+                ></div>
+                <div
+                  style={{
+                    background:
+                      "radial-gradient(circle at 33% 33%, #212196, #AFAFED50)",
+                  }}
+                  className="z-0 absolute -bottom-32 right-10 w-[250px] h-[250px] rounded-full "
+                ></div>
               </div>
               <div className="flex flex-col shadow-container rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/40 dark:bg-gray/40">
                 <div className="flex flex-col mb-4 pt-4 px-4">
@@ -223,11 +265,41 @@ export const Landing = () => {
             </div>
             <div className="setWrapper relative">
               <div className="objectSet">
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219650, #AFAFED50)'}}  className="z-0 absolute top-[32%] -left-4 w-[75px] h-[75px] rounded-full animate-spin"></div>
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219670, #AFAFED70)'}}  className="z-0 absolute top-72 -right-20 w-[200px] h-[200px] rounded-full "></div>
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED)'}}  className="z-0 absolute top-[52%] left-10 w-[125px] h-[125px] rounded-full "></div>
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED)'}}  className="z-0 absolute bottom-96 lg:bottom-60 right-32 w-[100px] h-[100px] rounded-full "></div>
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED50)'}}  className="z-0 absolute -bottom-32 -left-32 w-[250px] h-[250px] rounded-full "></div>
+                <div
+                  style={{
+                    background:
+                      "radial-gradient(circle at 33% 33%, #21219650, #AFAFED50)",
+                  }}
+                  className="z-0 absolute top-[32%] -left-4 w-[75px] h-[75px] rounded-full animate-spin"
+                ></div>
+                <div
+                  style={{
+                    background:
+                      "radial-gradient(circle at 33% 33%, #21219670, #AFAFED70)",
+                  }}
+                  className="z-0 absolute top-72 -right-20 w-[200px] h-[200px] rounded-full "
+                ></div>
+                <div
+                  style={{
+                    background:
+                      "radial-gradient(circle at 33% 33%, #212196, #AFAFED)",
+                  }}
+                  className="z-0 absolute top-[52%] left-10 w-[125px] h-[125px] rounded-full "
+                ></div>
+                <div
+                  style={{
+                    background:
+                      "radial-gradient(circle at 33% 33%, #212196, #AFAFED)",
+                  }}
+                  className="z-0 absolute bottom-96 lg:bottom-60 right-32 w-[100px] h-[100px] rounded-full "
+                ></div>
+                <div
+                  style={{
+                    background:
+                      "radial-gradient(circle at 33% 33%, #212196, #AFAFED50)",
+                  }}
+                  className="z-0 absolute -bottom-32 -left-32 w-[250px] h-[250px] rounded-full "
+                ></div>
               </div>
               <div className="flex flex-col bg-cream/40 dark:bg-gray/40 rounded-2xl">
                 <div className="flex flex-col rounded-2xl backdrop-blur-xl rounded-b-none w-full h-auto p-4 border border-b-0 z-10 border-gray/[0.075] dark:border-cream/[0.075] shadow-rim">
@@ -261,8 +333,7 @@ export const Landing = () => {
                               href={projectsData.projectWebsite}
                             >
                               {projectsData.name}
-                          <ArrowRightIcon className="transition-all duration-300 transform group-hover:translate-x-1 fill-darkgray dark:fill-cream group-hover:fill-accent-light dark:group-hover:fill-accent-dark" />
-
+                              <ArrowRightIcon className="transition-all duration-300 transform group-hover:translate-x-1 fill-darkgray dark:fill-cream group-hover:fill-accent-light dark:group-hover:fill-accent-dark" />
                             </a>
                             <Chip
                               type="outlined"
@@ -289,42 +360,62 @@ export const Landing = () => {
             </div>
             <div className="setWrapper relative">
               <div className="objectSet">
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #21219650, #AFAFED50)'}}  className="z-0 absolute top-[52%] left-10 w-[125px] h-[125px] rounded-full "></div>
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED)'}}  className="z-0 absolute bottom-96 right-0 w-[100px] h-[100px] rounded-full animate-spin"></div>
-                <div style={{background: 'radial-gradient(circle at 33% 33%, #212196, #AFAFED90)'}}  className="z-0 absolute -bottom-32 -right-40 lg:-right-20 w-[250px] h-[250px] rounded-full "></div>
+                <div
+                  style={{
+                    background:
+                      "radial-gradient(circle at 33% 33%, #21219650, #AFAFED50)",
+                  }}
+                  className="z-0 absolute top-[52%] left-10 w-[125px] h-[125px] rounded-full "
+                ></div>
+                <div
+                  style={{
+                    background:
+                      "radial-gradient(circle at 33% 33%, #212196, #AFAFED)",
+                  }}
+                  className="z-0 absolute bottom-96 right-0 w-[100px] h-[100px] rounded-full animate-spin"
+                ></div>
+                <div
+                  style={{
+                    background:
+                      "radial-gradient(circle at 33% 33%, #212196, #AFAFED90)",
+                  }}
+                  className="z-0 absolute -bottom-32 -right-40 lg:-right-20 w-[250px] h-[250px] rounded-full "
+                ></div>
               </div>
-            <div className="flex flex-col shadow-container rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/40 dark:bg-gray/40">
-              <div className="flex flex-col mb-4 pt-4 px-4">
-                <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
-                  Interests
-                </p>
-                <p className=" font-poppins text-lg tracking-wide font-light text-darkgray dark:text-cream">
-                  Lessons beyond formal education
-                </p>
+              <div className="flex flex-col shadow-container rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/40 dark:bg-gray/40">
+                <div className="flex flex-col mb-4 pt-4 px-4">
+                  <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
+                    Interests
+                  </p>
+                  <p className=" font-poppins text-lg tracking-wide font-light text-darkgray dark:text-cream">
+                    Lessons beyond formal education
+                  </p>
+                </div>
+                <div className="flex flex-col">
+                  {interestData.map((interestData) => (
+                    <div
+                      key={interestData.interestIndex}
+                      className="flex flex-col border-t last:rounded-b-2xl border-gray/[0.075] dark:border-cream/[0.075] pt-3 bg-black/0 dark:hover:bg-accent-dark/[0.2] hover:bg-accent-light/[0.2] pb-4 px-4"
+                    >
+                      <p className=" font-poppins text-lg font-semibold text-darkgray dark:text-cream">
+                        {interestData.name}
+                      </p>
+                      <p className=" font-poppins tracking-wider text-sm font-normal text-darkgray dark:text-cream mt-3">
+                        {interestData.desc}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div className="flex flex-col">
-                {interestData.map((interestData) => (
-                  <div
-                    key={interestData.interestIndex}
-                    className="flex flex-col border-t last:rounded-b-2xl border-gray/[0.075] dark:border-cream/[0.075] pt-3 bg-black/0 dark:hover:bg-accent-dark/[0.2] hover:bg-accent-light/[0.2] pb-4 px-4"
-                  >
-                    <p className=" font-poppins text-lg font-semibold text-darkgray dark:text-cream">
-                      {interestData.name}
-                    </p>
-                    <p className=" font-poppins tracking-wider text-sm font-normal text-darkgray dark:text-cream mt-3">
-                      {interestData.desc}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
             </div>
             <div className="flex flex-row justify-center gap-4 flex-wrap w-full h-auto mb-10">
               {socialData.map((socialData) => (
                 <a
+                  tabIndex={0}
                   key={socialData.socialIndex}
                   className="flex flex-col justify-center items-center shadow-container rounded-2xl w-auto h-auto p-3 cursor-pointer border border-gray/[0.075] dark:border-cream/[0.075] hover:border-accent-light dark:hover:border-accent-dark backdrop-blur-xl bg-cream/30 dark:bg-gray/30 dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06]"
                   href={socialData.link}
+                  alt={`${socialData.name} Link`}
                 >
                   {getSocialLogo(socialData.name)}
                 </a>
