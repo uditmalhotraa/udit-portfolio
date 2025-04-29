@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Header } from "../components/Header";
 import Instagram from "../assets/Instagram";
 import Twitter from "../assets/Twitter";
@@ -19,20 +19,14 @@ import EscapekarLogoDarkMode from "../assets/EscapekarLogoDarkMode";
 import EscapekarLogoLightMode from "../assets/EscapekarLogoLightMode";
 import ArrowRightIcon from "../assets/ArrowRightIcon";
 
-export const Landing = () => {
-  const [educationData, setEducationData] = useState([]);
-  const [workData, setWorkData] = useState([]);
-  const [interestData, setInterestData] = useState([]);
-  const [socialData, setSocialData] = useState([]);
-  const [projectsData, setProjectsData] = useState([]);
+import AnimatedDiv from "../components/AnimatedDiv";
 
-  useEffect(() => {
-    setEducationData(education);
-    setWorkData(work);
-    setInterestData(interest);
-    setSocialData(social);
-    setProjectsData(projects);
-  }, []);
+export const Landing = () => {
+  const [educationData] = useState(education);
+  const [workData] = useState(work);
+  const [interestData] = useState(interest);
+  const [socialData] = useState(social);
+  const [projectsData] = useState(projects);
 
   const getSocialLogo = (socialName) => {
     switch (socialName) {
@@ -91,7 +85,9 @@ export const Landing = () => {
         <Header />
         <div className="flex lg:overflow-x-visible overflow-x-hidden flex-col lg:flex-row px-5 md:px-0 mt-28 mb-10 gap-12 lg:max-w-[1280px] xl:max-w-[1536px] 2xl:max-w-[1920px] mx-auto">
           <div className="lg:!sticky z-20 lg:top-[120px] lg:left-0 relative flex flex-col justify-end bg-uditPic bg-no-repeat bg-cover bg-top shadow-container !rounded-2xl w-full h-[468px] md:h-[600px] xl:h-[724px] 2xl:h-[796px] border border-gray/[0.075] dark:border-cream/[0.075] ">
-            <div className="absolute -bottom-3 md:-bottom-4 -left-[8px] md:-left-[16px] flex flex-col gap-2 w-[calc(100%+16px)] md:w-[calc(100%+32px)] h-auto z-10 bg-cream/10 dark:bg-gray/10 shadow-container backdrop-blur-xl p-4 rounded-2xl">
+            <AnimatedDiv
+              className="absolute -bottom-3 md:-bottom-4 -left-[8px] md:-left-[16px] flex flex-col gap-2 w-[calc(100%+16px)] md:w-[calc(100%+32px)] h-auto z-10 bg-cream/10 dark:bg-gray/10 shadow-container backdrop-blur-xl p-4 rounded-2xl will-change-transform transform-gpu"
+            >
               <p
                 title="Greetings: I bow to you"
                 className=" font-poppins text-2xl font-semibold tracking-wide text-cream w-[80%] z-10"
@@ -101,7 +97,7 @@ export const Landing = () => {
               <p className=" font-poppins text-md font-light tracking-wide text-cream w-full z-10">
                 From Code to Chronicles – My Journey
               </p>
-            </div>
+            </AnimatedDiv>
           </div>
           <div className="flex flex-col w-full gap-12 lg:mt-2">
             <div className="setWrapper relative">
@@ -128,7 +124,9 @@ export const Landing = () => {
                   className="z-0 absolute -bottom-5 -left-20 w-[200px] h-[200px] rounded-full"
                 ></div>
               </div>
-              <div className="z-10 flex flex-col rounded-2xl w-full h-auto border shadow-container border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/40 dark:bg-gray/40">
+              <AnimatedDiv
+                className="z-10 flex flex-col rounded-2xl w-full h-auto border shadow-container border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/40 dark:bg-gray/40 will-change-transform transform-gpu"
+              >
                 <div className="flex flex-col mb-4 pt-4 px-4">
                   <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                     Education
@@ -137,7 +135,7 @@ export const Landing = () => {
                     Graduation and formal schooling
                   </p>
                 </div>
-                <div className="flex flex-col">
+                <AnimatedDiv stagger className="flex flex-col">
                   {educationData.map((educationData) => (
                     <div
                       key={educationData.educationIndex}
@@ -163,18 +161,18 @@ export const Landing = () => {
                           key={educationDataDetail.detailIndex}
                           className="flex flex-row justify-between items-start w-full mt-4"
                         >
-                          <p className=" font-poppins tracking-wider text-base font-light text-darkgray dark:text-cream mr-3">
+                          <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream mr-3">
                             {educationDataDetail?.certificate}
                           </p>
-                          <p className=" font-poppins tracking-wider text-base font-light text-darkgray dark:text-cream italic whitespace-nowrap">
+                          <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream italic whitespace-nowrap">
                             {educationDataDetail?.grade}
                           </p>
                         </div>
                       ))}
                     </div>
                   ))}
-                </div>
-              </div>
+                </AnimatedDiv>
+              </AnimatedDiv>
             </div>
             <div className="setWrapper relative">
               <div className="objectSet">
@@ -207,7 +205,9 @@ export const Landing = () => {
                   className="z-0 absolute -bottom-32 right-10 w-[250px] h-[250px] rounded-full "
                 ></div>
               </div>
-              <div className="flex flex-col shadow-container rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/40 dark:bg-gray/40">
+              <AnimatedDiv
+                className="flex flex-col shadow-container rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/40 dark:bg-gray/40 will-change-transform transform-gpu"
+              >
                 <div className="flex flex-col mb-4 pt-4 px-4">
                   <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                     Work
@@ -216,7 +216,7 @@ export const Landing = () => {
                     Professional company work
                   </p>
                 </div>
-                <div className="flex flex-col">
+                <AnimatedDiv stagger className="flex flex-col">
                   {workData.map((workData) => (
                     <div
                       key={workData.workIndex}
@@ -234,13 +234,13 @@ export const Landing = () => {
                           key={roleDetail.roleIndex}
                           className="flex flex-row justify-between items-center w-full mt-3"
                         >
-                          <p className=" block md:hidden font-poppins tracking-wider text-base font-light text-darkgray dark:text-cream">
+                          <p className=" block md:hidden font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream">
                             {roleDetail.shortName}
                           </p>
-                          <p className=" hidden md:block font-poppins tracking-wider text-base font-light text-darkgray dark:text-cream">
+                          <p className=" hidden md:block font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream">
                             {roleDetail.fullName}
                           </p>
-                          <p className=" font-poppins tracking-wider text-base font-light text-darkgray dark:text-cream">
+                          <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream">
                             {roleDetail.period}
                           </p>
                         </div>
@@ -260,8 +260,8 @@ export const Landing = () => {
                       </div>
                     </div>
                   ))}
-                </div>
-              </div>
+                </AnimatedDiv>
+              </AnimatedDiv>
             </div>
             <div className="setWrapper relative">
               <div className="objectSet">
@@ -302,7 +302,9 @@ export const Landing = () => {
                 ></div>
               </div>
               <div className="flex flex-col bg-cream/40 dark:bg-gray/40 rounded-2xl">
-                <div className="flex flex-col rounded-2xl backdrop-blur-xl rounded-b-none w-full h-auto p-4 border border-b-0 z-10 border-gray/[0.075] dark:border-cream/[0.075] shadow-rim">
+              <div
+                  className="flex flex-col rounded-2xl backdrop-blur-xl rounded-b-none w-full h-auto p-4 border border-b-0 z-10 border-gray/[0.075] dark:border-cream/[0.075] shadow-rim will-change-transform transform-gpu"
+                >
                   <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                     Projects
                   </p>
@@ -310,11 +312,11 @@ export const Landing = () => {
                     Delivering impactful solutions
                   </p>
                 </div>
-                <div className="flex flex-col gap-y-8">
+                <AnimatedDiv stagger className="flex flex-col gap-y-8">
                   {projectsData.map((projectsData) => (
                     <div
                       key={projectsData.projectIndex}
-                      className="flex flex-col backdrop-blur-xl md:flex-row gap-x-0 md:gap-y-0 shadow-container gap-y-4 rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] z-10 dark:hover:bg-accent-dark/[0.2] hover:bg-accent-light/[0.2]"
+                      className="flex flex-col backdrop-blur-xl md:flex-row gap-x-0 md:gap-y-0 shadow-container gap-y-4 rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] z-10 dark:hover:bg-accent-dark/[0.2] hover:bg-accent-light/[0.2] will-change-transform transform-gpu"
                     >
                       <div
                         className={`${
@@ -340,7 +342,7 @@ export const Landing = () => {
                               text={`${projectsData.area}`}
                             />
                           </div>
-                          <p className=" font-poppins tracking-wider text-sm font-light text-darkgray dark:text-cream">
+                          <p className="font-poppins tracking-wider text-sm font-normal leading-6 text-darkgray dark:text-cream">
                             {projectsData.desc}
                           </p>
                         </div>
@@ -355,7 +357,7 @@ export const Landing = () => {
                       </div>
                     </div>
                   ))}
-                </div>
+                </AnimatedDiv>
               </div>
             </div>
             <div className="setWrapper relative">
@@ -382,7 +384,9 @@ export const Landing = () => {
                   className="z-0 absolute -bottom-32 -right-40 lg:-right-20 w-[250px] h-[250px] rounded-full "
                 ></div>
               </div>
-              <div className="flex flex-col shadow-container rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/40 dark:bg-gray/40">
+              <AnimatedDiv
+                className="flex flex-col shadow-container rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/40 dark:bg-gray/40 will-change-transform transform-gpu"
+              >
                 <div className="flex flex-col mb-4 pt-4 px-4">
                   <p className=" font-poppins text-3xl font-semibold tracking-wide text-accent-light dark:text-accent-dark">
                     Interests
@@ -391,7 +395,7 @@ export const Landing = () => {
                     Lessons beyond formal education
                   </p>
                 </div>
-                <div className="flex flex-col">
+                <AnimatedDiv stagger className="flex flex-col">
                   {interestData.map((interestData) => (
                     <div
                       key={interestData.interestIndex}
@@ -400,13 +404,13 @@ export const Landing = () => {
                       <p className=" font-poppins text-lg font-semibold text-darkgray dark:text-cream">
                         {interestData.name}
                       </p>
-                      <p className=" font-poppins tracking-wider text-sm font-normal text-darkgray dark:text-cream mt-3">
+                      <p className=" font-poppins tracking-wider text-sm font-normal leading-6 text-darkgray dark:text-cream mt-3">
                         {interestData.desc}
                       </p>
                     </div>
                   ))}
-                </div>
-              </div>
+                </AnimatedDiv>
+              </AnimatedDiv>
             </div>
             <div className="flex flex-row justify-center gap-4 flex-wrap w-full h-auto mb-10">
               {socialData.map((socialData) => (
