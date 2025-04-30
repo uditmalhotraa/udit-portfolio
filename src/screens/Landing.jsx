@@ -20,6 +20,8 @@ import EscapekarLogoLightMode from "../assets/EscapekarLogoLightMode";
 import ArrowRightIcon from "../assets/ArrowRightIcon";
 
 import AnimatedDiv from "../components/AnimatedDiv";
+import { motion } from "framer-motion";
+
 
 export const Landing = () => {
   const [educationData] = useState(education);
@@ -412,7 +414,7 @@ export const Landing = () => {
                 </AnimatedDiv>
               </AnimatedDiv>
             </div>
-            <div className="flex flex-row justify-center gap-4 flex-wrap w-full h-auto mb-10">
+            <motion.div layout={false} className="flex flex-row justify-center gap-4 flex-wrap w-full h-auto mb-10">
               {socialData.map((socialData) => (
                 <a
                   tabIndex={0}
@@ -425,7 +427,7 @@ export const Landing = () => {
                   {getSocialLogo(socialData.name)}
                 </a>
               ))}
-            </div>
+            </motion.div>
             <div className="flex flex-col w-full h-auto">
               <p className="font-poppins text-sm font-thin text-center opacity-75 text-gray dark:text-cream tracking-wider leading-relaxed">
                 Designed, developed, and owned by <br />
