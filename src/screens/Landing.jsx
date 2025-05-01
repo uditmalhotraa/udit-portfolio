@@ -21,6 +21,10 @@ import ArrowRightIcon from "../assets/ArrowRightIcon";
 
 import AnimatedDiv from "../components/AnimatedDiv";
 import { motion } from "framer-motion";
+import EducationIcon from "../assets/EducationIcon";
+import WorkIcon from "../assets/WorkIcon";
+import ProjectsIcon from "../assets/ProjectsIcon";
+import InterestIcon from "../assets/InterestIcon";
 
 
 export const Landing = () => {
@@ -129,10 +133,11 @@ export const Landing = () => {
               <AnimatedDiv
                 className="z-10 flex flex-col rounded-2xl w-full h-auto border shadow-container border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/40 dark:bg-gray/40 will-change-transform transform-gpu"
               >
-                <div className="flex flex-col mb-4 pt-4 px-4">
+                <div className="flex flex-row mb-4 pt-4 px-4 gap-3 items-center">
                   <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
                     Education
                   </p>
+                  <EducationIcon className="fill-accent-light dark:fill-accent-dark" />
                 </div>
                 <AnimatedDiv stagger className="flex flex-col">
                   {educationData.map((educationData) => (
@@ -197,10 +202,11 @@ export const Landing = () => {
               <AnimatedDiv
                 className="flex flex-col shadow-container rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/40 dark:bg-gray/40 will-change-transform transform-gpu"
               >
-                <div className="flex flex-col mb-4 pt-4 px-4">
+                <div className="flex flex-row mb-4 pt-4 px-4 gap-3 items-center">
                   <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
                     Work
                   </p>
+                  <WorkIcon className="stroke-accent-light dark:stroke-accent-dark" />
                 </div>
                 <AnimatedDiv stagger className="flex flex-col">
                   {workData.map((workData) => (
@@ -282,11 +288,12 @@ export const Landing = () => {
               </div>
               <div className="flex flex-col bg-cream/40 dark:bg-gray/40 rounded-2xl">
               <div
-                  className="flex flex-col rounded-2xl backdrop-blur-xl rounded-b-none w-full h-auto p-4 border border-b-0 z-10 border-gray/[0.075] dark:border-cream/[0.075] shadow-rim will-change-transform transform-gpu"
+                  className="flex flex-row gap-3 items-center rounded-2xl backdrop-blur-xl rounded-b-none w-full h-auto p-4 border border-b-0 z-10 border-gray/[0.075] dark:border-cream/[0.075] shadow-rim will-change-transform transform-gpu"
                 >
                   <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
                     Projects
                   </p>
+                  <ProjectsIcon className="stroke-accent-light dark:stroke-accent-dark" />
                 </div>
                 <AnimatedDiv stagger className="flex flex-col gap-y-8">
                   {projectsData.map((projectsData) => (
@@ -349,10 +356,11 @@ export const Landing = () => {
               <AnimatedDiv
                 className="flex flex-col shadow-container rounded-2xl w-full h-auto border border-gray/[0.075] dark:border-cream/[0.075] backdrop-blur-xl bg-cream/40 dark:bg-gray/40 will-change-transform transform-gpu"
               >
-                <div className="flex flex-col mb-4 pt-4 px-4">
+                <div className="flex flex-row items-center mb-4 pt-4 px-4 gap-3">
                   <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
                     Interests
                   </p>
+                  <InterestIcon className="fill-accent-light dark:fill-accent-dark mb-1" />
                 </div>
                 <AnimatedDiv stagger className="flex flex-col">
                   {interestData.map((interestData) => (
