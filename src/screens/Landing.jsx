@@ -123,7 +123,7 @@ export const Landing = () => {
                     background:
                       "radial-gradient(circle at 33% 33%, #21219680, #AFAFED80)",
                   }}
-                  className="z-0 absolute -bottom-5 -left-20 w-[200px] h-[200px] rounded-full blur-2xl animate-spin"
+                  className="z-0 absolute -bottom-5 -left-20 lg:left-20 lg:-bottom-20 w-[200px] h-[200px] rounded-full blur-2xl animate-spin lg:animate-none"
                 ></div>
               </div>
               <AnimatedDiv
@@ -177,21 +177,21 @@ export const Landing = () => {
                     background:
                       "radial-gradient(circle at 33% 33%, #21219690, #AFAFED50)",
                   }}
-                  className="z-0 absolute top-10 -left-4 w-[75px] h-[75px] rounded-full blur-md"
+                  className="z-0 absolute top-10 lg:top-72 -left-4 w-[75px] h-[75px] rounded-full blur-md"
                 ></div>
                 <div
                   style={{
                     background:
                       "radial-gradient(circle at 33% 33%, #212196, #AFAFED50)",
                   }}
-                  className="z-0 absolute -top-5 -right-20 w-[200px] h-[200px] rounded-full blur-3xl"
+                  className="z-0 absolute -top-5 lg:top-5 -right-20 lg:right-0 w-[200px] h-[200px] rounded-full blur-3xl"
                 ></div>
                 <div
                   style={{
                     background:
                       "radial-gradient(circle at 33% 33%, #21219690, #AFAFED50)",
                   }}
-                  className="z-0 absolute -bottom-32 right-10 w-[250px] h-[250px] rounded-full blur-3xl animate-spin"
+                  className="z-0 absolute -bottom-32 right-10 lg:right-52 w-[250px] h-[250px] rounded-full blur-3xl animate-spin lg:animate-none"
                 ></div>
               </div>
               <AnimatedDiv
@@ -263,14 +263,14 @@ export const Landing = () => {
                     background:
                       "radial-gradient(circle at 33% 33%, #21219670, #AFAFED70)",
                   }}
-                  className="z-0 absolute top-72 -right-20 w-[200px] h-[200px] rounded-full blur-2xl animate-spin"
+                  className="z-0 absolute top-72 -right-20 lg:-right-10 w-[200px] h-[200px] rounded-full blur-2xl animate-spin lg:animate-none"
                 ></div>
                 <div
                   style={{
                     background:
                       "radial-gradient(circle at 33% 33%, #212196, #AFAFED)",
                   }}
-                  className="z-0 absolute bottom-96 lg:bottom-60 right-32 w-[100px] h-[100px] rounded-full blur-2xl"
+                  className="z-0 absolute bottom-96 lg:bottom-52 right-32 lg:right-72 w-[100px] h-[100px] rounded-full blur-2xl"
                 ></div>
                 <div
                   style={{
@@ -343,7 +343,7 @@ export const Landing = () => {
                     background:
                       "radial-gradient(circle at 33% 33%, #212196, #AFAFED90)",
                   }}
-                  className="z-0 absolute -bottom-32 -right-40 lg:-right-20 w-[250px] h-[250px] rounded-full blur-3xl animate-spin"
+                  className="z-0 absolute -bottom-32 -right-40 lg:right-0 w-[250px] h-[250px] rounded-full blur-3xl animate-spin lg:animate-none"
                 ></div>
               </div>
               <AnimatedDiv
