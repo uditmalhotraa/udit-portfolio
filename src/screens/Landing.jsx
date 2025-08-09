@@ -108,21 +108,21 @@ export const Landing = () => {
                 <div
                   style={{
                     background:
-                      "radial-gradient(circle at 33% 33%, #21219660, #AFAFED60)",
+                      "radial-gradient(circle at 33% 33%, #2f8d7260, #00ffa260)",
                   }}
                   className="z-0 absolute top-10 -right-4 w-[150px] h-[150px] rounded-full blur-lg"
                 ></div>
                 <div
                   style={{
                     background:
-                      "radial-gradient(circle at 33% 33%, #212196, #AFAFED60)",
+                      "radial-gradient(circle at 33% 33%, #2f8d72, #00ffa260)",
                   }}
                   className="z-0 absolute -top-2 left-10 w-[75px] h-[75px] rounded-full blur-lg"
                 ></div>
                 <div
                   style={{
                     background:
-                      "radial-gradient(circle at 33% 33%, #21219680, #AFAFED80)",
+                      "radial-gradient(circle at 33% 33%, #2f8d7280, #00ffa280)",
                   }}
                   className="z-0 absolute -bottom-5 -left-20 lg:left-20 lg:-bottom-20 w-[200px] h-[200px] rounded-full blur-2xl animate-spin lg:animate-none"
                 ></div>
@@ -140,7 +140,7 @@ export const Landing = () => {
                     return (
                       <div
                         key={educationData.educationIndex}
-                        className={`flex flex-col border-t border-cream/30 dark:border-gray/30 pt-3 dark:hover:bg-accent-dark/5 hover:bg-accent-light/5 px-4 pb-4 ${isLast? "!rounded-b-2xl" : "rounded-b-none"}`}
+                        className={`flex flex-col border-t border-cream/30 dark:border-gray/30 pt-3 dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 px-4 pb-4 ${isLast? "!rounded-b-2xl" : "rounded-b-none"}`}
                       >
                         <div className="flex flex-row justify-between items-center w-full">
                           <a
@@ -178,21 +178,21 @@ export const Landing = () => {
                 <div
                   style={{
                     background:
-                      "radial-gradient(circle at 33% 33%, #21219690, #AFAFED50)",
+                      "radial-gradient(circle at 33% 33%, #2f8d7290, #00ffa250)",
                   }}
                   className="z-0 absolute top-10 lg:top-72 -left-4 w-[75px] h-[75px] rounded-full blur-md"
                 ></div>
                 <div
                   style={{
                     background:
-                      "radial-gradient(circle at 33% 33%, #212196, #AFAFED50)",
+                      "radial-gradient(circle at 33% 33%, #2f8d72, #00ffa250)",
                   }}
                   className="z-0 absolute -top-5 lg:top-5 -right-20 lg:right-0 w-[200px] h-[200px] rounded-full blur-3xl"
                 ></div>
                 <div
                   style={{
                     background:
-                      "radial-gradient(circle at 33% 33%, #21219690, #AFAFED50)",
+                      "radial-gradient(circle at 33% 33%, #2f8d7290, #00ffa250)",
                   }}
                   className="z-0 absolute -bottom-32 right-10 lg:right-52 w-[250px] h-[250px] rounded-full blur-3xl animate-spin lg:animate-none"
                 ></div>
@@ -210,7 +210,7 @@ export const Landing = () => {
                     return (
                     <div
                       key={workData.workIndex}
-                      className={`flex flex-col border-t border-cream/30 dark:border-gray/30 pt-3 bg-black/0 dark:hover:bg-accent-dark/5 hover:bg-accent-light/5 pb-4 px-4 ${isLast? "!rounded-b-2xl" : "rounded-b-none"}`}
+                      className={`flex flex-col border-t border-cream/30 dark:border-gray/30 pt-3 bg-black/0 dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 pb-4 px-4 ${isLast? "!rounded-b-2xl" : "rounded-b-none"}`}
                     >
                       <a
                         className="font-poppins group inline-flex gap-[6px] items-center w-fit mb-3 text-xl font-medium text-darkgray dark:text-cream hover:text-accent-light dark:hover:text-accent-dark"
@@ -258,28 +258,28 @@ export const Landing = () => {
                 <div
                   style={{
                     background:
-                      "radial-gradient(circle at 33% 33%, #21219650, #AFAFED50)",
+                      "radial-gradient(circle at 33% 33%, #2f8d7250, #00ffa250)",
                   }}
                   className="z-0 absolute top-[32%] -left-4 w-[75px] h-[75px] rounded-full blur-md"
                 ></div>
                 <div
                   style={{
                     background:
-                      "radial-gradient(circle at 33% 33%, #21219670, #AFAFED70)",
+                      "radial-gradient(circle at 33% 33%, #2f8d7270, #00ffa270)",
                   }}
                   className="z-0 absolute top-72 -right-20 lg:-right-10 w-[200px] h-[200px] rounded-full blur-2xl animate-spin lg:animate-none"
                 ></div>
                 <div
                   style={{
                     background:
-                      "radial-gradient(circle at 33% 33%, #212196, #AFAFED)",
+                      "radial-gradient(circle at 33% 33%, #2f8d72, #00ffa2)",
                   }}
                   className="z-0 absolute bottom-96 lg:bottom-52 right-32 lg:right-72 w-[100px] h-[100px] rounded-full blur-2xl"
                 ></div>
                 <div
                   style={{
                     background:
-                      "radial-gradient(circle at 33% 33%, #21219690, #AFAFED50)",
+                      "radial-gradient(circle at 33% 33%, #2f8d7290, #00ffa250)",
                   }}
                   className="z-0 absolute -bottom-32 -left-32 w-[250px] h-[250px] rounded-full blur-3xl"
                 ></div>
@@ -295,7 +295,7 @@ export const Landing = () => {
                   {projectsData.map((projectsData) => (
                     <div
                       key={projectsData.projectIndex}
-                      className="flex flex-col backdrop-blur-xl md:flex-row gap-x-0 md:gap-y-0 shadow-md gap-y-4 rounded-2xl w-full h-auto border border-cream/30 dark:border-gray/30 z-10 dark:hover:bg-accent-dark/5 hover:bg-accent-light/5 will-change-transform transform-gpu"
+                      className="flex flex-col backdrop-blur-xl md:flex-row gap-x-0 md:gap-y-0 shadow-md gap-y-4 rounded-2xl w-full h-auto border border-cream/30 dark:border-gray/30 z-10 dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 will-change-transform transform-gpu"
                     >
                       <div
                         className={`${
@@ -344,7 +344,7 @@ export const Landing = () => {
                 <div
                   style={{
                     background:
-                      "radial-gradient(circle at 33% 33%, #212196, #AFAFED90)",
+                      "radial-gradient(circle at 33% 33%, #2f8d72, #00ffa290)",
                   }}
                   className="z-0 absolute -bottom-32 -right-40 lg:right-0 w-[250px] h-[250px] rounded-full blur-3xl animate-spin lg:animate-none"
                 ></div>
@@ -362,7 +362,7 @@ export const Landing = () => {
                     return (
                     <div
                       key={interestData.interestIndex}
-                      className={`flex flex-col border-t border-cream/30 dark:border-gray/30 pt-3 bg-black/0 dark:hover:bg-accent-dark/5 hover:bg-accent-light/5 pb-4 px-4 ${isLast? "!rounded-b-2xl" : "rounded-b-none"}`}
+                      className={`flex flex-col border-t border-cream/30 dark:border-gray/30 pt-3 bg-black/0 dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 pb-4 px-4 ${isLast? "!rounded-b-2xl" : "rounded-b-none"}`}
                     >
                       <p className=" font-poppins text-base font-normal text-darkgray dark:text-cream">
                         {interestData.name}
