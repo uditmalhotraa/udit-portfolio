@@ -90,7 +90,7 @@ export const Landing = () => {
         <Header />
         <div className="flex lg:overflow-x-visible overflow-x-hidden flex-col lg:flex-row px-5 md:px-0 mt-28 mb-10 gap-12 lg:max-w-[1280px] xl:max-w-[1536px] 2xl:max-w-[1920px] mx-auto">
           <div className="lg:!sticky z-20 lg:top-[120px] lg:min-w-[448px] xl:min-w-[556px] 2xl:min-w-[756px] lg:left-0 relative flex flex-col justify-end bg-uditPic bg-no-repeat bg-cover bg-top shadow-md !rounded-2xl w-full h-[468px] md:h-[600px] xl:h-[724px] 2xl:h-[796px] border border-cream/30 dark:border-gray/30 ">
-            <AnimatedDiv className="absolute -bottom-3 md:-bottom-4 -left-[8px] md:-left-[16px] flex flex-col gap-2 w-[calc(100%+16px)] md:w-[calc(100%+32px)] h-auto z-10 bg-cream/10 dark:bg-gray/10 shadow-md backdrop-blur-xl p-4 rounded-2xl will-change-transform transform-gpu">
+            <AnimatedDiv className="absolute -bottom-3 md:-bottom-4 -left-[8px] md:-left-[16px] flex flex-col gap-2 w-[calc(100%+16px)] md:w-[calc(100%+32px)] h-auto z-10 bg-gray/5 dark:bg-cream/5 shadow-md backdrop-blur-xl p-4 rounded-2xl will-change-transform transform-gpu">
               <p
                 title="Greetings: I bow to you"
                 className=" font-poppins text-2xl font-medium tracking-wide text-cream w-[80%] z-10"
@@ -108,26 +108,26 @@ export const Landing = () => {
                 <div
                   style={{
                     background:
-                      "radial-gradient(circle at 33% 33%, #2f8d7260, #00ffa260)",
+                      "radial-gradient(circle at 33% 33%, #2f8d7260, #00ffa240)",
                   }}
                   className="z-0 absolute top-10 -right-4 w-[150px] h-[150px] rounded-full blur-lg"
                 ></div>
                 <div
                   style={{
                     background:
-                      "radial-gradient(circle at 33% 33%, #2f8d72, #00ffa260)",
+                      "radial-gradient(circle at 33% 33%, #2f8d72, #00ffa240)",
                   }}
                   className="z-0 absolute -top-2 left-10 w-[75px] h-[75px] rounded-full blur-lg"
                 ></div>
                 <div
                   style={{
                     background:
-                      "radial-gradient(circle at 33% 33%, #2f8d7280, #00ffa280)",
+                      "radial-gradient(circle at 33% 33%, #2f8d7280, #00ffa240)",
                   }}
                   className="z-0 absolute -bottom-5 -left-20 lg:left-20 lg:-bottom-20 w-[200px] h-[200px] rounded-full blur-2xl animate-spin lg:animate-none"
                 ></div>
               </div>
-              <AnimatedDiv className="z-10 flex flex-col rounded-2xl w-full h-auto border shadow-md border-cream/30 dark:border-gray/30 backdrop-blur-xl bg-cream/10 dark:bg-gray/10 will-change-transform transform-gpu">
+              <AnimatedDiv className="z-10 flex flex-col rounded-2xl w-full h-auto border shadow-md border-cream/30 dark:border-gray/30 backdrop-blur-xl bg-gray/5 dark:bg-cream/5 will-change-transform transform-gpu">
                 <div className="flex flex-row mb-4 pt-4 px-4 gap-3 items-center">
                   <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
                     Education
@@ -140,7 +140,9 @@ export const Landing = () => {
                     return (
                       <div
                         key={educationData.educationIndex}
-                        className={`flex flex-col border-t border-cream/30 dark:border-gray/30 pt-3 dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 px-4 pb-4 ${isLast? "!rounded-b-2xl" : "rounded-b-none"}`}
+                        className={`flex flex-col border-t border-cream/30 dark:border-gray/30 pt-3 dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 px-4 pb-4 ${
+                          isLast ? "!rounded-b-2xl" : "rounded-b-none"
+                        }`}
                       >
                         <div className="flex flex-row justify-between items-center w-full">
                           <a
@@ -197,7 +199,7 @@ export const Landing = () => {
                   className="z-0 absolute -bottom-32 right-10 lg:right-52 w-[250px] h-[250px] rounded-full blur-3xl animate-spin lg:animate-none"
                 ></div>
               </div>
-              <AnimatedDiv className="flex flex-col shadow-md rounded-2xl w-full h-auto border border-cream/30 dark:border-gray/30 backdrop-blur-xl bg-cream/10 dark:bg-gray/10 will-change-transform transform-gpu">
+              <AnimatedDiv className="flex flex-col shadow-md rounded-2xl w-full h-auto border border-cream/30 dark:border-gray/30 backdrop-blur-xl bg-gray/5 dark:bg-cream/5 will-change-transform transform-gpu">
                 <div className="flex flex-row mb-4 pt-4 px-4 gap-3 items-center">
                   <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
                     Work
@@ -208,48 +210,51 @@ export const Landing = () => {
                   {workData.map((workData, index, array) => {
                     const isLast = index === array.length - 1;
                     return (
-                    <div
-                      key={workData.workIndex}
-                      className={`flex flex-col border-t border-cream/30 dark:border-gray/30 pt-3 bg-black/0 dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 pb-4 px-4 ${isLast? "!rounded-b-2xl" : "rounded-b-none"}`}
-                    >
-                      <a
-                        className="font-poppins group inline-flex gap-[6px] items-center w-fit mb-3 text-xl font-medium text-darkgray dark:text-cream hover:text-accent-light dark:hover:text-accent-dark"
-                        href={workData.companyWebsite}
+                      <div
+                        key={workData.workIndex}
+                        className={`flex flex-col border-t border-cream/30 dark:border-gray/30 pt-3 bg-black/0 dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 pb-4 px-4 ${
+                          isLast ? "!rounded-b-2xl" : "rounded-b-none"
+                        }`}
                       >
-                        {workData.companyName}
-                        <ArrowRightIcon className="transition-all duration-300 transform group-hover:translate-x-1 fill-darkgray dark:fill-cream group-hover:fill-accent-light dark:group-hover:fill-accent-dark" />
-                      </a>
-                      {workData.roleDetail.map((roleDetail) => (
-                        <div
-                          key={roleDetail.roleIndex}
-                          className="flex flex-row justify-between items-center w-full mt-3"
+                        <a
+                          className="font-poppins group inline-flex gap-[6px] items-center w-fit mb-3 text-xl font-medium text-darkgray dark:text-cream hover:text-accent-light dark:hover:text-accent-dark"
+                          href={workData.companyWebsite}
                         >
-                          <p className=" block md:hidden font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream">
-                            {roleDetail.shortName}
-                          </p>
-                          <p className=" hidden md:block font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream">
-                            {roleDetail.fullName}
-                          </p>
-                          <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream">
-                            {roleDetail.period}
-                          </p>
-                        </div>
-                      ))}
-                      <div className="flex flex-row w-full gap-2 flex-wrap mt-7">
-                        {workData.tech.map((techDetail) => (
-                          <Chip
-                            key={techDetail.techIndex}
-                            type={
-                              techDetail.category === "primary"
-                                ? "filled"
-                                : "outlined"
-                            }
-                            text={techDetail.name}
-                          />
+                          {workData.companyName}
+                          <ArrowRightIcon className="transition-all duration-300 transform group-hover:translate-x-1 fill-darkgray dark:fill-cream group-hover:fill-accent-light dark:group-hover:fill-accent-dark" />
+                        </a>
+                        {workData.roleDetail.map((roleDetail) => (
+                          <div
+                            key={roleDetail.roleIndex}
+                            className="flex flex-row justify-between items-center w-full mt-3"
+                          >
+                            <p className=" block md:hidden font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream">
+                              {roleDetail.shortName}
+                            </p>
+                            <p className=" hidden md:block font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream">
+                              {roleDetail.fullName}
+                            </p>
+                            <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream">
+                              {roleDetail.period}
+                            </p>
+                          </div>
                         ))}
+                        <div className="flex flex-row w-full gap-2 flex-wrap mt-7">
+                          {workData.tech.map((techDetail) => (
+                            <Chip
+                              key={techDetail.techIndex}
+                              type={
+                                techDetail.category === "primary"
+                                  ? "filled"
+                                  : "outlined"
+                              }
+                              text={techDetail.name}
+                            />
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  )})}
+                    );
+                  })}
                 </AnimatedDiv>
               </AnimatedDiv>
             </div>
@@ -284,8 +289,8 @@ export const Landing = () => {
                   className="z-0 absolute -bottom-32 -left-32 w-[250px] h-[250px] rounded-full blur-3xl"
                 ></div>
               </div>
-              <div className="flex flex-col bg-cream/10 dark:bg-gray/10 rounded-2xl">
-                <div className="flex flex-row gap-3 items-center rounded-2xl backdrop-blur-xl rounded-b-none w-full h-auto p-4 border border-b-0 z-10 border-cream/30 dark:border-gray/30 shadow-rim will-change-transform transform-gpu">
+              <div className="flex flex-col bg-gray/[0.03] dark:bg-cream/[0.03] rounded-2xl">
+                <div className="flex flex-row gap-3 bg-gray/[0.02] dark:bg-cream/[0.02] items-center rounded-2xl backdrop-blur-xl mb-3 w-full h-auto p-4 border border-b-0 z-10 border-cream/30 dark:border-gray/30 shadow-md will-change-transform transform-gpu">
                   <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
                     Projects
                   </p>
@@ -295,7 +300,7 @@ export const Landing = () => {
                   {projectsData.map((projectsData) => (
                     <div
                       key={projectsData.projectIndex}
-                      className="flex flex-col backdrop-blur-xl md:flex-row gap-x-0 md:gap-y-0 shadow-md gap-y-4 rounded-2xl w-full h-auto border border-cream/30 dark:border-gray/30 z-10 dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 will-change-transform transform-gpu"
+                      className="flex flex-col backdrop-blur-xl md:flex-row gap-x-0 md:gap-y-0 shadow-md gap-y-4 rounded-2xl w-full h-auto border border-cream/30 dark:border-gray/30 z-10 bg-gray/5 dark:bg-cream/5 dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 will-change-transform transform-gpu"
                     >
                       <div
                         className={`${
@@ -306,8 +311,8 @@ export const Landing = () => {
                       >
                         {getProjectLogo(projectsData.name)}
                       </div>
-                      <div className="pb-4 md:pb-0 px-4 pt-0 md:pt-4 w-full md:w-[50%]">
-                        <div className="flex flex-col mb-5 gap-5">
+                      <div className="pb-4 md:pb-0 px-4 pt-0 md:pt-4 w-full h-[190px] md:h-[256px] md:w-[50%]">
+                        <div className="flex flex-col mb-5 gap-5 h-[130px] md:h-[180px]">
                           <div className="flex flex-row justify-between items-center w-full">
                             <a
                               className="font-poppins group inline-flex items-center gap-[6px] text-xl w-fit font-medium text-darkgray dark:text-cream hover:text-accent-light dark:hover:text-accent-dark"
@@ -321,14 +326,14 @@ export const Landing = () => {
                               text={`${projectsData.area}`}
                             />
                           </div>
-                          <p className="font-poppins tracking-wider text-sm font-normal leading-6 text-darkgray dark:text-cream">
+                          <p className="font-poppins tracking-wider text-base font-normal leading-6 text-darkgray dark:text-cream">
                             {projectsData.desc}
                           </p>
                         </div>
                         <div className="flex flex-row justify-between items-center w-full">
-                          <p className="font-poppins text-base font-medium text-darkgray dark:text-cream">
+                          <p className="font-poppins text-base font-light text-darkgray dark:text-cream">
                             Role:{" "}
-                            <span className="font-light">
+                            <span className="font-medium tracking-wider">
                               {projectsData.role}
                             </span>
                           </p>
@@ -344,12 +349,12 @@ export const Landing = () => {
                 <div
                   style={{
                     background:
-                      "radial-gradient(circle at 33% 33%, #2f8d72, #00ffa290)",
+                      "radial-gradient(circle at 33% 33%, #2f8d72, #00ffa260)",
                   }}
                   className="z-0 absolute -bottom-32 -right-40 lg:right-0 w-[250px] h-[250px] rounded-full blur-3xl animate-spin lg:animate-none"
                 ></div>
               </div>
-              <AnimatedDiv className="flex flex-col shadow-md rounded-2xl w-full h-auto border border-cream/30 dark:border-gray/30 backdrop-blur-xl bg-cream/10 dark:bg-gray/10 will-change-transform transform-gpu">
+              <AnimatedDiv className="flex flex-col shadow-md rounded-2xl w-full h-auto border border-cream/30 dark:border-gray/30 backdrop-blur-xl bg-gray/5 dark:bg-cream/5 will-change-transform transform-gpu">
                 <div className="flex flex-row items-center mb-4 pt-4 px-4 gap-3">
                   <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
                     Interests
@@ -360,15 +365,18 @@ export const Landing = () => {
                   {interestData.map((interestData, index, array) => {
                     const isLast = index === array.length - 1;
                     return (
-                    <div
-                      key={interestData.interestIndex}
-                      className={`flex flex-col border-t border-cream/30 dark:border-gray/30 pt-3 bg-black/0 dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 pb-4 px-4 ${isLast? "!rounded-b-2xl" : "rounded-b-none"}`}
-                    >
-                      <p className=" font-poppins text-base font-normal text-darkgray dark:text-cream">
-                        {interestData.name}
-                      </p>
-                    </div>
-                  )})}
+                      <div
+                        key={interestData.interestIndex}
+                        className={`flex flex-col border-t border-cream/30 dark:border-gray/30 pt-3 bg-black/0 dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 pb-4 px-4 ${
+                          isLast ? "!rounded-b-2xl" : "rounded-b-none"
+                        }`}
+                      >
+                        <p className=" font-poppins text-base font-normal text-darkgray dark:text-cream">
+                          {interestData.name}
+                        </p>
+                      </div>
+                    );
+                  })}
                 </AnimatedDiv>
               </AnimatedDiv>
             </div>

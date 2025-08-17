@@ -8,7 +8,7 @@
         "roleIndex": 1,
         "shortName": "SE",
         "fullName": "Software Engineer",
-        "period": "Jul 2024 - Present"
+        "period": "Jul 2024 - Jul 2025"
       },
       {
         "roleIndex": 2,
@@ -47,7 +47,7 @@
       {
         "techIndex": 5,
         "name": "Figma",
-        "category": "secondary"
+        "category": "primary"
       },
       {
         "techIndex": 6,
@@ -101,7 +101,7 @@
       },
       {
         "techIndex": 7,
-        "name": "Figma",
+        "name": "Adobe XD",
         "category": "primary"
       }
     ]

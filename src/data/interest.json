@@ -1,18 +1,22 @@
 [
   {
     "interestIndex": 1,
-    "name": "Creative Research & Writing"
+    "name": "Research & Writing"
   },
   {
     "interestIndex": 2,
-    "name": "Indian Stock Market Analysis"
+    "name": "Painting & Sketching"
   },
   {
     "interestIndex": 3,
-    "name": "UI/UX Design & Development Practice"
+    "name": "Stock Market Analysis"
   },
   {
     "interestIndex": 4,
-    "name": "College Event Leadership & Management"
+    "name": "User Interface Design"
+  },
+  {
+    "interestIndex": 5,
+    "name": "Event Leadership & Management"
   }
 ]
