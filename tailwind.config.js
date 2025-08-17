@@ -28,6 +28,9 @@ export default {
       extrabold: 800,
     },
     extend: {
+      backdropBlur: {
+        "8px": "8px",
+      },
       boxShadow: {
         container: "rgba(75, 75, 75, 0.24) 0px 3px 8px -1px",
         containerXL: "rgba(75, 75, 75, 0.44) 0px 4px 10px",
