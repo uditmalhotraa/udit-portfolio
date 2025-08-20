@@ -5,8 +5,10 @@ export default {
   theme: {
     colors: {
       transparent: "transparent",
-      cream: "#efebdb",
-      gray: "#15202B",
+      // cream: "#efebdb",
+      cream: "#FAF9F6",
+      // gray: "#15202B",
+      gray: "#212121",
       darkgray: "#111822",
       // "accent-light": "#212196",
       // "accent-dark": "#AFAFED",
