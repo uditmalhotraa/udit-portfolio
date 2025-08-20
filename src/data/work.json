@@ -3,6 +3,7 @@
     "workIndex": 1,
     "companyName": "Spenda",
     "companyWebsite": "https://www.spenda.co/",
+    "tenure": "3 yr 7 mo",
     "roleDetail": [
       {
         "roleIndex": 1,
@@ -60,6 +61,7 @@
     "workIndex": 2,
     "companyName": "Mintworxs",
     "companyWebsite": "https://www.mintworxs.co/",
+    "tenure": "9 mo",
     "roleDetail": [
       {
         "roleIndex": 1,
@@ -110,6 +112,7 @@
     "workIndex": 3,
     "companyName": "Infosys",
     "companyWebsite": "https://www.infosys.com/",
+    "tenure": "1 yr",
     "roleDetail": [
       {
         "roleIndex": 1,

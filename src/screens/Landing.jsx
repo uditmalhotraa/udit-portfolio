@@ -134,8 +134,10 @@ export const Landing = () => {
                             {educationData.name}
                             <ArrowRightIcon className="transition-all duration-300 transform group-hover:translate-x-1 fill-darkgray dark:fill-cream group-hover:fill-accent-light dark:group-hover:fill-accent-dark" />
                           </a>
-                          <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream">
-                            {educationData?.year}
+
+                          <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream italic">
+                            <span className="font-light">Tenure:</span>{" "}
+                            {educationData?.tenure}
                           </p>
                         </div>
                         {educationData?.detail.map((educationDataDetail) => (
@@ -146,8 +148,8 @@ export const Landing = () => {
                             <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream mr-3">
                               {educationDataDetail?.certificate}
                             </p>
-                            <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream italic whitespace-nowrap">
-                              {educationDataDetail?.grade}
+                            <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream italic">
+                              {educationDataDetail?.year}
                             </p>
                           </div>
                         ))}
@@ -180,13 +182,19 @@ export const Landing = () => {
                           isLast ? "!rounded-b-2xl" : "rounded-b-none"
                         }`}
                       >
-                        <a
-                          className="font-poppins group inline-flex gap-[6px] items-center w-fit mb-3 text-xl font-medium text-darkgray dark:text-cream hover:text-accent-light dark:hover:text-accent-dark"
-                          href={workData.companyWebsite}
-                        >
-                          {workData.companyName}
-                          <ArrowRightIcon className="transition-all duration-300 transform group-hover:translate-x-1 fill-darkgray dark:fill-cream group-hover:fill-accent-light dark:group-hover:fill-accent-dark" />
-                        </a>
+                        <div className="flex flex-row justify-between items-center">
+                          <a
+                            className="font-poppins group inline-flex gap-[6px] items-center w-fit mb-3 text-xl font-medium text-darkgray dark:text-cream hover:text-accent-light dark:hover:text-accent-dark"
+                            href={workData.companyWebsite}
+                          >
+                            {workData.companyName}
+                            <ArrowRightIcon className="transition-all duration-300 transform group-hover:translate-x-1 fill-darkgray dark:fill-cream group-hover:fill-accent-light dark:group-hover:fill-accent-dark" />
+                          </a>
+                          <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream italic">
+                            <span className="font-light">Tenure:</span>{" "}
+                            {workData.tenure}
+                          </p>
+                        </div>
                         {workData.roleDetail.map((roleDetail) => (
                           <div
                             key={roleDetail.roleIndex}
@@ -198,7 +206,7 @@ export const Landing = () => {
                             <p className=" hidden md:block font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream">
                               {roleDetail.fullName}
                             </p>
-                            <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream">
+                            <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream italic">
                               {roleDetail.period}
                             </p>
                           </div>
