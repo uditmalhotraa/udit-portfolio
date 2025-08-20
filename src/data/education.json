@@ -20,12 +20,14 @@
     "detail": [
       {
         "detailIndex": 1,
-        "certificate": "Higher Secondary (12th)",
+        "shortCertificate": "HSE (12th)",
+        "fullCertificate": "Higher Secondary (12th)",
         "year": "Mar 2014 - Mar 2016"
       },
       {
         "detailIndex": 2,
-        "certificate": "Secondary (10th)",
+        "shortCertificate": "SSE (10th)",
+        "fullCertificate": "Secondary (10th)",
         "year": "Mar 2004 - Mar 2014"
       }
     ]

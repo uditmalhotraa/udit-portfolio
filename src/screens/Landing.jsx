@@ -145,8 +145,11 @@ export const Landing = () => {
                             key={educationDataDetail.detailIndex}
                             className="flex flex-row justify-between items-start w-full mt-4"
                           >
-                            <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream mr-3">
-                              {educationDataDetail?.certificate}
+                            <p className=" block md:hidden font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream mr-3">
+                              {educationDataDetail?.shortCertificate}
+                            </p>
+                            <p className=" md:block hidden font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream mr-3">
+                              {educationDataDetail?.fullCertificate}
                             </p>
                             <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream italic">
                               {educationDataDetail?.year}
