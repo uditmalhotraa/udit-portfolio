@@ -7,7 +7,8 @@
     "detail": [
       {
         "detailIndex": 1,
-        "certificate": "Bachelor of Engineering",
+        "shortCertificate": "BE CSE",
+        "fullCertificate": "Bachelor of Engineering CSE",
         "year": "Jul 2016 - Jul 2020"
       }
     ]
