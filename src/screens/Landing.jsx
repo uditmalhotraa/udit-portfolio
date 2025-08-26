@@ -105,8 +105,7 @@ export const Landing = () => {
             <div className="setWrapper relative">
               <div className="objectSet">
                 <div className="z-0 absolute top-10 -right-4 w-[150px] h-[150px] rounded-full border-2 border-accent-light/40 dark:border-accent-dark/40 bg-transparent"></div>
-                <div className="z-0 absolute -top-2 left-10 w-[75px] h-[75px] rounded-full border-2 border-accent-light/40 dark:border-accent-dark/40 bg-transparent"></div>
-                <div className="z-0 absolute -bottom-5 -left-20 lg:left-20 lg:-bottom-20 w-[200px] h-[200px] rounded-full border-2 border-accent-light/40 dark:border-accent-dark/40 bg-transparent"></div>
+                <div className="z-0 absolute -bottom-5 -left-20 lg:left-20 lg:-bottom-20 w-[125px] h-[125px] lg:w-[200px] lg:h-[200px] rounded-full border-2 border-accent-light/40 dark:border-accent-dark/40 bg-transparent"></div>
               </div>
               <div className="z-10 flex flex-col rounded-2xl w-full h-auto border shadow-md border-cream/30 dark:border-gray/30 backdrop-blur-sm bg-gray/[0.025] dark:bg-cream/[0.025] will-change-transform transform-gpu">
                 <div className="flex flex-row mb-4 pt-4 px-4 gap-3 items-center">
@@ -163,7 +162,7 @@ export const Landing = () => {
             </div>
             <div className="setWrapper relative">
               <div className="objectSet">
-                <div className="z-0 absolute top-10 lg:top-72 -left-4 w-[75px] h-[75px] rounded-full border-2 border-accent-light/40 dark:border-accent-dark/40 bg-transparent"></div>
+                <div className="z-0 absolute top-72 -left-4 w-[75px] h-[75px] rounded-full border-2 border-accent-light/40 dark:border-accent-dark/40 bg-transparent"></div>
                 <div className="z-0 absolute -top-5 lg:top-5 -right-20 lg:right-0 w-[200px] h-[200px] rounded-full border-2 border-accent-light/40 dark:border-accent-dark/40 bg-transparent"></div>
                 <div className="z-0 absolute -bottom-32 right-10 lg:right-52 w-[250px] h-[250px] rounded-full border-2 border-accent-light/40 dark:border-accent-dark/40 bg-transparent"></div>
               </div>
