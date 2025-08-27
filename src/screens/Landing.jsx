@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Header } from "../components/Header";
 import Instagram from "../assets/Instagram";
-import Twitter from "../assets/Twitter";
-import Spotify from "../assets/Spotify";
 import Linkedin from "../assets/Linkedin";
 import Chip from "../components/Chip";
 
@@ -37,14 +35,6 @@ export const Landing = () => {
       case "Instagram":
         return (
           <Instagram className="w-[50px] h-[50px] fill-accent-light dark:fill-accent-dark" />
-        );
-      case "Twitter":
-        return (
-          <Twitter className="w-[50px] h-[50px] fill-accent-light dark:fill-accent-dark" />
-        );
-      case "Spotify":
-        return (
-          <Spotify className="w-[50px] h-[50px] fill-accent-light dark:fill-accent-dark" />
         );
       case "Linkedin":
         return (
