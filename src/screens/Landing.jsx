@@ -22,6 +22,7 @@ import EducationIcon from "../assets/EducationIcon";
 import WorkIcon from "../assets/WorkIcon";
 import ProjectsIcon from "../assets/ProjectsIcon";
 import InterestIcon from "../assets/InterestIcon";
+import Github from "../assets/Github";
 
 export const Landing = () => {
   const [educationData] = useState(education);
@@ -32,13 +33,17 @@ export const Landing = () => {
 
   const getSocialLogo = (socialName) => {
     switch (socialName) {
-      case "Instagram":
+      case "Github":
         return (
-          <Instagram className="w-[50px] h-[50px] fill-accent-light dark:fill-accent-dark" />
+          <Github className="w-[50px] h-[50px] stroke-accent-light dark:stroke-accent-dark" />
         );
       case "Linkedin":
         return (
           <Linkedin className="w-[50px] h-[50px] fill-accent-light dark:fill-accent-dark" />
+        );
+      case "Instagram":
+        return (
+          <Instagram className="w-[50px] h-[50px] fill-accent-light dark:fill-accent-dark" />
         );
       default:
         break;
@@ -77,7 +82,7 @@ export const Landing = () => {
     <>
       <div className="relative  flex flex-col w-full !select-none bg-fixed bg-cream dark:bg-gray">
         <Header />
-        <div className="flex lg:overflow-x-visible overflow-x-hidden flex-col lg:flex-row px-5 md:px-0 mt-28 mb-10 gap-12 lg:max-w-[1280px] xl:max-w-[1536px] 2xl:max-w-[1920px] mx-auto">
+        <div className="flex lg:overflow-x-visible overflow-x-hidden flex-col lg:flex-row px-5 md:px-0 mt-28 mb-10 gap-12 lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] mx-auto">
           <div className="lg:!sticky z-20 lg:top-[120px] lg:min-w-[448px] xl:min-w-[556px] 2xl:min-w-[756px] lg:left-0 relative flex flex-col justify-end bg-uditPic bg-no-repeat bg-cover bg-top shadow-md !rounded-2xl w-full h-[468px] md:h-[600px] xl:h-[724px] 2xl:h-[796px] border border-cream/30 dark:border-gray/30 ">
             <div className="absolute -bottom-3 md:-bottom-4 -left-[8px] md:-left-[16px] flex flex-col gap-2 w-[calc(100%+16px)] md:w-[calc(100%+32px)] h-auto z-10 bg-gray/[0.025] dark:bg-cream/[0.025] shadow-md backdrop-blur-md p-4 rounded-2xl will-change-transform transform-gpu">
               <p
@@ -93,10 +98,6 @@ export const Landing = () => {
           </div>
           <div className="flex flex-col w-full gap-12 lg:mt-2 lg:min-w-[448px] xl:min-w-[556px] 2xl:min-w-[756px]">
             <div className="setWrapper relative">
-              <div className="objectSet">
-                <div className="z-0 absolute top-10 -right-4 w-[150px] h-[150px] rounded-full border-2 border-accent-light/40 dark:border-accent-dark/40 bg-transparent"></div>
-                <div className="z-0 absolute -bottom-5 -left-20 lg:left-20 lg:-bottom-20 w-[125px] h-[125px] lg:w-[200px] lg:h-[200px] rounded-full border-2 border-accent-light/40 dark:border-accent-dark/40 bg-transparent"></div>
-              </div>
               <div className="z-10 flex flex-col rounded-2xl w-full h-auto border shadow-md border-cream/30 dark:border-gray/30 backdrop-blur-sm bg-gray/[0.025] dark:bg-cream/[0.025] will-change-transform transform-gpu">
                 <div className="flex flex-row mb-4 pt-4 px-4 gap-3 items-center">
                   <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
@@ -151,11 +152,6 @@ export const Landing = () => {
               </div>
             </div>
             <div className="setWrapper relative">
-              <div className="objectSet">
-                <div className="z-0 absolute top-72 -left-4 w-[75px] h-[75px] rounded-full border-2 border-accent-light/40 dark:border-accent-dark/40 bg-transparent"></div>
-                <div className="z-0 absolute -top-5 lg:top-5 -right-20 lg:right-0 w-[200px] h-[200px] rounded-full border-2 border-accent-light/40 dark:border-accent-dark/40 bg-transparent"></div>
-                <div className="z-0 absolute -bottom-32 right-10 lg:right-52 w-[250px] h-[250px] rounded-full border-2 border-accent-light/40 dark:border-accent-dark/40 bg-transparent"></div>
-              </div>
               <div className="flex flex-col shadow-md rounded-2xl w-full h-auto border border-cream/30 dark:border-gray/30 backdrop-blur-sm bg-gray/[0.025] dark:bg-cream/[0.025] will-change-transform transform-gpu">
                 <div className="flex flex-row mb-4 pt-4 px-4 gap-3 items-center">
                   <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
@@ -222,12 +218,6 @@ export const Landing = () => {
               </div>
             </div>
             <div className="setWrapper relative">
-              <div className="objectSet">
-                <div className="z-0 absolute top-[32%] -left-4 w-[75px] h-[75px] rounded-full border-2 border-accent-light/40 dark:border-accent-dark/40 bg-transparent"></div>
-                <div className="z-0 absolute top-72 -right-20 lg:-right-10 w-[200px] h-[200px] rounded-full border-2 border-accent-light/40 dark:border-accent-dark/40 bg-transparent"></div>
-                <div className="z-0 absolute bottom-96 lg:bottom-52 right-32 lg:right-72 w-[100px] h-[100px] rounded-full border-2 border-accent-light/40 dark:border-accent-dark/40 bg-transparent"></div>
-                <div className="z-0 absolute -bottom-32 -left-32 w-[250px] h-[250px] rounded-full border-2 border-accent-light/40 dark:border-accent-dark/40 bg-transparent"></div>
-              </div>
               <div className="flex flex-col bg-gray/[0.015] dark:bg-cream/[0.015] rounded-2xl">
                 <div className="flex flex-row gap-3 bg-gray/[0.02] dark:bg-cream/[0.02] items-center rounded-2xl backdrop-blur-sm mb-3 w-full h-auto p-4 border border-b-0 z-10 border-cream/30 dark:border-gray/30 shadow-md will-change-transform transform-gpu">
                   <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
@@ -284,9 +274,6 @@ export const Landing = () => {
               </div>
             </div>
             <div className="setWrapper relative">
-              <div className="objectSet">
-                <div className="z-0 absolute -bottom-32 -right-40 lg:right-0 w-[250px] h-[250px] rounded-full border-2 border-accent-light/40 dark:border-accent-dark/40 bg-transparent"></div>
-              </div>
               <div className="flex flex-col shadow-md rounded-2xl w-full h-auto border border-cream/30 dark:border-gray/30 backdrop-blur-sm bg-gray/[0.025] dark:bg-cream/[0.025] will-change-transform transform-gpu">
                 <div className="flex flex-row items-center mb-4 pt-4 px-4 gap-3">
                   <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
