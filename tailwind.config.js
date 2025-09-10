@@ -6,7 +6,7 @@ export default {
     colors: {
       transparent: "transparent",
       // cream: "#efebdb",
-      cream: "#FAF9F6",
+      cream: "#F5F5F7",
       // gray: "#15202B",
       gray: "#212121",
       darkgray: "#111822",

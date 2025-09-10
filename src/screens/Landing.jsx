@@ -98,7 +98,7 @@ export const Landing = () => {
           </div>
           <div className="flex flex-col w-full gap-12 lg:mt-2 lg:min-w-[448px] xl:min-w-[556px] 2xl:min-w-[756px]">
             <div className="setWrapper relative">
-              <div className="z-10 flex flex-col rounded-2xl w-full h-auto border shadow-md border-cream/30 dark:border-gray/30 backdrop-blur-sm bg-gray/[0.025] dark:bg-cream/[0.025] will-change-transform transform-gpu">
+              <div className="z-10 flex flex-col rounded-2xl w-full h-auto border shadow-md border-cream/30 dark:border-gray/30 backdrop-blur-sm bg-white dark:bg-black will-change-transform transform-gpu">
                 <div className="flex flex-row mb-4 pt-4 px-4 gap-3 items-center">
                   <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
                     Education
@@ -111,7 +111,7 @@ export const Landing = () => {
                     return (
                       <div
                         key={educationData.educationIndex}
-                        className={`flex flex-col border-t border-cream/30 dark:border-gray/30 pt-3 dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 px-4 pb-4 ${
+                        className={`flex flex-col border border-cream/30 dark:border-gray/30 pt-3 dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 px-4 pb-4 ${
                           isLast ? "!rounded-b-2xl" : "rounded-b-none"
                         }`}
                       >
@@ -124,9 +124,8 @@ export const Landing = () => {
                             <ArrowRightIcon className="transition-all duration-300 transform group-hover:translate-x-1 fill-darkgray dark:fill-cream group-hover:fill-accent-light dark:group-hover:fill-accent-dark" />
                           </a>
 
-                          <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream italic">
-                            <span className="font-light">Tenure:</span>{" "}
-                            {educationData?.tenure}
+                          <p className=" font-poppins tracking-wider text-base font-light text-darkgray dark:text-cream italic">
+                            Tenure: {educationData?.tenure}
                           </p>
                         </div>
                         {educationData?.detail.map((educationDataDetail) => (
@@ -140,7 +139,7 @@ export const Landing = () => {
                             <p className=" md:block hidden font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream mr-3">
                               {educationDataDetail?.fullCertificate}
                             </p>
-                            <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream italic">
+                            <p className=" font-poppins tracking-wider text-base font-light text-darkgray dark:text-cream italic">
                               {educationDataDetail?.year}
                             </p>
                           </div>
@@ -152,7 +151,7 @@ export const Landing = () => {
               </div>
             </div>
             <div className="setWrapper relative">
-              <div className="flex flex-col shadow-md rounded-2xl w-full h-auto border border-cream/30 dark:border-gray/30 backdrop-blur-sm bg-gray/[0.025] dark:bg-cream/[0.025] will-change-transform transform-gpu">
+              <div className="flex flex-col shadow-md rounded-2xl w-full h-auto border border-cream/30 dark:border-gray/30 backdrop-blur-sm bg-white dark:bg-black will-change-transform transform-gpu">
                 <div className="flex flex-row mb-4 pt-4 px-4 gap-3 items-center">
                   <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
                     Work
@@ -165,7 +164,7 @@ export const Landing = () => {
                     return (
                       <div
                         key={workData.workIndex}
-                        className={`flex flex-col border-t border-cream/30 dark:border-gray/30 pt-3 bg-black/0 dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 pb-4 px-4 ${
+                        className={`flex flex-col border border-cream/30 dark:border-gray/30 pt-3 bg-black/0 dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 pb-4 px-4 ${
                           isLast ? "!rounded-b-2xl" : "rounded-b-none"
                         }`}
                       >
@@ -177,9 +176,8 @@ export const Landing = () => {
                             {workData.companyName}
                             <ArrowRightIcon className="transition-all duration-300 transform group-hover:translate-x-1 fill-darkgray dark:fill-cream group-hover:fill-accent-light dark:group-hover:fill-accent-dark" />
                           </a>
-                          <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream italic">
-                            <span className="font-light">Tenure:</span>{" "}
-                            {workData.tenure}
+                          <p className=" font-poppins tracking-wider text-base font-light text-darkgray dark:text-cream italic">
+                            Tenure: {workData.tenure}
                           </p>
                         </div>
                         {workData.roleDetail.map((roleDetail) => (
@@ -193,7 +191,7 @@ export const Landing = () => {
                             <p className=" hidden md:block font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream">
                               {roleDetail.fullName}
                             </p>
-                            <p className=" font-poppins tracking-wider text-base font-normal text-darkgray dark:text-cream italic">
+                            <p className=" font-poppins tracking-wider text-base font-light text-darkgray dark:text-cream italic">
                               {roleDetail.period}
                             </p>
                           </div>
@@ -219,7 +217,7 @@ export const Landing = () => {
             </div>
             <div className="setWrapper relative">
               <div className="flex flex-col bg-gray/[0.015] dark:bg-cream/[0.015] rounded-2xl">
-                <div className="flex flex-row gap-3 bg-gray/[0.02] dark:bg-cream/[0.02] items-center rounded-2xl backdrop-blur-sm mb-3 w-full h-auto p-4 border border-b-0 z-10 border-cream/30 dark:border-gray/30 shadow-md will-change-transform transform-gpu">
+                <div className="flex flex-row gap-3 bg-white dark:bg-black items-center rounded-2xl backdrop-blur-sm mb-3 w-full h-auto p-4 border border-b-0 z-10 border-cream/30 dark:border-gray/30 shadow-md will-change-transform transform-gpu">
                   <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
                     Projects
                   </p>
@@ -229,7 +227,7 @@ export const Landing = () => {
                   {projectsData.map((projectsData) => (
                     <div
                       key={projectsData.projectIndex}
-                      className="flex flex-col backdrop-blur-8px md:flex-row gap-x-0 md:gap-y-0 shadow-md gap-y-4 rounded-2xl w-full h-auto border border-cream/30 dark:border-gray/30 z-10 bg-gray/[0.01] dark:bg-cream/[0.01] dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 will-change-transform transform-gpu"
+                      className="flex flex-col backdrop-blur-8px md:flex-row gap-x-0 md:gap-y-0 shadow-md gap-y-4 rounded-2xl w-full h-auto border border-cream/30 dark:border-gray/30 z-10 bg-white dark:bg-black dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 will-change-transform transform-gpu"
                     >
                       <div
                         className={`${
@@ -274,7 +272,7 @@ export const Landing = () => {
               </div>
             </div>
             <div className="setWrapper relative">
-              <div className="flex flex-col shadow-md rounded-2xl w-full h-auto border border-cream/30 dark:border-gray/30 backdrop-blur-sm bg-gray/[0.025] dark:bg-cream/[0.025] will-change-transform transform-gpu">
+              <div className="flex flex-col shadow-md rounded-2xl w-full h-auto border border-cream/30 dark:border-gray/30 backdrop-blur-sm bg-white dark:bg-black will-change-transform transform-gpu">
                 <div className="flex flex-row items-center mb-4 pt-4 px-4 gap-3">
                   <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
                     Interests
@@ -287,7 +285,7 @@ export const Landing = () => {
                     return (
                       <div
                         key={interestData.interestIndex}
-                        className={`flex flex-col border-t border-cream/30 dark:border-gray/30 pt-3 bg-black/0 dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 pb-4 px-4 ${
+                        className={`flex flex-col border border-cream/30 dark:border-gray/30 pt-3 bg-black/0 dark:hover:bg-accent-dark/10 hover:bg-accent-light/10 pb-4 px-4 ${
                           isLast ? "!rounded-b-2xl" : "rounded-b-none"
                         }`}
                       >
@@ -308,7 +306,7 @@ export const Landing = () => {
                 <a
                   tabIndex={0}
                   key={socialData.socialIndex}
-                  className="flex flex-col justify-center items-center shadow-md rounded-2xl w-auto h-auto p-3 cursor-pointer border border-cream/30 dark:border-gray/30 hover:border-accent-light dark:hover:border-accent-dark backdrop-blur-sm bg-gray/[0.025] dark:bg-cream/[0.025] dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06]"
+                  className="flex flex-col justify-center items-center shadow-md rounded-2xl w-auto h-auto p-3 cursor-pointer border border-cream/30 dark:border-gray/30 hover:border-accent-light dark:hover:border-accent-dark backdrop-blur-sm bg-white dark:bg-black dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06]"
                   href={socialData.link}
                   alt={`${socialData.name} Link`}
                   aria-label={`Find Udit at ${socialData.name} platform and connect`}
