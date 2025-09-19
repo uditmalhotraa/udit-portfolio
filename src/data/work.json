@@ -54,6 +54,11 @@
         "techIndex": 6,
         "name": "Azure",
         "category": "secondary"
+      },
+      {
+        "techIndex": 7,
+        "name": "AI",
+        "category": "primary"
       }
     ]
   },
