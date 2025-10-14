@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import { useContext } from "react";
 import DarkModeContext from "../contexts/DarkModeContext";
 import LightModeIcon from "../assets/LightModeIcon";
 import DarkModeIcon from "../assets/DarkModeIcon";
 
-export const Header = () => {
+export const Header = ({ selectedNavItem, setSelectedNavItem }) => {
   const { darkMode, setDarkMode } = useContext(DarkModeContext);
 
   const handleClick = () => {
@@ -19,12 +20,36 @@ export const Header = () => {
         >
           Udit<span className="ml-[2px] font-thin">Malhotra</span>
         </a>
-        <div className="cursor-pointer" onClick={handleClick}>
-          {darkMode ? (
-            <LightModeIcon className="h-[30px] w-[30px] !stroke-accent-dark" />
-          ) : (
-            <DarkModeIcon className="h-[30px] w-[30px] !fill-accent-light" />
-          )}
+        <div className="flex flex-row items-center justify-end gap-x-6">
+          <nav className="hidden lg:flex flex-row justify-end items-center gap-x-6">
+            <p
+              onClick={() => setSelectedNavItem("home")}
+              className={`cursor-pointer text-lg ${
+                selectedNavItem === "home"
+                  ? "text-accent-light dark:text-accent-dark"
+                  : "dark:text-cream text-gray"
+              }`}
+            >
+              Home
+            </p>
+            <p
+              onClick={() => setSelectedNavItem("about")}
+              className={`cursor-pointer text-lg ${
+                selectedNavItem === "about"
+                  ? "text-accent-light dark:text-accent-dark"
+                  : "dark:text-cream text-gray"
+              }`}
+            >
+              About
+            </p>
+          </nav>
+          <div className="cursor-pointer" onClick={handleClick}>
+            {darkMode ? (
+              <LightModeIcon className="h-[30px] w-[30px] !stroke-accent-dark" />
+            ) : (
+              <DarkModeIcon className="h-[30px] w-[30px] !fill-accent-light" />
+            )}
+          </div>
         </div>
       </div>
     </>
