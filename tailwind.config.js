@@ -42,6 +42,7 @@ export default {
       },
       backgroundImage: {
         uditPic: "url('../src/assets/UditPic.webp')",
+        bookThumbnail: "url('../src/assets/BookThumbnail.webp')",
       },
     },
   },
