@@ -42,19 +42,11 @@ export const Home = () => {
                   >
                     <a
                       href={bookDataDetail?.linkURL}
-                      className={`${
-                        bookDataDetail.detailIndex === 2
-                          ? "text-[#ADADAD] hover:text-[#ADADAD] pointer-events-none"
-                          : "text-black dark:text-white hover:text-accent-light dark:hover:text-accent-dark"
-                      } font-poppins group gap-[6px] items-center !justify-between inline-flex w-full tracking-wider text-base font-normal mr-3`}
+                      className={`font-poppins text-black dark:text-white hover:text-accent-light dark:hover:text-accent-dark" group gap-[6px] items-center !justify-between inline-flex w-full tracking-wider text-base font-normal mr-3`}
                     >
                       {bookDataDetail?.link}
                       <ArrowRightIcon
-                        className={`${
-                          bookDataDetail.detailIndex === 2
-                            ? "fill-[#ADADAD] pointer-events-none"
-                            : "fill-black dark:fill-white"
-                        } transition-all duration-300 transform group-hover:translate-x-1 group-hover:fill-accent-light dark:group-hover:fill-accent-dark`}
+                        className={`transition-all duration-300 transform fill-black dark:fill-white group-hover:translate-x-1 group-hover:fill-accent-light dark:group-hover:fill-accent-dark`}
                       />
                     </a>
                   </div>
