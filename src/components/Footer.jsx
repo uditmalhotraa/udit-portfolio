@@ -38,7 +38,7 @@ export const Footer = () => {
             <a
               tabIndex={0}
               key={socialData.socialIndex}
-              className="flex flex-col justify-center items-center shadow-md rounded-2xl w-auto h-auto p-3 cursor-pointer border border-black/10 dark:border-white/20 hover:border-accent-light dark:hover:border-accent-dark backdrop-blur-sm bg-white dark:bg-black dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06]"
+              className="flex flex-col justify-center items-center shadow-md rounded-2xl w-auto h-auto p-3 cursor-pointer border border-black/10 dark:border-white/20 hover:border-accent-light dark:hover:border-accent-dark backdrop-blur-sm bg-cream dark:bg-black dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06]"
               href={socialData.link}
               alt={`${socialData.name} Link`}
               aria-label={`Find Udit at ${socialData.name} platform and connect`}

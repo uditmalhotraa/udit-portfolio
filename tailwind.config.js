@@ -5,9 +5,7 @@ export default {
   theme: {
     colors: {
       transparent: "transparent",
-      // cream: "#efebdb",
-      cream: "#F5F5F7",
-      // gray: "#15202B",
+      cream: "#efebdb",
       gray: "#212121",
       darkgray: "#111822",
       // "accent-light": "#212196",
@@ -42,7 +40,7 @@ export default {
       },
       backgroundImage: {
         uditPic: "url('../src/assets/UditPic.webp')",
-        bookThumbnail: "url('../src/assets/BookThumbnail.webp')",
+        bookThumbnail: "url('../src/assets/HomeThumbnail.webp')",
       },
     },
   },
