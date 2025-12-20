@@ -8,7 +8,7 @@ export const Landing = () => {
     <>
       <div className="relative flex flex-col w-full !select-none bg-fixed bg-cream dark:bg-gray">
         <Header />
-        <div className="flex lg:overflow-x-visible overflow-x-hidden flex-col lg:flex-row px-5 lg:px-0 lg:mt-28 mb-10 gap-12 md:max-w-[768px] md:min-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] mx-0 md:mx-auto">
+        <div className="flex lg:overflow-x-visible overflow-x-hidden flex-col lg:flex-row px-5 lg:px-0 mt-24 lg:mt-28 mb-10 gap-12 md:max-w-[768px] md:min-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] mx-0 md:mx-auto">
           <div
             className={`lg:!sticky z-20 lg:top-[120px] md:min-w-[448px] xl:min-w-[556px] 2xl:min-w-[756px] lg:left-0 relative flex flex-col justify-end bg-bookThumbnail bg-center bg-no-repeat bg-cover shadow-md !rounded-2xl w-full h-[468px] md:h-[600px] xl:h-[724px] 2xl:h-[796px] border border-black/10 dark:border-white/10`}
           >

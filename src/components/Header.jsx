@@ -13,7 +13,7 @@ export const Header = () => {
 
   return (
     <>
-      <div className="z-50 fixed flex flex-row justify-between items-center w-full h-16 px-4 shadow-md bg-gray/[0.005] dark:bg-cream/[0.1] backdrop-blur-sm border-b border-black/10 dark:border-white/10 rounded-b-[25px]">
+      <div className="z-50 fixed flex flex-row justify-between items-center w-full h-16 px-4 shadow-md bg-gray/[0.005] dark:bg-cream/[0.005] backdrop-blur-md border-b border-black/10 dark:border-white/10 rounded-b-[25px]">
         <a
           href="/"
           className="font-poppins text-3xl font-semibold tracking-wider text-accent-light dark:text-accent-dark dark:text-accent-dark-dark"
