@@ -4,7 +4,7 @@ import { Landing } from "./screens/Landing";
 function App() {
   return (
     <>
-      <div className="w-full h-full scroll-smooth">
+      <div className="w-full !h-full scroll-smooth">
         <Routes>
           <Route path="/" element={<Landing />} />
         </Routes>
