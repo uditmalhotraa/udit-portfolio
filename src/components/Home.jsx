@@ -42,7 +42,7 @@ export const Home = () => {
                   >
                     <a
                       href={bookDataDetail?.linkURL}
-                      className={`font-poppins text-black dark:text-white hover:text-accent-light dark:hover:text-accent-dark" group gap-[6px] items-center !justify-between inline-flex w-full tracking-wider text-base font-normal mr-3`}
+                      className={`font-poppins text-black dark:text-white hover:text-accent-light dark:hover:text-accent-dark group gap-[6px] items-center !justify-between inline-flex w-full tracking-wider text-base font-normal mr-3`}
                     >
                       {bookDataDetail?.link}
                       <ArrowRightIcon
