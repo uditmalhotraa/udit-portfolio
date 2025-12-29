@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import social from "../data/social.json";
 
@@ -47,6 +48,14 @@ export const Footer = () => {
             </a>
           ))}
         </motion.div>
+        <div className="flex flex-col justify-center lg:flex-row lg:gap-x-5 w-full h-auto mb-5">
+          <Link to="/terms-and-conditions" className="font-poppins text-md font-thin text-center text-gray dark:text-white tracking-wider leading-relaxed hover:underline cursor-pointer">
+            Terms & Conditions
+          </Link>
+          <Link to="/privacy-policy" className="font-poppins text-md font-thin text-center text-gray dark:text-white tracking-wider leading-relaxed hover:underline cursor-pointer">
+            Privacy Policy
+          </Link>
+        </div>
         <div className="flex flex-col w-full h-auto">
           <p className="font-poppins text-sm font-thin text-center opacity-75 text-gray dark:text-white tracking-wider leading-relaxed">
             Designed, developed, and owned by <br />

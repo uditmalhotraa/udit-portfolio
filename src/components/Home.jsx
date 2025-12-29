@@ -10,6 +10,39 @@ export const Home = () => {
   return (
     <div className="flex flex-col w-full gap-12">
       <div className="z-10 flex flex-col px-4 rounded-2xl !w-full h-auto border shadow-md border-black/10 dark:border-white/20 backdrop-blur-sm bg-cream dark:bg-black will-change-transform transform-gpu">
+        <div className="flex flex-row pt-4 gap-3 items-center lg:justify-between">
+          <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
+            Support My Work
+          </p>
+          <a
+            className="bg-accent-light hidden lg:block dark:bg-accent-dark w-full max-w-[200px] text-center font-bold px-3 py-2 text-white dark:text-black text-md rounded-md"
+            href="https://u.payu.in/gImbfwnX7ggn"
+          >
+            Pay Now
+          </a>
+        </div>
+        <div className="flex flex-col pb-4">
+          <div
+            className={`lg:hidden flex flex-row items-center w-full border-t border-gray/30 dark:border-cream/30 mt-4 pt-4`}
+          >
+            <a
+              className="bg-accent-light dark:bg-accent-dark w-full max-w-[350px] text-center font-bold px-3 py-2 text-white dark:text-black text-md rounded-md"
+              href="https://u.payu.in/gImbfwnX7ggn"
+            >
+              Pay Now
+            </a>
+          </div>
+          <div
+            className={`flex flex-row items-center w-full border-t border-gray/30 dark:border-cream/30 mt-4 pt-4`}
+          >
+            <p className="font-poppins group gap-[6px] items-center w-full !justify-between inline-flex tracking-wider text-base font-normal text-black dark:text-white mr-3">
+              Knowledge stays free. Support, if you’d like to help me keep
+              building more valuable content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="z-10 flex flex-col px-4 rounded-2xl !w-full h-auto border shadow-md border-black/10 dark:border-white/20 backdrop-blur-sm bg-cream dark:bg-black will-change-transform transform-gpu">
         <div className="flex flex-row mb-4 pt-4 gap-3 items-center ">
           <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
             Book(s)
