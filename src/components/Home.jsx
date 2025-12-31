@@ -77,7 +77,7 @@ export const Home = () => {
                     >
                       {bookDataDetail?.link}
                       <ArrowRightIcon
-                        className={`transition-all duration-300 transform fill-black dark:fill-white group-hover:translate-x-1 group-hover:fill-accent-light dark:group-hover:fill-accent-dark`}
+                        className={`transition-all duration-300 transform group-hover:translate-x-1 fill-accent-light dark:fill-accent-dark`}
                       />
                     </a>
                   </div>
@@ -100,7 +100,7 @@ export const Home = () => {
             Services produced upon request. Please reach out via{" "}
             <span
               href="mailto:contact@uditmalhotra.in"
-              className="font-bold cursor-pointer text-accent-light dark:text-accent-dark"
+              className="font-bold cursor-pointer text-accent-light dark:text-accent-dark hover:underline"
             >
               contact@uditmalhotra.in
             </span>{" "}
@@ -108,31 +108,51 @@ export const Home = () => {
           </p>
         </div>
         <div
-          className={`flex flex-row items-center w-full border-t border-gray/30 dark:border-cream/30 mt-4 pt-4`}
+          className={`flex flex-row items-center justify-between w-full border-t border-gray/30 dark:border-cream/30 mt-4 pt-4`}
         >
-          <p className="font-poppins gap-[6px] w-full tracking-wider text-base font-normal text-black dark:text-white">
+          <p className="font-poppins gap-[6px] tracking-wider text-base font-normal text-black dark:text-white">
             Content/Article writing
           </p>
+          <p className="font-poppins text-right gap-[6px] tracking-wider text-base font-light text-accent-light dark:text-accent-dark">
+            ₹5 / word
+          </p>
         </div>
         <div
-          className={`flex flex-row items-center w-full border-t border-gray/30 dark:border-cream/30 mt-4 pt-4`}
+          className={`flex flex-row items-center justify-between w-full border-t border-gray/30 dark:border-cream/30 mt-4 pt-4`}
         >
-          <p className="font-poppins gap-[6px] w-full tracking-wider text-base font-normal text-black dark:text-white">
+          <p className="font-poppins gap-[6px] tracking-wider text-base font-normal text-black dark:text-white">
             Book cover desiging (PNG, PDF)
           </p>
-        </div>
-        <div
-          className={`flex flex-row items-center w-full border-t border-gray/30 dark:border-cream/30 mt-4 pt-4`}
-        >
-          <p className="font-poppins gap-[6px] w-full tracking-wider text-base font-normal text-black dark:text-white">
-            Book editing and format conversion (ePub, Mobi, PDF)
+          <p className="font-poppins text-right gap-[6px] tracking-wider text-base font-light text-accent-light dark:text-accent-dark">
+            ₹10,000 onwards
           </p>
         </div>
         <div
-          className={`flex flex-row items-center w-full border-t border-gray/30 dark:border-cream/30 mt-4 py-4`}
+          className={`flex flex-row items-center justify-between w-full border-t border-gray/30 dark:border-cream/30 mt-4 pt-4`}
         >
-          <p className="font-poppins gap-[6px] w-full tracking-wider text-base font-normal text-black dark:text-white">
+          <p className="font-poppins gap-[6px] max-w-[70%] tracking-wider text-base font-normal text-black dark:text-white">
+            Book editing and format conversion (ePub, Mobi, PDF)
+          </p>
+          <p className="font-poppins text-right gap-[6px] tracking-wider text-base font-light text-accent-light dark:text-accent-dark">
+            ₹2 / word
+          </p>
+        </div>
+        <div
+          className={`flex flex-row items-center justify-between w-full border-t border-gray/30 dark:border-cream/30 mt-4 py-4`}
+        >
+          <p className="font-poppins gap-[6px] tracking-wider text-base font-normal text-black dark:text-white">
             Research and consulting
+          </p>
+          <p className="font-poppins text-right gap-[6px] tracking-wider text-base font-light text-accent-light dark:text-accent-dark">
+            ₹3000 / hour
+          </p>
+        </div>
+        <div
+          className={`flex flex-row items-center justify-between w-full border-t border-gray/30 dark:border-cream/30 mt-4 py-4`}
+        >
+          <p className="font-poppins gap-[6px] italic tracking-wider text-sm font-light text-black dark:text-white">
+            * Prices are given for estimation purposes. Final pricing may vary
+            depending on the project scope.
           </p>
         </div>
       </div>
