@@ -48,13 +48,34 @@ export const Footer = () => {
             </a>
           ))}
         </motion.div>
-        <div className="flex flex-col justify-center lg:flex-row lg:gap-x-5 w-full h-auto mb-5">
-          <Link to="/terms-and-conditions" className="font-poppins text-md font-thin text-center text-gray dark:text-white tracking-wider leading-relaxed hover:underline cursor-pointer">
+        <div className="flex flex-col justify-center lg:flex-row lg:gap-x-5 gap-y-3 w-full h-auto mb-5">
+          <Link
+            to="/terms-and-conditions"
+            className="font-poppins text-md font-thin text-center text-gray dark:text-white tracking-wider leading-relaxed underline cursor-pointer"
+          >
             Terms & Conditions
           </Link>
-          <Link to="/privacy-policy" className="font-poppins text-md font-thin text-center text-gray dark:text-white tracking-wider leading-relaxed hover:underline cursor-pointer">
+          <Link
+            to="/privacy-policy"
+            className="font-poppins text-md font-thin text-center text-gray dark:text-white tracking-wider leading-relaxed underline cursor-pointer"
+          >
             Privacy Policy
           </Link>
+        </div>
+        <div className="flex flex-col w-full h-auto gap-2 mb-2">
+          <p className="font-poppins text-sm font-thin text-center opacity-75 text-gray dark:text-white tracking-wider leading-relaxed">
+            Name: Udit Malhotra
+          </p>
+          <p className="font-poppins text-sm font-thin text-center opacity-75 text-gray dark:text-white tracking-wider leading-relaxed">
+            Email: contact@uditmalhotra.in
+          </p>
+          <p className="font-poppins text-sm font-thin text-center opacity-75 text-gray dark:text-white tracking-wider leading-relaxed">
+            Business Phone: 01875-222220
+          </p>
+          <p className="font-poppins text-sm font-thin text-center opacity-75 text-gray dark:text-white tracking-wider leading-relaxed">
+            Address: House number 341, Chauntra, PO: Chaunta, Dist: Gurdaspur,
+            Punjab, India - 143533
+          </p>
         </div>
         <div className="flex flex-col w-full h-auto">
           <p className="font-poppins text-sm font-thin text-center opacity-75 text-gray dark:text-white tracking-wider leading-relaxed">
