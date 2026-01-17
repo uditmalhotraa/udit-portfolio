@@ -144,7 +144,7 @@ export const Home = () => {
             Research and consulting
           </p>
           <p className="font-poppins text-right gap-[6px] tracking-wider text-base font-light text-accent-light dark:text-accent-dark">
-            ₹3000 / hour
+            ₹10,000 / hour
           </p>
         </div>
         <div

@@ -69,13 +69,6 @@ export const Footer = () => {
           <p className="font-poppins text-sm font-thin text-center opacity-75 text-gray dark:text-white tracking-wider leading-relaxed">
             Email: contact@uditmalhotra.in
           </p>
-          <p className="font-poppins text-sm font-thin text-center opacity-75 text-gray dark:text-white tracking-wider leading-relaxed">
-            Business Phone: 01875-222220
-          </p>
-          <p className="font-poppins text-sm font-thin text-center opacity-75 text-gray dark:text-white tracking-wider leading-relaxed">
-            Address: House number 341, Chauntra, PO: Chaunta, Dist: Gurdaspur,
-            Punjab, India - 143533
-          </p>
         </div>
         <div className="flex flex-col w-full h-auto">
           <p className="font-poppins text-sm font-thin text-center opacity-75 text-gray dark:text-white tracking-wider leading-relaxed">
