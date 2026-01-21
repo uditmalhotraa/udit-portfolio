@@ -87,7 +87,7 @@ export const Home = () => {
           })}
         </div>
       </div>
-      <div className="z-10 flex flex-col px-4 rounded-2xl !w-full h-auto border shadow-md border-black/10 dark:border-white/20 backdrop-blur-sm bg-cream dark:bg-black will-change-transform transform-gpu">
+      {/* <div className="z-10 flex flex-col px-4 rounded-2xl !w-full h-auto border shadow-md border-black/10 dark:border-white/20 backdrop-blur-sm bg-cream dark:bg-black will-change-transform transform-gpu">
         <div className="flex flex-row pt-4 gap-3 items-center ">
           <p className=" font-poppins text-3xl font-medium tracking-wide text-accent-light dark:text-accent-dark">
             Services
@@ -155,7 +155,7 @@ export const Home = () => {
             depending on the project scope.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
