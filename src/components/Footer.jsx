@@ -51,27 +51,27 @@ export const Footer = () => {
         <div className="flex flex-col justify-center lg:flex-row lg:gap-x-5 gap-y-3 w-full h-auto mb-5">
           <Link
             to="/terms-and-conditions"
-            className="font-poppins text-md font-thin text-center text-gray dark:text-white tracking-wider leading-relaxed underline cursor-pointer"
+            className="font-poppins text-base font-thin text-center text-gray dark:text-white tracking-wider leading-relaxed underline cursor-pointer"
           >
             Terms & Conditions
           </Link>
           <Link
             to="/privacy-policy"
-            className="font-poppins text-md font-thin text-center text-gray dark:text-white tracking-wider leading-relaxed underline cursor-pointer"
+            className="font-poppins text-base font-thin text-center text-gray dark:text-white tracking-wider leading-relaxed underline cursor-pointer"
           >
             Privacy Policy
           </Link>
         </div>
         <div className="flex flex-col w-full h-auto gap-2 mb-2">
-          <p className="font-poppins text-sm font-thin text-center opacity-75 text-gray dark:text-white tracking-wider leading-relaxed">
+          <p className="font-poppins text-md font-thin text-center opacity-75 text-gray dark:text-white tracking-wider leading-relaxed">
             Name: Udit Malhotra
           </p>
-          <p className="font-poppins text-sm font-thin text-center opacity-75 text-gray dark:text-white tracking-wider leading-relaxed">
+          <p className="font-poppins text-md font-thin text-center opacity-75 text-gray dark:text-white tracking-wider leading-relaxed">
             Email: contact@uditmalhotra.in
           </p>
         </div>
         <div className="flex flex-col w-full h-auto">
-          <p className="font-poppins text-sm font-thin text-center opacity-75 text-gray dark:text-white tracking-wider leading-relaxed">
+          <p className="font-poppins text-md font-thin text-center opacity-75 text-gray dark:text-white tracking-wider leading-relaxed">
             Designed, developed, and owned by <br />
             Udit Malhotra
           </p>

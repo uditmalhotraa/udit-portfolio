@@ -16,9 +16,10 @@ export default {
       white: "#ffffff",
     },
     fontFamily: {
-      poppins: "Poppins, sans-serif",
+      poppins: "EB Garamond, serif",
     },
     fontWeight: {
+      ultrathin: 100,
       thin: 200,
       light: 300,
       normal: 400,
@@ -46,4 +47,3 @@ export default {
   },
   plugins: [],
 };
-

@@ -16,9 +16,9 @@ export const Header = () => {
       <div className="z-50 fixed flex flex-row justify-between items-center w-full h-16 px-4 shadow-md bg-gray/[0.005] dark:bg-cream/[0.005] backdrop-blur-md border-b border-black/10 dark:border-white/10 rounded-b-[25px]">
         <a
           href="/"
-          className="font-poppins text-3xl font-semibold tracking-wider text-accent-light dark:text-accent-dark dark:text-accent-dark-dark"
+          className="font-poppins text-3xl font-extrabold tracking-wider text-accent-light dark:text-accent-dark dark:text-accent-dark-dark"
         >
-          Udit<span className="ml-[2px] font-thin">Malhotra</span>
+          Udit<span className="ml-[2px] font-ultrathin">Malhotra</span>
         </a>
           <div className="cursor-pointer" onClick={handleClick}>
             {darkMode ? (
