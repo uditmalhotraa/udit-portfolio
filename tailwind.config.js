@@ -6,6 +6,7 @@ export default {
     colors: {
       transparent: "transparent",
       cream: "#f7f5ed",
+      "cream-high": "#FCF5E0",
       gray: "#212121",
       darkgray: "#111822",
       // "accent-light": "#212196",
@@ -16,7 +17,8 @@ export default {
       white: "#ffffff",
     },
     fontFamily: {
-      poppins: "EB Garamond, serif",
+      // poppins: "EB Garamond, serif",
+      poppins: "Cormorant Garamond, serif",
     },
     fontWeight: {
       ultrathin: 100,
