@@ -14,15 +14,15 @@ export const Footer = () => {
     switch (socialName) {
       case "Github":
         return (
-          <Github className="w-[50px] h-[50px] stroke-accent-light dark:stroke-accent-dark" />
+          <Github className="w-[50px] h-[50px] stroke-black dark:stroke-cream group-hover:stroke-accent-light dark:group-hover:stroke-accent-dark" />
         );
       case "Linkedin":
         return (
-          <Linkedin className="w-[50px] h-[50px] fill-accent-light dark:fill-accent-dark" />
+          <Linkedin className="w-[50px] h-[50px] fill-black dark:fill-cream group-hover:fill-accent-light dark:group-hover:fill-accent-dark" />
         );
       case "Instagram":
         return (
-          <Instagram className="w-[50px] h-[50px] fill-accent-light dark:fill-accent-dark" />
+          <Instagram className="w-[50px] h-[50px] fill-black dark:fill-cream group-hover:fill-accent-light dark:group-hover:fill-accent-dark" />
         );
       default:
         break;
@@ -39,7 +39,7 @@ export const Footer = () => {
             <a
               tabIndex={0}
               key={socialData.socialIndex}
-              className="flex flex-col justify-center items-center shadow-md rounded-2xl w-auto h-auto p-3 cursor-pointer border border-black/10 dark:border-white/20 hover:border-accent-light dark:hover:border-accent-dark backdrop-blur-sm bg-cream-high/[0.5] dark:bg-black/[0.5] dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06]"
+              className="flex flex-col justify-center items-center group shadow-md rounded-2xl w-auto h-auto p-3 cursor-pointer border border-black/10 dark:border-white/20 hover:border-accent-light dark:hover:border-accent-dark backdrop-blur-sm bg-cream-high/[0.8] dark:bg-black/[0.8] dark:hover:bg-accent-dark/[0.05] hover:bg-accent-light/[0.06]"
               href={socialData.link}
               alt={`${socialData.name} Link`}
               aria-label={`Find Udit at ${socialData.name} platform and connect`}

@@ -3,27 +3,9 @@
     "BookIndex": 1,
     "name": "Terror 2016",
     "published": "Oct 2025",
-    "detail": [
-      {
-        "detailIndex": 1,
-        "link": "eBook Edition (India only)",
-        "linkURL": "https://amzn.in/d/3nbRkfs"
-      },
-      {
-        "detailIndex": 2,
-        "link": "Paperback Edition (India only)",
-        "linkURL": "https://amzn.in/d/6XMNvl9"
-      },
-      {
-        "detailIndex": 3,
-        "link": "eBook Edition (Worldwide)",
-        "linkURL": "https://a.co/d/cM1VwkS"
-      },
-      {
-        "detailIndex": 4,
-        "link": "Paperback Edition (Worldwide)",
-        "linkURL": "https://a.co/d/dOGEEOR"
-      }
-    ]
+    "linkURLeBookIN": "https://amzn.in/d/3nbRkfs",
+    "linkURLPaperbackIN": "https://amzn.in/d/6XMNvl9",
+    "linkURLeBookWorld": "https://a.co/d/cM1VwkS",
+    "linkURLPaperbackWorld": "https://a.co/d/dOGEEOR"
   }
 ]
