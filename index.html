@@ -1,63 +1,93 @@
 <!doctype html>
-<html lang="en" class="!overscroll-none">
+<html lang="en" class="overscroll-none">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Terror 2016 — a novel by Udit Malhotra</title>
     <meta
       name="description"
-      content="Udit Malhotra's personal portfolio showcasing skills, projects, and achievements in software development and design."
+      content="Terror 2016 is a novel by Udit Malhotra, inspired by the Pathankot airbase attack. Buy the eBook or paperback."
     />
+    <link rel="canonical" href="https://uditmalhotra.in/" />
 
-    <!-- Preload fonts and critical resources -->
-    <!-- <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
-      as="style"
+    <!-- Open Graph / Twitter — put a 1200x630 image at public/og-terror-2016.jpg -->
+    <meta property="og:type" content="book" />
+    <meta property="og:site_name" content="Udit Malhotra" />
+    <meta
+      property="og:title"
+      content="Terror 2016 — a novel by Udit Malhotra"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <meta
+      property="og:description"
+      content="Inspired by the Pathankot airbase attack. Buy the eBook or paperback."
+    />
+    <meta property="og:url" content="https://uditmalhotra.in/" />
+    <meta
+      property="og:image"
+      content="https://uditmalhotra.in/og-terror-2016.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Cover of the novel Terror 2016" />
+    <meta property="og:locale" content="en_IN" />
+    <meta name="twitter:card" content="summary_large_image" />
 
+    <!-- Fonts are self-hosted via @fontsource and imported in main.jsx.
+         The Google Fonts <link>s are gone: two fewer third-party connections,
+         no render-blocking round trip, and no visitor IPs sent to Google. -->
+
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      content="#E8E2D4"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#171A16"
+      media="(prefers-color-scheme: dark)"
+    />
     <link
       rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap"
-      rel="stylesheet"
+      as="image"
+      href="/images/terror-2016-960.webp"
+      fetchpriority="high"
+      imagesrcset="
+    /images/terror-2016-480.webp 480w,
+    /images/terror-2016-960.webp 960w,
+    /images/terror-2016-1440.webp 1440w
+  "
+      imagesizes="(min-width:1280px) 584px,
+              (min-width:1024px) 456px,
+              100vw"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Preload the LCP image (if it's the largest visible element) -->
-    <link rel="preload" href="/src/assets/UditPic.webp" as="image" />
-
-    <link rel="icon" type="image/svg+xml" href="/iconsSun.png" />
-    <title>Udit Malhotra</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/um.ico" />
+    <link rel="icon" type="image/svg+xml" href="/um.ico" />
+    <link rel="apple-touch-icon" href="/um.ico" />
 
     <script>
-      // Critical inline script to apply dark or light theme immediately on page load
+      // Applies the theme before first paint so there's no light flash.
       (function () {
-        // Get the saved theme preference
-        const savedMode = localStorage.getItem("darkMode");
-
-        // Apply theme based on saved preference or system preference
-        if (savedMode === "enabled") {
-          document.documentElement.classList.add("dark");
-        } else if (savedMode === "disabled") {
-          document.documentElement.classList.remove("dark");
-        } else {
-          // Fallback to system preference if no saved preference exists
-          const prefersDarkMode = window.matchMedia(
-            "(prefers-color-scheme: dark)",
-          ).matches;
-          if (prefersDarkMode) {
-            document.documentElement.classList.add("dark");
-          } else {
-            document.documentElement.classList.remove("dark");
-          }
+        try {
+          var saved = localStorage.getItem("darkMode");
+          var dark =
+            saved === "enabled"
+              ? true
+              : saved === "disabled"
+                ? false
+                : window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.classList.toggle("dark", dark);
+          document.documentElement.style.colorScheme = dark ? "dark" : "light";
+        } catch (e) {
+          /* private mode / storage blocked — fall through to light */
         }
       })();
     </script>
   </head>
-  <body class="bg-cream dark:bg-gray !overscroll-none">
+  <body class="bg-surface dark:bg-surface-dark overscroll-none">
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx" defer></script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
