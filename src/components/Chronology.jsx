@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import chronology from "../data/chronology.json";
 
-const STAMP_W = "md:w-[190px]";
+const STAMP_W = "md:w-[170px]";
 
 export const Chronology = () => {
   const [activeIndex, setActiveIndex] = useState(0);

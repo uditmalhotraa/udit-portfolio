@@ -3,7 +3,7 @@
 const surface = { DEFAULT: "#E8E2D4", dark: "#171A16" }; // page
 const panel = { DEFAULT: "#F6F3EC", dark: "#1F2420" }; // cards
 const ink = { DEFAULT: "#16181A", dark: "#E8E2D4" }; // body text
-const field = { DEFAULT: "#24382C", dark: "#7E9B7F" }; // headings, structure
+const field = { DEFAULT: "#405145", dark: "#7E9B7F" }; // headings, structure
 const brass = { DEFAULT: "#B4813A", dark: "#C79A50" }; // links, CTAs, chips
 const rule = { DEFAULT: "#B9B0A0", dark: "#3A423A" }; // hairlines
 

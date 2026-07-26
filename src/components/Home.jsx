@@ -101,7 +101,7 @@ export const Home = () => {
 
   const featured = book[0];
   const barURL =
-    featured[isIndia ? `linkURLPaperbookIN` : `linkURLPaperbookWorld`];
+    featured[isIndia ? `linkURLPaperbackIN` : `linkURLPaperbackWorld`];
 
   return (
     <>
@@ -161,8 +161,12 @@ export const Home = () => {
                       href={paperbackURL}
                       label="Buy Paperback"
                       format="paperback"
-                      store={b[isIndia ? `paperbackStoreIN` : `paperbackStoreWorld`]}
-                      price={b[isIndia ? `paperbackPriceIN` : `paperbackPriceWorld`]}
+                      store={
+                        b[isIndia ? `paperbackStoreIN` : `paperbackStoreWorld`]
+                      }
+                      price={
+                        b[isIndia ? `paperbackPriceIN` : `paperbackPriceWorld`]
+                      }
                       Icon={Paperback}
                     />
                   </div>
@@ -199,14 +203,24 @@ export const Home = () => {
       <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 p-3 bg-panel/90 dark:bg-panel-dark/90 backdrop-blur-md border-t border-rule dark:border-rule-dark">
         <a
           href={barURL}
-          target="_blank"
+          target="_self"
           rel="noopener noreferrer"
-          onClick={() => trackBuy("ebook", featured[isIndia ? `paperbackStoreIN` : `paperbackStoreWorld`])}
-          className="flex text-ink-dark dark:text-ink items-center justify-center gap-2 w-full rounded-lg bg-brass dark:bg-brass-dark py-3 font-display uppercase tracking-label text-base font-bold text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-field"
+          onClick={() =>
+            trackBuy(
+              "ebook",
+              featured[
+                isIndia ? `linkURLPaperbackIN` : `linkURLPaperbackWorld`
+              ],
+            )
+          }
+          className="flex text-ink-dark dark:text-ink items-center justify-center gap-2 w-full rounded-lg bg-brass dark:bg-brass-dark py-3 font-display uppercase tracking-label text-base font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-field"
         >
-          Buy the book{' '}@{' '}
+          Buy the book
           {featured[isIndia ? `paperbackPriceIN` : `paperbackPriceWorld`] && (
-              <> {featured[isIndia ? `paperbackPriceIN` : `paperbackPriceWorld`]}</>
+            <>
+              {" "}
+              @ {featured[isIndia ? `paperbackPriceIN` : `paperbackPriceWorld`]}
+            </>
           )}
         </a>
       </div>

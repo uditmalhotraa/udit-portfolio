@@ -93,12 +93,12 @@ export const Landing = () => {
         {/* pb-24 on mobile clears the fixed buy bar rendered by Home. */}
         <main
           id="content"
-          className="flex flex-col lg:flex-row px-5 lg:px-0 mt-24 lg:mt-28 mb-10 pb-24 lg:pb-0 gap-12 w-full max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] mx-auto"
+          className="flex flex-col lg:flex-row px-5 lg:px-0 mt-24 lg:mt-28 mb-10 pb-24 lg:pb-0 gap-12 w-full max-w-[768px] lg:max-w-[986px] xl:max-w-[1236px] 2xl:max-w-[1456px] mx-auto"
         >
           {/* Hero — cover photo + title */}
           <section
             aria-labelledby="book-title"
-            className="lg:!sticky z-20 lg:top-[112px] lg:w-[456px] lg:shrink-0 xl:w-[584px] relative flex flex-col justify-end shadow-container rounded-2xl w-full h-[468px] md:h-[600px] lg:h-[654px] 2xl:h-[724px] border border-rule dark:border-rule-dark"
+            className="lg:!sticky z-20 lg:top-[112px] lg:w-[456px] lg:shrink-0 xl:w-[584px] relative flex flex-col justify-end shadow-container rounded-2xl w-full h-[600px] md:h-[824px] lg:h-[524px] xl:h-[724px] border border-rule dark:border-rule-dark"
           >
             <img
               src="/images/terror-2016-960.webp"
