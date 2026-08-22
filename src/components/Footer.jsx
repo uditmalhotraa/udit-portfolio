@@ -14,15 +14,15 @@ export const Footer = () => {
     switch (socialName) {
       case "Github":
         return (
-          <Github className="w-[50px] h-[50px] stroke-ink dark:stroke-ink-dark group-hover:stroke-brass group-hover:stroke-brass-dark" />
+          <Github className="w-[50px] h-[50px] stroke-ink-dark group-hover:stroke-brass-dark" />
         );
       case "Linkedin":
         return (
-          <Linkedin className="w-[50px] h-[50px] fill-ink dark:fill-ink-dark group-hover:fill-brass group-hover:fill-brass-dark" />
+          <Linkedin className="w-[50px] h-[50px] fill-ink-dark group-hover:fill-brass-dark" />
         );
       case "Instagram":
         return (
-          <Instagram className="w-[50px] h-[50px] fill-ink dark:fill-ink-dark group-hover:fill-brass group-hover:fill-brass-dark" />
+          <Instagram className="w-[50px] h-[50px] fill-ink-dark group-hover:fill-brass-dark" />
         );
       default:
         break;
@@ -39,7 +39,7 @@ export const Footer = () => {
             <a
               tabIndex={0}
               key={socialData.socialIndex}
-              className="flex flex-col justify-center items-center group shadow-md rounded-2xl w-auto h-auto p-3 cursor-pointer border border-rule dark:border-rule-dark hover:border-brass dark:hover:border-brass-dark backdrop-blur-sm bg-panel dark:bg-panel-dark dark:hover:bg-panel-dark/[0.05] hover:bg-panel/[0.06]"
+              className="flex flex-col justify-center items-center group shadow-md rounded-2xl w-auto h-auto p-3 cursor-pointer border border-rule-dark hover:border-brass-dark backdrop-blur-sm bg-panel-dark hover:bg-panel-dark/[0.05]"
               href={socialData.link}
               alt={`${socialData.name} Link`}
               aria-label={`Find Udit at ${socialData.name} platform and connect`}
@@ -51,27 +51,27 @@ export const Footer = () => {
         <div className="flex flex-col justify-center lg:flex-row lg:gap-x-5 gap-y-3 w-full h-auto mb-5">
           <Link
             to="/terms-and-conditions"
-            className="font-body text-base font-thin text-center text-ink dark:text-ink-dark leading-relaxed underline cursor-pointer"
+            className="font-body text-base font-thin text-center text-ink-dark leading-relaxed underline cursor-pointer"
           >
             Terms & Conditions
           </Link>
           <Link
             to="/privacy-policy"
-            className="font-body text-base font-thin text-center text-ink dark:text-ink-dark leading-relaxed underline cursor-pointer"
+            className="font-body text-base font-thin text-center text-ink-dark leading-relaxed underline cursor-pointer"
           >
             Privacy Policy
           </Link>
         </div>
         <div className="flex flex-col w-full h-auto gap-2 mb-2">
-          <p className="font-body text-md font-thin text-center opacity-75 text-ink dark:text-ink-dark leading-relaxed">
+          <p className="font-body text-md font-thin text-center opacity-75 text-ink-dark leading-relaxed">
             Name: Udit Malhotra
           </p>
-          <p className="font-body text-md font-thin text-center opacity-75 text-ink dark:text-ink-dark leading-relaxed">
+          <p className="font-body text-md font-thin text-center opacity-75 text-ink-dark leading-relaxed">
             Email: contact@uditmalhotra.in
           </p>
         </div>
         <div className="flex flex-col w-full h-auto">
-          <p className="font-body text-md font-thin text-center opacity-75 text-ink dark:text-ink-dark leading-relaxed">
+          <p className="font-body text-md font-thin text-center opacity-75 text-ink-dark leading-relaxed">
             Designed, developed, and owned by <br />
             Udit Malhotra
           </p>

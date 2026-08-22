@@ -82,12 +82,12 @@ export const Landing = () => {
 
       <a
         href="#content"
-        className="sr-only focus:not-sr-only focus:fixed focus:z-[100] focus:top-4 focus:left-4 focus:rounded-md focus:bg-panel focus:px-4 focus:py-2 focus:font-mono focus:uppercase focus:tracking-label focus:text-ink dark:focus:bg-panel-dark dark:focus:text-ink-dark"
+        className="sr-only focus:not-sr-only focus:fixed focus:z-[100] focus:top-4 focus:left-4 focus:rounded-md focus:px-4 focus:py-2 focus:font-mono focus:uppercase text-ink focus:bg-panel-dark focus:text-ink-dark"
       >
         Skip to content
       </a>
 
-      <div className="relative flex flex-col w-full bg-surface dark:bg-surface-dark">
+      <div className="relative flex flex-col w-full bg-surface-dark">
         <Header />
 
         {/* pb-24 on mobile clears the fixed buy bar rendered by Home. */}
@@ -98,7 +98,7 @@ export const Landing = () => {
           {/* Hero — cover photo + title */}
           <section
             aria-labelledby="book-title"
-            className="lg:!sticky z-20 lg:top-[112px] lg:w-[456px] lg:shrink-0 xl:w-[584px] relative flex flex-col justify-end shadow-container rounded-2xl w-full h-[600px] md:h-[824px] lg:h-[524px] xl:h-[724px] border border-rule dark:border-rule-dark"
+            className="lg:!sticky z-20 lg:top-[112px] lg:w-[456px] lg:shrink-0 xl:w-[584px] relative flex flex-col justify-end shadow-container rounded-2xl w-full h-[600px] md:h-[824px] lg:h-[524px] xl:h-[724px] border border-rule-dark"
           >
             <img
               src="/images/terror-2016-960.webp"
@@ -121,14 +121,14 @@ export const Landing = () => {
               text="LATEST RELEASE"
             />
 
-            <div className="absolute -bottom-8 -left-[8px] md:-left-[16px] z-10 flex flex-col gap-2 w-[calc(100%+16px)] md:w-[calc(100%+32px)] bg-panel/[0.92] dark:bg-panel-dark/[0.92] shadow-container backdrop-blur-md p-5 rounded-2xl border border-rule dark:border-rule-dark">
+            <div className="absolute -bottom-8 -left-[8px] md:-left-[16px] z-10 flex flex-col gap-2 w-[calc(100%+16px)] md:w-[calc(100%+32px)] bg-panel-dark/[0.92] shadow-container backdrop-blur-md p-5 rounded-2xl border border-rule-dark">
               <h1
                 id="book-title"
-                className="font-display uppercase tracking-display text-5xl md:text-6xl font-extrabold text-field dark:text-field-dark"
+                className="font-title uppercase tracking-display text-5xl md:text-6xl font-extrabold text-field-dark"
               >
                 {featured.name}
               </h1>
-              <p className="font-mono text-[14px] uppercase tracking-label text-ink/70 dark:text-ink-dark/70">
+              <p className="font-mono text-[14px] uppercase tracking-label text-ink-dark/70">
                 {featured.tagline || "Inspired by the Pathankot airbase attack"}
               </p>
             </div>
@@ -144,7 +144,7 @@ export const Landing = () => {
       {isLoading && (
         <div
           aria-hidden="true"
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-surface dark:bg-surface-dark h-[100svh] w-full pointer-events-none motion-reduce:hidden"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-surface-dark h-[100svh] w-full pointer-events-none motion-reduce:hidden"
         >
           <UMLogo className="w-28 h-28 animate-spin-once" />
         </div>

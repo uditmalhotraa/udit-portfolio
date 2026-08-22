@@ -7,18 +7,18 @@ import { useUserCountry } from "../hooks/useUserCountry";
 import { Chronology } from "./Chronology";
 
 const CARD =
-  "z-10 flex flex-col px-4 md:px-6 rounded-2xl w-full h-auto border shadow-container border-rule dark:border-rule-dark backdrop-blur-sm bg-panel/[0.85] dark:bg-panel-dark/[0.85]";
+  "z-10 flex flex-col px-4 md:px-6 rounded-2xl w-full h-auto border shadow-container border-rule-dark backdrop-blur-sm bg-panel-dark/[0.85]";
 
 const CARD_HEADING =
-  "font-display uppercase tracking-label text-2xl md:text-3xl font-bold text-field dark:text-field-dark";
+  "font-title uppercase tracking-label text-2xl md:text-3xl font-bold text-field-dark";
 
-const DIVIDER = "border-t border-rule dark:border-rule-dark";
+const DIVIDER = "border-t border-rule-dark";
 
 const LABEL =
-  "font-mono text-[14px] uppercase tracking-label text-field dark:text-field-dark";
+  "font-mono text-[14px] uppercase tracking-label text-field-dark";
 
 const BUY =
-  "font-display group flex-1 flex flex-col items-center justify-center gap-1 min-h-[168px] py-5 px-3 rounded-xl border border-rule dark:border-rule-dark bg-panel/60 dark:bg-panel-dark/60 text-ink dark:text-ink-dark uppercase tracking-label text-lg font-bold transition-colors duration-300 motion-reduce:transition-none hover:text-brass dark:hover:text-brass-dark hover:border-brass dark:hover:border-brass-dark hover:bg-brass/[0.06] dark:hover:bg-brass-dark/[0.06] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brass dark:focus-visible:outline-brass-dark";
+  "font-display group flex-1 flex flex-col items-center justify-center gap-1 min-h-[168px] py-5 px-3 rounded-xl border border-rule-dark bg-panel-dark/60 text-ink-dark uppercase tracking-label text-lg font-bold transition-colors duration-300 motion-reduce:transition-none hover:text-brass-dark hover:border-brass-dark hover:bg-brass-dark/[0.06] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brass-dark";
 
 /* Fires into whatever analytics is on the page; harmless if neither exists. */
 const trackBuy = (format, store) => {
@@ -51,17 +51,17 @@ const BuyButton = ({ href, label, store, price, format, Icon }) => (
   >
     <Icon
       aria-hidden="true"
-      className="w-[68px] h-[68px] fill-ink dark:fill-ink-dark group-hover:fill-brass dark:group-hover:fill-brass-dark transition-colors duration-300 motion-reduce:transition-none"
+      className="w-[68px] h-[68px] fill-ink-dark group-hover:fill-brass-dark transition-colors duration-300 motion-reduce:transition-none"
     />
     <span className="inline-flex items-center gap-[6px] pt-4">
       {label}
       <ArrowRightIcon
         aria-hidden="true"
-        className="transition-transform duration-300 motion-reduce:transition-none transform group-hover:translate-x-1 fill-ink dark:fill-ink-dark group-hover:fill-brass dark:group-hover:fill-brass-dark"
+        className="transition-transform duration-300 motion-reduce:transition-none transform group-hover:translate-x-1 fill-ink-dark group-hover:fill-brass-dark"
       />
     </span>
     {(store || price) && (
-      <span className="font-body text-base normal-case tracking-normal font-normal text-ink dark:text-ink-dark pt-1">
+      <span className="font-body text-base normal-case tracking-normal font-normal text-ink-dark pt-1">
         {[store, price].filter(Boolean).join(" · ")}
       </span>
     )}
@@ -83,7 +83,7 @@ const Spec = ({ items }) => (
     {items.map(([term, value]) => (
       <div key={term} className="flex flex-col gap-[2px]">
         <dt className={LABEL}>{term}</dt>
-        <dd className="font-body text-base text-ink dark:text-ink-dark">
+        <dd className="font-body text-base text-ink-dark">
           {value}
         </dd>
       </div>
@@ -138,7 +138,7 @@ export const Home = () => {
                     className={
                       single
                         ? "sr-only"
-                        : "font-display uppercase tracking-display text-xl font-bold text-ink dark:text-ink-dark mb-4"
+                        : "font-display uppercase tracking-display text-xl font-bold text-ink-dark mb-4"
                     }
                   >
                     {b.name}
@@ -178,7 +178,7 @@ export const Home = () => {
 
         <Card title="About" id="about-heading">
           <div className={`flex flex-col mb-6 ${DIVIDER} mt-1 pt-5`}>
-            <p className="font-body text-lg leading-relaxed text-ink dark:text-ink-dark">
+            <p className="font-body text-lg leading-relaxed text-ink-dark">
               Inspired by actual events, this powerful novel unravels the untold
               stories of bravery, fear, and sacrifice during the Pathankot
               Airbase terror attack, where ordinary lives met extraordinary
@@ -200,7 +200,7 @@ export const Home = () => {
 
       {/* Mobile buy bar. Landing.jsx adds pb-24 on small screens so this never
           covers the footer. */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 p-3 bg-panel/90 dark:bg-panel-dark/90 backdrop-blur-md border-t border-rule dark:border-rule-dark">
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 p-3 bg-panel-dark/90 backdrop-blur-md border-t border-rule-dark">
         <a
           href={barURL}
           target="_self"
@@ -213,7 +213,7 @@ export const Home = () => {
               ],
             )
           }
-          className="flex text-ink-dark dark:text-ink items-center justify-center gap-2 w-full rounded-lg bg-brass dark:bg-brass-dark py-3 font-display uppercase tracking-label text-base font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-field"
+          className="flex text-ink items-center justify-center gap-2 w-full rounded-lg bg-brass-dark py-3 font-display uppercase tracking-label text-base font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-field"
         >
           Buy the book
           {featured[isIndia ? `paperbackPriceIN` : `paperbackPriceWorld`] && (

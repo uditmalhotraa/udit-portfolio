@@ -8,7 +8,6 @@ const brass = { DEFAULT: "#B4813A", dark: "#C79A50" }; // links, CTAs, chips
 const rule = { DEFAULT: "#B9B0A0", dark: "#3A423A" }; // hairlines
 
 export default {
-  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
@@ -28,6 +27,7 @@ export default {
 
     fontFamily: {
       display: ['"Archivo Narrow"', "system-ui", "sans-serif"], // titles, card headings
+      title: ['"Protest Guerrilla"', "sans-serif"],
       body: ['"Newsreader"', "Georgia", "serif"], // prose
       mono: ['"Courier Prime"', "ui-monospace", "monospace"], // labels, dates, prices
       poppins: ['"Newsreader"', "Georgia", "serif"],
