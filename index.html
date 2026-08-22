@@ -40,13 +40,7 @@
     <meta name="color-scheme" content="light dark" />
     <meta
       name="theme-color"
-      content="#E8E2D4"
-      media="(prefers-color-scheme: light)"
-    />
-    <meta
-      name="theme-color"
       content="#171A16"
-      media="(prefers-color-scheme: dark)"
     />
     <link
       rel="preload"
@@ -62,29 +56,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/um.ico" />
     <link rel="icon" type="image/svg+xml" href="/um.ico" />
     <link rel="apple-touch-icon" href="/um.ico" />
-
-    <script>
-      // Applies the theme before first paint so there's no light flash.
-      (function () {
-        try {
-          var saved = localStorage.getItem("darkMode");
-          var dark =
-            saved === "enabled"
-              ? true
-              : saved === "disabled"
-                ? false
-                : window.matchMedia("(prefers-color-scheme: dark)").matches;
-          document.documentElement.classList.toggle("dark", dark);
-          document.documentElement.style.colorScheme = dark ? "dark" : "light";
-        } catch (e) {
-          /* private mode / storage blocked — fall through to light */
-        }
-      })();
-    </script>
-    <script type="module" crossorigin src="/assets/index-19_C-aS2.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DqIMqMCZ.css">
+    <script type="module" crossorigin src="/assets/index-Cxwx65jY.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DJPCgZEF.css">
   </head>
-  <body class="bg-surface dark:bg-surface-dark overscroll-none">
+  <body class="bg-surface-dark overscroll-none">
     <div id="root"></div>
   </body>
 </html>
