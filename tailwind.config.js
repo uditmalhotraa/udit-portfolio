@@ -26,8 +26,9 @@ export default {
     },
 
     fontFamily: {
-      display: ['"Archivo Narrow"', "system-ui", "sans-serif"], // titles, card headings
+      display: ['"Archivo Narrow"', "system-ui", "sans-serif"],
       title: ['"Protest Guerrilla"', "sans-serif"],
+      stencil: ["Stardos Stencil", "serif"],
       body: ['"Newsreader"', "Georgia", "serif"], // prose
       mono: ['"Courier Prime"', "ui-monospace", "monospace"], // labels, dates, prices
       poppins: ['"Newsreader"', "Georgia", "serif"],

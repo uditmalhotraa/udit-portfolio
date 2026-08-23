@@ -10,7 +10,7 @@ const CARD =
   "z-10 flex flex-col px-4 md:px-6 rounded-2xl w-full h-auto border shadow-container border-rule-dark backdrop-blur-sm bg-panel-dark/[0.85]";
 
 const CARD_HEADING =
-  "font-title uppercase tracking-label text-2xl md:text-3xl font-bold text-field-dark";
+  "font-stencil uppercase tracking-label text-2xl font-regular text-field-dark";
 
 const DIVIDER = "border-t border-rule-dark";
 
@@ -18,7 +18,7 @@ const LABEL =
   "font-mono text-[14px] uppercase tracking-label text-field-dark";
 
 const BUY =
-  "font-display group flex-1 flex flex-col items-center justify-center gap-1 min-h-[168px] py-5 px-3 rounded-xl border border-rule-dark bg-panel-dark/60 text-ink-dark uppercase tracking-label text-lg font-bold transition-colors duration-300 motion-reduce:transition-none hover:text-brass-dark hover:border-brass-dark hover:bg-brass-dark/[0.06] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brass-dark";
+  "font-body group flex-1 flex flex-col items-center justify-center gap-1 h-10 py-5 px-3 rounded-xl border border-field-dark bg-panel-dark/60 text-ink-dark uppercase tracking-label text-lg font-bold transition-colors duration-300 motion-reduce:transition-none hover:text-brass-dark hover:border-brass-dark hover:bg-brass-dark/[0.06] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brass-dark";
 
 /* Fires into whatever analytics is on the page; harmless if neither exists. */
 const trackBuy = (format, store) => {
@@ -41,7 +41,7 @@ Card.propTypes = {
   children: PropTypes.node,
 };
 
-const BuyButton = ({ href, label, store, price, format, Icon }) => (
+const BuyButton = ({ href, label, store, price, format, isbn }) => (
   <a
     href={href}
     target="_blank"
@@ -49,22 +49,24 @@ const BuyButton = ({ href, label, store, price, format, Icon }) => (
     onClick={() => trackBuy(format, store)}
     className={BUY}
   >
-    <Icon
-      aria-hidden="true"
-      className="w-[68px] h-[68px] fill-ink-dark group-hover:fill-brass-dark transition-colors duration-300 motion-reduce:transition-none"
-    />
-    <span className="inline-flex items-center gap-[6px] pt-4">
-      {label}
-      <ArrowRightIcon
-        aria-hidden="true"
-        className="transition-transform duration-300 motion-reduce:transition-none transform group-hover:translate-x-1 fill-ink-dark group-hover:fill-brass-dark"
-      />
-    </span>
-    {(store || price) && (
-      <span className="font-body text-base normal-case tracking-normal font-normal text-ink-dark pt-1">
-        {[store, price].filter(Boolean).join(" · ")}
-      </span>
-    )}
+    <div className="w-full font-body px-1 lg:px-2.5 flex flex-row items-center justify-between gap-1">
+      <div className="flex flex-col items-start leading-4 gap-[2px] lg:gap-1">
+        <span className="inline-flex text-base items-center gap-[6px]">
+          {label}
+          <ArrowRightIcon
+            aria-hidden="true"
+            className="transition-transform duration-300 motion-reduce:transition-none transform group-hover:translate-x-1 fill-ink-dark group-hover:fill-brass-dark"
+          />
+        </span>
+        <span className="inline-flex text-[10px] tracking-wide items-center">{isbn}</span>
+      </div>
+      {(store || price) && (
+        <div className="flex flex-col items-end leading-4 gap-[2px] lg:gap-1">
+          <span className="inline-flex text-lg items-center">{price}</span>
+          <span className="inline-flex text-[10px] tracking-wide items-center">{store}</span>
+        </div>
+      )}
+    </div>
   </a>
 );
 
@@ -74,12 +76,13 @@ BuyButton.propTypes = {
   store: PropTypes.string,
   price: PropTypes.string,
   format: PropTypes.string.isRequired,
+  isbn: PropTypes.string.isRequired,
   Icon: PropTypes.elementType.isRequired,
 };
 
 /* Spec rows — only the fields you actually supply in book.json get rendered. */
 const Spec = ({ items }) => (
-  <dl className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3">
+  <dl className="grid grid-cols-2 gap-x-6 gap-y-3">
     {items.map(([term, value]) => (
       <div key={term} className="flex flex-col gap-[2px]">
         <dt className={LABEL}>{term}</dt>
@@ -106,7 +109,7 @@ export const Home = () => {
   return (
     <>
       <div className="flex flex-col w-full gap-8">
-        <Card title="Book" id="book-heading">
+        <Card title="Get the Book" id="book-heading">
           <div className="flex flex-col">
             {book.map((b, index) => {
               const isLast = index === book.length - 1;
@@ -121,8 +124,6 @@ export const Home = () => {
               const spec = [
                 ["Published", b.published],
                 ["Format", b.format],
-                ["ISBN (e)", b.isbne],
-                ["ISBN (p)", b.isbnp],
                 ["Pages", b.pages],
                 ["Language", b.language],
               ].filter(([, v]) => Boolean(v));
@@ -147,20 +148,22 @@ export const Home = () => {
                   {spec.length > 0 && <Spec items={spec} />}
 
                   <div
-                    className={`flex flex-col md:flex-row items-stretch w-full ${DIVIDER} mt-5 pt-5 gap-3`}
+                    className={`flex flex-col items-stretch w-full ${DIVIDER} mt-5 pt-5 gap-3`}
                   >
                     <BuyButton
                       href={ebookURL}
-                      label="Buy eBook"
+                      label="Get eBook"
                       format="ebook"
+                      isbn={`ISBN: ${b.isbne}`}
                       store={b[isIndia ? `ebookStoreIN` : `ebookStoreWorld`]}
                       price={b[isIndia ? `ebookPriceIN` : `ebookPriceWorld`]}
                       Icon={Kindle}
                     />
                     <BuyButton
                       href={paperbackURL}
-                      label="Buy Paperback"
+                      label="Get Paperback"
                       format="paperback"
+                      isbn={`ISBN: ${b.isbnp}`}
                       store={
                         b[isIndia ? `paperbackStoreIN` : `paperbackStoreWorld`]
                       }
@@ -178,7 +181,7 @@ export const Home = () => {
 
         <Card title="About" id="about-heading">
           <div className={`flex flex-col mb-6 ${DIVIDER} mt-1 pt-5`}>
-            <p className="font-body text-lg leading-relaxed text-ink-dark">
+            <p className="font-body text-base leading-relaxed text-ink-dark">
               Inspired by actual events, this powerful novel unravels the untold
               stories of bravery, fear, and sacrifice during the Pathankot
               Airbase terror attack, where ordinary lives met extraordinary

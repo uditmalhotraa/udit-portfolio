@@ -1,17 +1,17 @@
 [
   {
     "socialIndex": 1,
-    "name": "Linkedin",
-    "link": "https://www.linkedin.com/in/uditmalhotraa"
-  },
-  {
-    "socialIndex": 2,
     "name": "Instagram",
     "link": "https://instagram.com/uditmalhotra.in"
   },
   {
+    "socialIndex": 2,
+    "name": "Youtube",
+    "link": "https://www.youtube.com/@uditmalhotra"
+  },
+  {
     "socialIndex": 3,
-    "name": "Github",
-    "link": "https://github.com/uditmalhotraa"
+    "name": "Linkedin",
+    "link": "https://www.linkedin.com/in/uditmalhotraa"
   }
 ]

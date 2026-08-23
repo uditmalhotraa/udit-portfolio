@@ -93,7 +93,7 @@ export const Landing = () => {
         {/* pb-24 on mobile clears the fixed buy bar rendered by Home. */}
         <main
           id="content"
-          className="flex flex-col lg:flex-row px-5 lg:px-0 mt-24 lg:mt-28 mb-10 pb-24 lg:pb-0 gap-12 w-full max-w-[768px] lg:max-w-[986px] xl:max-w-[1236px] 2xl:max-w-[1456px] mx-auto"
+          className="flex flex-col lg:flex-row px-5 lg:px-0 mt-20 lg:mt-28 mb-10 pb-24 lg:pb-0 gap-12 w-full max-w-[768px] lg:max-w-[986px] xl:max-w-[1236px] 2xl:max-w-[1456px] mx-auto"
         >
           {/* Hero — cover photo + title */}
           <section
@@ -121,10 +121,10 @@ export const Landing = () => {
               text="LATEST RELEASE"
             />
 
-            <div className="absolute -bottom-8 -left-[8px] md:-left-[16px] z-10 flex flex-col gap-2 w-[calc(100%+16px)] md:w-[calc(100%+32px)] bg-panel-dark/[0.92] shadow-container backdrop-blur-md p-5 rounded-2xl border border-rule-dark">
+            <div className="absolute -bottom-8 -left-[8px] md:-left-[16px] z-10 flex flex-col gap-2 w-[calc(100%+16px)] md:w-[calc(100%+32px)] bg-panel-dark/[0.5] shadow-container backdrop-blur-2xl p-5 rounded-2xl border border-rule-dark">
               <h1
                 id="book-title"
-                className="font-title uppercase tracking-display text-5xl md:text-6xl font-extrabold text-field-dark"
+                className="font-stencil uppercase tracking-display text-4xl lg:text-5xl md:text-6xl font-extrabold text-field-dark"
               >
                 {featured.name}
               </h1>

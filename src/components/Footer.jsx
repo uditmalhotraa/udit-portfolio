@@ -5,20 +5,20 @@ import social from "../data/social.json";
 
 import Instagram from "../assets/Instagram";
 import Linkedin from "../assets/Linkedin";
-import Github from "../assets/Github";
+import Youtube from "../assets/Youtube";
 
 export const Footer = () => {
   const [socialData] = useState(social);
 
   const getSocialLogo = (socialName) => {
     switch (socialName) {
-      case "Github":
-        return (
-          <Github className="w-[50px] h-[50px] stroke-ink-dark group-hover:stroke-brass-dark" />
-        );
       case "Linkedin":
         return (
           <Linkedin className="w-[50px] h-[50px] fill-ink-dark group-hover:fill-brass-dark" />
+        );
+      case "Youtube":
+        return (
+          <Youtube className="w-[50px] h-[50px] fill-ink-dark group-hover:fill-brass-dark" />
         );
       case "Instagram":
         return (

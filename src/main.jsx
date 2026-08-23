@@ -19,6 +19,9 @@ import "@fontsource/eb-garamond/700.css";
 
 import "@fontsource/protest-guerrilla/400.css";
 
+import "@fontsource/stardos-stencil/400.css";
+import "@fontsource/stardos-stencil/700.css";
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <HashRouter>
     <App />
