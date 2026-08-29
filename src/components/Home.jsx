@@ -218,7 +218,7 @@ export const Home = () => {
           }
           className="flex text-ink items-center justify-center gap-2 w-full rounded-lg bg-brass-dark py-3 font-display uppercase tracking-label text-base font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-field"
         >
-          Buy the book
+          Get the book
           {featured[isIndia ? `paperbackPriceIN` : `paperbackPriceWorld`] && (
             <>
               {" "}
