@@ -156,7 +156,7 @@ export const TermsAndConditions = () => {
           <p className="text-gray-700 leading-relaxed text-ink-dark">
             For any questions regarding these Terms, contact:
             <br />
-            📩 <span className="font-semibold">contact@uditmalhotra.in</span>
+            📩 <span className="font-semibold">uditmalhotra05@gmail.com</span>
             <br />
             🌐 <span className="font-semibold">uditmalhotra.in</span>
           </p>
