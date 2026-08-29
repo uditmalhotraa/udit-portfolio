@@ -161,7 +161,7 @@ export const PrivacyPolicy = () => {
           <p className="text-gray-700 leading-relaxed text-ink-dark">
             If you have any questions regarding this Privacy Policy, contact:
             <br />
-            📩 <span className="font-semibold">contact@uditmalhotra.in</span>
+            📩 <span className="font-semibold">uditmalhotra05@gmail.com</span>
             <br />
             🌐 <span className="font-semibold">uditmalhotra.in</span>
           </p>
