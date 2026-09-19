@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import social from "../data/social.json";
 
-import Instagram from "../assets/Instagram";
-import Linkedin from "../assets/Linkedin";
-import Youtube from "../assets/Youtube";
+import IconInstagram from "../assets/IconInstagram";
+import IconLinkedin from "../assets/IconLinkedin";
+import IconYoutube from "../assets/IconYoutube";
+import IconX from "../assets/IconX";
 
 export const Footer = () => {
   const [socialData] = useState(social);
@@ -14,15 +15,19 @@ export const Footer = () => {
     switch (socialName) {
       case "Linkedin":
         return (
-          <Linkedin className="w-[50px] h-[50px] fill-ink-dark group-hover:fill-brass-dark" />
+          <IconLinkedin className="w-[36px] h-[36px] fill-ink-dark group-hover:fill-brass-dark" />
+        );
+      case "X":
+        return (
+          <IconX className="w-[36px] h-[36px] fill-ink-dark group-hover:fill-brass-dark" />
         );
       case "Youtube":
         return (
-          <Youtube className="w-[50px] h-[50px] fill-ink-dark group-hover:fill-brass-dark" />
+          <IconYoutube className="w-[36px] h-[36px] fill-ink-dark group-hover:fill-brass-dark" />
         );
       case "Instagram":
         return (
-          <Instagram className="w-[50px] h-[50px] fill-ink-dark group-hover:fill-brass-dark" />
+          <IconInstagram className="w-[36px] h-[36px] fill-ink-dark group-hover:fill-brass-dark" />
         );
       default:
         break;
@@ -67,7 +72,7 @@ export const Footer = () => {
             Name: Udit Malhotra
           </p>
           <p className="font-body text-md font-thin text-center opacity-75 text-ink-dark leading-relaxed">
-            Email: contact@uditmalhotra.in
+            Email: uditmalhotra05@gmail.in
           </p>
         </div>
         <div className="flex flex-col w-full h-auto">

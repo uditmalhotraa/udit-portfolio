@@ -21,7 +21,7 @@ export const PrivacyPolicy = () => {
           </h1>
 
           <p className="text-sm text-gray-500 mb-8 text-ink-dark">
-            Last Updated: 26 Dec 2025
+            Last Updated: 19 Sep 2026
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-6 text-ink-dark">
@@ -161,7 +161,7 @@ export const PrivacyPolicy = () => {
           <p className="text-gray-700 leading-relaxed text-ink-dark">
             If you have any questions regarding this Privacy Policy, contact:
             <br />
-            📩 <span className="font-semibold">contact@uditmalhotra.in</span>
+            📩 <span className="font-semibold">uditmalhotra05@gmail.in</span>
             <br />
             🌐 <span className="font-semibold">uditmalhotra.in</span>
           </p>

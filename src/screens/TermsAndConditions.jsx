@@ -22,7 +22,7 @@ export const TermsAndConditions = () => {
           </h1>
 
           <p className="text-sm text-gray-500 mb-8 text-ink-dark">
-            Last Updated: 25 Jul 2026
+            Last Updated: 19 Sep 2026
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-6 text-ink-dark">
@@ -156,7 +156,7 @@ export const TermsAndConditions = () => {
           <p className="text-gray-700 leading-relaxed text-ink-dark">
             For any questions regarding these Terms, contact:
             <br />
-            📩 <span className="font-semibold">contact@uditmalhotra.in</span>
+            📩 <span className="font-semibold">uditmalhotra05@gmail.in</span>
             <br />
             🌐 <span className="font-semibold">uditmalhotra.in</span>
           </p>

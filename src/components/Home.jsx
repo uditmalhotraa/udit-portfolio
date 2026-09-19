@@ -18,7 +18,7 @@ const LABEL =
   "font-mono text-[14px] uppercase tracking-label text-field-dark";
 
 const BUY =
-  "font-body group flex-1 flex flex-col items-center justify-center gap-1 h-10 py-5 px-3 rounded-xl border border-field-dark bg-panel-dark/60 text-ink-dark uppercase tracking-label text-lg font-bold transition-colors duration-300 motion-reduce:transition-none hover:text-brass-dark hover:border-brass-dark hover:bg-brass-dark/[0.06] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brass-dark";
+  "!z-1 font-body group flex-1 flex flex-col shadow-container backdrop-blur-3xl items-center justify-center gap-1 h-10 py-5 px-3 rounded-xl border border-field-dark bg-panel-dark/[0.5] text-ink-dark uppercase tracking-label text-lg font-bold transition-colors duration-300 motion-reduce:transition-none hover:text-brass-dark hover:border-brass-dark hover:bg-brass-dark/[0.06] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brass-dark";
 
 /* Fires into whatever analytics is on the page; harmless if neither exists. */
 const trackBuy = (format, store) => {
@@ -58,12 +58,16 @@ const BuyButton = ({ href, label, store, price, format, isbn }) => (
             className="transition-transform duration-300 motion-reduce:transition-none transform group-hover:translate-x-1 fill-ink-dark group-hover:fill-brass-dark"
           />
         </span>
-        <span className="inline-flex text-[10px] tracking-wide items-center">{isbn}</span>
+        <span className="inline-flex text-[10px] tracking-wide items-center">
+          {isbn}
+        </span>
       </div>
       {(store || price) && (
         <div className="flex flex-col items-end leading-4 gap-[2px] lg:gap-1">
           <span className="inline-flex text-lg items-center">{price}</span>
-          <span className="inline-flex text-[10px] tracking-wide items-center">{store}</span>
+          <span className="inline-flex text-[10px] tracking-wide items-center">
+            {store}
+          </span>
         </div>
       )}
     </div>
@@ -148,8 +152,16 @@ export const Home = () => {
                   {spec.length > 0 && <Spec items={spec} />}
 
                   <div
-                    className={`flex flex-col items-stretch w-full ${DIVIDER} mt-5 pt-5 gap-3`}
+                    className={`relative flex flex-col items-stretch w-full ${DIVIDER} mt-5 pt-5 gap-3`}
                   >
+                    <div
+                      aria-hidden="true"
+                      className=" absolute top-[20%] left-[5%] lg:left-[15%] h-12 w-40 lg:w-56 blur-xl rounded-full bg-brass"
+                    ></div>
+                    <div
+                      aria-hidden="true"
+                      className=" absolute bottom-[10%] left-[15%] lg:left-[20%] h-12 w-40 lg:w-72 blur-xl rounded-full bg-brass"
+                    ></div>
                     <BuyButton
                       href={ebookURL}
                       label="Get eBook"
