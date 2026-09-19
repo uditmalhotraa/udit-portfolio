@@ -72,7 +72,7 @@ export const Footer = () => {
             Name: Udit Malhotra
           </p>
           <p className="font-body text-md font-thin text-center opacity-75 text-ink-dark leading-relaxed">
-            Email: uditmalhotra05@gmail.in
+            Email: uditmalhotra05@gmail.com
           </p>
         </div>
         <div className="flex flex-col w-full h-auto">
