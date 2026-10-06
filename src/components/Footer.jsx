@@ -5,8 +5,6 @@ import social from "../data/social.json";
 
 import IconInstagram from "../assets/IconInstagram";
 import IconLinkedin from "../assets/IconLinkedin";
-import IconYoutube from "../assets/IconYoutube";
-import IconX from "../assets/IconX";
 
 export const Footer = () => {
   const [socialData] = useState(social);
@@ -16,14 +14,6 @@ export const Footer = () => {
       case "Linkedin":
         return (
           <IconLinkedin className="w-[36px] h-[36px] fill-ink-dark group-hover:fill-brass-dark" />
-        );
-      case "X":
-        return (
-          <IconX className="w-[36px] h-[36px] fill-ink-dark group-hover:fill-brass-dark" />
-        );
-      case "Youtube":
-        return (
-          <IconYoutube className="w-[36px] h-[36px] fill-ink-dark group-hover:fill-brass-dark" />
         );
       case "Instagram":
         return (
